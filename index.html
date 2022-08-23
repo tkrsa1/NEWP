@@ -4,81 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/font.css">
+    <title>프로젝트 기본 레이아웃 실습</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/font.css">
+    <style>
+        #wrap{
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+        header h1{
+            width: 160px;
+            background-color: #ccc;
+            float: left;
+            height: 100px;
+            line-height: 100px;
+        }
+        header nav ul{
+            width: 800px;
+            background-color: orangered;
+            float: left;
+            height: 100px;
+        }
+        header nav ul li{
+            float: left;
+            line-height: 100px;
+            padding-left: 50px;
+        }
+        main section{
+            line-height: 400px;
+        }
+        main section:nth-child(1) {
+            width: 300px;
+            background-color: pink;
+            float: left;
+            height: 400px;
+        }
+        main section:nth-child(2) {
+            width: 660px;
+            background-color: green;
+            float: left;
+            height: 400px;
+        }
+        footer{
+            width: 960px;
+            height: 100px;
+            line-height: 100px;
+            background-color: lightgreen;   
+        }
+        aside{
+            width: 100px;
+            height: 300px;
+            background-color: lightblue;
+            position: absolute;
+            left: 100%;
+            top: 0%;
+            line-height: 300px;
+            z-index: 1;
+        }
+
+        
+    </style>
 </head>
 <body>
     <div id="wrap">
-        <!-- header -->
-        <header>
-            <h1>
-                이용재
-            </h1>
-            <p class="h_title">
-                EzenC
-            </p>
-            <p class="h_title2">
-                &quot;지금 아니면 어디에도 없을 이젠컴.&quot;
-            </p>
-            <img src="images/Post-Malone-Transparent.png" alt="이미지">
+        <header class="cf">
+            <h1>로고</h1>
+            <nav>
+                <ul>
+                    <li>GNB</li>
+                    <li>유틸리티메뉴</li>
+                    <li>검색창</li>
+                </ul>
+            </nav>
         </header>
-        <!-- /header -->
-        <!-- Section -->
-        <section>
-            <h2>상세정보</h2>
-            <p><span>이&nbsp;&nbsp;&nbsp;름</span>&nbsp;&nbsp;&nbsp;&nbsp;김명철</p>
-            <p><span>생 &nbsp;&nbsp;일</span>&nbsp;&nbsp;&nbsp;&nbsp;2000 - 01 -01</p>
-            <p><span>핸드폰</span>&nbsp;&nbsp;&nbsp;&nbsp;010 1234 5678</p>
-            <p><span>이메일</span>&nbsp;&nbsp;&nbsp;&nbsp;indopop@naver.com</p>
-            <p><span>블로그</span>&nbsp;&nbsp;&nbsp;&nbsp;ezen.blog.me</p>
-            <p><span>주&nbsp;&nbsp; 소</span>&nbsp;&nbsp;&nbsp;서울시 성동구 성수동</p>
-        </section>
-        <!-- /Section -->
-        <!-- Section -->
-        <section>
-            <h2>자격정보</h2>
-            <p><span>DESIGN</span>&nbsp;&nbsp;&nbsp;&nbsp;GTQ 포토샵 2급</p>
-            <p><span>O.A</span>&nbsp;&nbsp;&nbsp;&nbsp;ITQ 엑셀 A</p>
-            <p><span>O.A</span>&nbsp;&nbsp;&nbsp;&nbsp;ITQ 워드프로세서</p>
-            <p><span>O.A</span>&nbsp;&nbsp;&nbsp;&nbsp;ITQ 전산회계 2급</p>
-            <p><span>WEB</span>&nbsp;&nbsp;&nbsp;&nbsp;웹 디자인 기능사</p>
-        </section>
-        <!-- /Section -->
-        <!-- Section -->
-        <section>
-            <h2>학력사항</h2>
-            <p><span>2010 ~ 2014</span>&nbsp;&nbsp;&nbsp;&nbsp;한국대학교 컴퓨터 공학과 졸업</p>
-            <p><span>2016 ~ 2017</span>&nbsp;&nbsp;&nbsp;&nbsp;NCS UXUI 디지털 디자인 과정 수료</p>
-        </section>
-        <!-- /Section -->
-        <!-- Section -->
-        <section>
-            <h2>능력치</h2>
-            <img src="images/images/ps_ability.png" alt="포토샵">
-            <img src="images/images/ai_ability.png" alt="일러스트">
-            <img src="images/images/id_ability.png" alt="인디자인">
-            <img src="images/images/pr_ability.png" alt="프리미어">
-        </section>
-        <!-- /Section -->
-        <!-- Section -->
-        <section>
-            <h2>취미활동</h2>
-            <img src="images/images/hobby_01.png" alt="사진찍기">
-            <img src="images/images/hobby_02.png" alt="요리하기">
-            <img src="images/images/hobby_03.png" alt="볼링치기">
-            <img src="images/images/hobby_04.png" alt="영화보기">
-            <img src="images/images/hobby_05.png" alt="글쓰기">
-        </section>
-        <!-- /Section -->
-        <!-- Footer -->
+        <main role="main" class="cf">
+            <section>
+                <article>
+                    LNB
+                </article>
+            </section>
+            <section>
+                <article>
+                    콘텐츠 내용물
+                </article>
+            </section>
+        </main>
+        <aside>
+            <section>
+                퀵메뉴
+            </section>
+        </aside>
         <footer>
-            <p>
-                CopyRight ALL Rights Reserved., <span>MCSSAM</span>
-            </p>
+            <p>하단메뉴,주소 저작권</p>
         </footer>
-        <!-- /Footer -->
-    </div>
+    </div>    
 </body>
 </html>
