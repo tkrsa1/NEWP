@@ -51,9 +51,14 @@
             border-top: 1px solid #000;
             border-bottom: 1px solid #000;
         }
+        /* 헤더 */
         nav {
             background-color: rgb(221,221,221);
             padding: 10px;
+            width: 160px;
+            float: left;
+            margin-top: 10px;
+            border-radius: 10px;
         }
         nav p{
             padding-left: 15px;
@@ -75,28 +80,24 @@
             font-weight: 400;
             font-size: 15px;
         }
-        nav{
-            width: 160px;
-            float: left;
-            margin-top: 10px;
-            border-radius: 10px;
+        header dl+p{
+            padding-top: 10px;
+            font-size: 12px;
         }
+        /* nav */
         .cover{
-            width:1280px;
+            width:1700px;
             float:left;
             padding: 20px;
         }
-        main>p{
+        main>div:first-child{
             width: 740px;
             background-color: rgb(221,221,221);
-            margin-left: 500px;
+            margin-left: 40%;
             font-size: 10px;
-            text-align: center;
+            padding-left: 5px;
+            padding-bottom: 5px;
             margin-top: 10px;
-        }
-        main>p img{
-            padding-top: 10px;
-            width: 700px;
         }
         h2{
             font-size: 25px;
@@ -113,16 +114,6 @@
         }
         .sec_3{
             margin-bottom: 15px;
-        }
-        dt{
-            font-weight: 700;
-            font-size: 15px;
-        }
-        footer{
-            background-color: rgb(133, 133, 133);
-            color: red;
-            text-align: right;
-            font-size: 13px;
         }
         .sec_2 p{
             line-height: 25px;
@@ -165,17 +156,17 @@
         .inline{
             display: inline;
         }
-        .point{
-            border-bottom: 1px solid #bbb;
+        dt{
+            font-weight: 700;
+            font-size: 15px;
         }
-        header dl+p{
-            padding-top: 10px;
-            font-size: 12px;
+        /* main */
+        footer{
+            background-color: rgb(133, 133, 133);
+            color: red;
+            text-align: right;
+            font-size: 13px;
         }
-        span2{
-            display: block;
-        }
-
         aside div img{
             width: 130px;
             height: 100px;
@@ -190,7 +181,18 @@
             background-color: rgb(221,221,221);
             position: relative;
             left: 92%;
-            top: -400px;
+            top: -500px;
+        }
+        /* aside */
+        .point{
+            border-bottom: 1px solid #bbb;
+        }
+        span2{
+            display: block;
+        }
+        .underliner{
+            text-decoration:underline dotted;
+            text-decoration-color: red;
         }
     </style>
 </head>
@@ -246,9 +248,10 @@
             </nav>
         </header>
         <main role="main" class="cf">
-            <p>promotion:
-                <img src="https://ads.filezilla-project.org/images/leaderboards/fzpro_white.png">
-            </p>
+            <div>
+                <p>promotion:</p>
+                <p><img src="https://ads.filezilla-project.org/images/leaderboards/fzpro_white.png"></p>
+            </div>
             <div class="cover">
                 <section class="sec_1">
                     <h2>Overview</h2>
@@ -309,13 +312,13 @@
                         images/filezilla/h3.png"><dt class="inline">2019-07-29 - FileZilla refocuses on security after participation in EU bug bounty program</dt><br>
                         <dd>European Union-sponsored "bug bounty" program found some security issues which have promptly been fixed.
     
-                        <span2><a href="#">Read the full news.</span2></a></dd>
+                        <span2 class="underliner"><a href="#">Read the full news.</span2></a></dd>
                     </dl>
                     <dl>
                         <img src="
                         
                         images/filezilla/h3.png"><dt class="inline">2019-07-09 - FileZilla Pro to add new features after recent customer survey</dt><br>
-                        <dd><span2><a href="#">Read the full news.</a></span2>
+                        <dd><span2 class="underliner"><a href="#">Read the full news.</a></span2>
                         The user interface mentioned in the article will also be available for users of the free FileZilla.</dd>
                     </dl>
                 </section>
