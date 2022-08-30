@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filezilla-project</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        #wrap{
+            width: 100%;
+            margin: 0 auto;
+            position: absolute;
+        }
+        @import url('http://fonts.cdnfonts.com/css/verdana');
+        body{
+            font-family: 'verdana',sans-serif;
+            background-color: rgb(248, 248, 248);
+        }
+        header h1{
+            color: rgb(179, 1, 1);
+            background: #EEEEEE;
+            font-size: 75px;
+            font-weight: 700;
+            border-bottom: 1px solid #000;
+            position: relative;
+        }
+        header h1::before{
+            content:"";
+            background:url(images/filezilla/pattern.png);
+            background-size:100% 100%;
+            opacity:0.2;
+            position:absolute;
+            top:0px;
+            left:0px;
+            right:0px;
+            bottom:0px;
+        }
+        header h1 img{
+            margin-top: 5px;
+            padding: 5px;
+            width: 80px;
+            height: 80px;
+        }
+        header h1 small{
+            font-size: 15px;
+        }
+        header div{
+            background-color: rgb(179, 1, 1);
+            height: 12px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        /* 헤더 */
+        nav {
+            background-color: rgb(221,221,221);
+            padding: 10px;
+            width: 160px;
+            float: left;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        nav p{
+            padding-left: 15px;
+            font-size: 15px;
+        }
+        nav dl dt{
+            font-weight: 700;
+        }
+        nav dl dt:nth-child(1){
+            margin-top: 10px;
+        }
+        nav dl dd:hover{
+            color: red;
+            background-color: white;
+            cursor: pointer;
+        }
+        nav dl dd{
+            padding-left: 15px;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        header dl+p{
+            padding-top: 10px;
+            font-size: 12px;
+        }
+        /* nav */
+        .cover{
+            width:1200px;
+            float:left;
+            padding: 20px;
+        }
+        main>div:first-child{
+            width: 740px;
+            background-color: rgb(221,221,221);
+            margin-left: 40%;
+            font-size: 10px;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+        }
+        h2{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .sec_1{
+            margin-bottom: 15px;
+        }
+        .sec_1 p{
+            font-size: 14px;
+        }
+        .sec_2{
+            margin-bottom: 15px;
+        }
+        .sec_3{
+            margin-bottom: 15px;
+        }
+        .sec_2 p{
+            line-height: 25px;
+            height: 100px;
+            background-image: url(images/filezilla/button.png);
+            background-repeat: no-repeat;
+            font-size: 20px;
+            color: white;
+            font-weight: 700;
+            padding-left: 30px;
+            padding-top: 10px;
+        }
+        .sec_2 h3{
+            padding-left: 50px;
+        }
+        .sec_2 span{
+            display: block;
+        }
+        .sec_2 small{
+            display: block;
+            font-size: 10px;
+        }
+        .sec_2 p{
+            width: 300px;
+            float: left;
+        }
+        .sec_2 p+p{
+            float: left;
+        }
+        .sec_2 div{
+            margin-left: 50px;
+        }
+        .sec_3 h2{
+            display: inline-block;
+        }
+        .sec_3 img{
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        .inline{
+            display: inline;
+        }
+        dt{
+            font-weight: 700;
+            font-size: 15px;
+        }
+        /* main */
+        footer{
+            background-color: rgb(133, 133, 133);
+            color: red;
+            text-align: right;
+            font-size: 13px;
+        }
+        aside div img{
+            width: 130px;
+            height: 100px;
+            padding: 5px;
+            padding-left: 15px;
+        }
+        aside div p{
+            font-size: 10px;
+        }
+        aside div{
+            width: 140px;
+            background-color: rgb(221,221,221);
+            position: relative;
+            left: 92%;
+            top: -500px;
+        }
+        /* aside */
+        .point{
+            border-bottom: 1px solid #bbb;
+        }
+        span2{
+            display: block;
+        }
+        .underliner{
+            text-decoration:underline dotted;
+            text-decoration-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="cf">
+        <header>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/FileZilla_logo.svg/380px-FileZilla_logo.svg.png">FileZilla<small>the free FTP solution</small></h1>
+            <div></div>
+            <nav>
+                <p class="point">Home</p>
+                <dl>
+                    <dt>FileZilla</dt>
+                    <dd>Features</dd>
+                    <dd>Screenshots</dd>
+                    <dd>Download</dd>
+                    <dd>Documentation</dd>
+                    <dd>FileZilla pro</dd>
+                </dl>
+                <dl>
+                    <dt>FileZilla Server</dt>
+                    <dd>Download</dd>
+                </dl>
+                <dl>
+                    <dt>Community</dt>
+                    <dd>Forum</dd>
+                    <dd>Wiki</dd>
+                </dl>
+                <dl>
+                    <dt>General</dt>
+                    <dd>FAQ</dd>
+                    <dd>Support</dd>
+                    <dd>Contact</dd>
+                    <dd>License</dd>
+                    <dd>Privacy policy</dd>
+                    <dd>Trademark policy</dd>
+                </dl>
+                <dl>
+                    <dt>Development</dt>
+                    <dd>Source code</dd>
+                    <dd>Nightly builds</dd>
+                    <dd>Translation</dd>
+                    <dd>Version history</dd>
+                    <dd>Changelog</dd>
+                    <dd>Issue tracker</dd>
+                </dl>
+                <dl>
+                    <dt>Other projects</dt>
+                    <dd>libfilezilla</dd>
+                    <dd class="point">Octochess</dd>
+                </dl>
+                <p>sponsors:</p>
+                <p><img src="https://filezilla-project.org/images/sponsors/ndchost.png"></p>
+            </nav>
+        </header>
+        <main role="main" class="cf">
+            <div>
+                <p>promotion:</p>
+                <p><img src="images/filezilla/fzpro_white.png"></p>
+            </div>
+            <div class="cover">
+                <section class="sec_1">
+                    <h2>Overview</h2>
+                    <p>Welcome to the homepage of FileZilla®, the free FTP solution. The FileZilla Client not only supports FTP, but also FTP over TLS (FTPS) and SFTP. It is open source software distributed free of charge under the terms of the GNU General Public License.</p><br>
+        
+                        <p>We are also offering FileZilla Pro, with additional protocol support for WebDAV, Amazon S3, Backblaze B2, Dropbox, Microsoft OneDrive, Google Drive, Microsoft Azure Blob and File Storage, and Google Cloud Storage.</p><br>
+                        
+                        <p>Last but not least, FileZilla Server is a free open source FTP and FTPS Server.</p><br>
+                        
+                        <p>Support is available through our forums, the wiki and the bug and feature request trackers.</p><br>
+                        
+                        <p>In addition, you will find documentation on how to compile FileZilla and nightly builds for multiple platforms in the development section.<br>
+                    </p>
+                </section>
+                <section class="sec_2">
+                    <img src="images/filezilla/h3.png"><h2 class="inline">Quick download link</h2>
+                    <div class="cf">
+                        <p>Download<span>FileZilla Client <small>All paltforms</small></span></p>
+                        <p>Download<span>FileZilla Server <small>All platforms</small></span></p>
+                    </div>
+                    <h3>Pick the client if you want to transfer files. Get the server if you want to make files available for others.</h3>
+                </section>
+                <section class="sec_3">
+                    <img src="
+                    images/filezilla/h3.png"><h2 class="inline">News</h2><img src="https://filezilla-project.org/images/atomfeed.png" style="border-bottom: dashed red 1px; padding-left: 4px;">
+                    <dl>
+                        <img src="images/filezilla/h3.png"><dt class="inline">2022-07-29 - FileZilla Server 1.5.1 released <span2>Bugfixes and minor changes:</span2></dt><br>
+                        <img src="images/filezilla/h3.png"><dd class="inline">Fixed a crash if a session is closed and the data connection receives a connection error at the same time</dd><br>
+                        <img src="images/filezilla/h3.png"><dd class="inline">MSW: The notification area icon now displays again in all display scale factors</dd><br>
+                        <img src="images/filezilla/h3.png"><dd class="inline">Admin UI: Fixed switching from "Use system credentials to log in" to "Require a password to log in" not applying</dd><br>
+                    </dl>
+                    <dl>
+                        <img src="images/filezilla/h3.png"><dt class="inline">2022-07-22 - FileZilla Client 3.60.2 released <span2>Bugfixes and minor changes:</span2></dt><br>
+                        <img src="images/filezilla/h3.png"><dd class="inline">Updated to libfilezilla 0.38.1 to address an issue with child process termination resulting in freezes</dd><br>
+                    </dl>
+                    <dl>
+                        <img src="images/filezilla/h3.png"><dt class="inline">2022-07-20 - FileZilla Server 1.5.0 released <span2>Bugfixes and minor changes:</span2></dt><br>
+                        <img src="images/filezilla/h3.png"><dd class="inline">Admin UI: Connection dialog did not remember the last used port if there are multiple saved entries for the same hostname with different ports</dd><br>
+                    </dl>
+                    <dl>
+                        <img src="
+                        
+                        images/filezilla/h3.png"><dt class="inline">2020-07-16 - FileZilla Pro Adds Support for Keystone V3, OneDrive Sharing, and Amazon STS</dt><br>
+                        <dd>By adding support for the OpenStack Swift Keystone v3 identity service, OneDrive Sharing, and Amazon Secure Token Service (STS). FileZilla Pro is making it possible for its users to store and share files with greater versatility and security.<a href="#">Read the full news.</a>
+                    <dl>
+                       <img src="
+                       
+                       images/filezilla/h3.png"><dt class="inline">
+                            2019-11-07 - FileZilla Pro to continue work with bug bounty program
+                        </dt>
+                        <dd>
+                            Building on success of participation in EU security project, FileZilla will continue participating and investing project resources in bug bounty program. <a href="#">Read the full news</a>.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <img src="
+                        
+                        images/filezilla/h3.png"><dt class="inline">2019-07-29 - FileZilla refocuses on security after participation in EU bug bounty program</dt><br>
+                        <dd>European Union-sponsored "bug bounty" program found some security issues which have promptly been fixed.
+    
+                        <span2 class="underliner"><a href="#">Read the full news.</span2></a></dd>
+                    </dl>
+                    <dl>
+                        <img src="
+                        
+                        images/filezilla/h3.png"><dt class="inline">2019-07-09 - FileZilla Pro to add new features after recent customer survey</dt><br>
+                        <dd><span2 class="underliner"><a href="#">Read the full news.</a></span2>
+                        The user interface mentioned in the article will also be available for users of the free FileZilla.</dd>
+                    </dl>
+                </section>
+            </div>
+        </main>
+        <aside>
+            <div>
+                <p>Advertisement:</p>
+                <img src="images/filezilla/advertise.txt">
+                <p>Sponsor FileZilla development and reach developers, webmasters and bloggers</p>
+            </div>
+        </aside>
+        <footer>
+            <p>Imprint</p>
+        </footer>
+    </div>
+</body>
+</html>
