@@ -11,20 +11,33 @@
         height: 800px;
         text-align: center;
         margin: 0 auto;
+        text-align: center;
       }
       a {
         text-decoration: none;
         color: inherit;
+        margin-right: 50px;
+      }
+      .contents a:last-child() {
+        margin-right: 0px;
+      }
+      .contents {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin: 0 auto;
       }
     </style>
   </head>
   <body>
     <div id="wrap">
-      <h1>LYJ LINK PAGE</h1>
-      <p><a href="filezilla/filezille.html">파일질라 실습</a></p>
-      <p><a href="float/float_layout.html">중급 플롯레이아웃</a></p>
-      <p><a href="float2/조별플롯과제2.html">플롯 레이아웃 조별2</a></p>
-      <p><a href="group1/조별.html">조별 과제1</a></p>
+      <h1>링크 페이지</h1>
+      <div class="contents">
+        <p><a href="filezilla/filezille.html">파일질라 실습</a></p>
+        <p><a href="float/float_layout.html">중급 플롯레이아웃</a></p>
+        <p><a href="float2/조별플롯과제2.html">플롯 레이아웃 조별2</a></p>
+        <p><a href="group1/조별.html">조별 과제1</a></p>
+      </div>
       <p>
         <img
           src="https://i1.sndcdn.com/artworks-000568061312-ykwm42-t500x500.jpg"
@@ -34,3 +47,4 @@
     </div>
   </body>
 </html>
+
