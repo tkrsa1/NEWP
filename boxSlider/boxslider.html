@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- 박스 슬라이더 css -->
+    <link rel="stylesheet" href="/300_boxSlider/css/jquery.bxslider.css">
+    <!-- 1. 제이쿼리 코어파일 사용 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- 2. 제이쿼리 CDN 방식이용 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- 3.제이쿼리 플러그인 추가 -->
+    <script src="js/jquery.bxslider.js"></script>
+    <style>
+        /* 전체구조 = 본인사이트에 맞게 수정 */
+        #gallery_wrap{
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .slide_gallery li{
+            /* display: none; */
+        }
+        .slide_pager{
+            text-align: center;
+            display: none;
+        }
+        .slide_pager li{
+            display: inline-block;
+        }
+    </style>
+    <!-- Bxslide스크립트 -->
+    <!-- 1.기본속성들 -->
+    <!-- <script>
+        $(document).ready(function(){
+            $(".slide_gallery").bxSlider({
+                // 1.슬라이드 이동방향 : "horizontal","vertical","fade"
+                mode:"horizontal",
+                // 2.슬라이드 전환속도:숫자형값=하나의 이미지가 바뀌는 시간
+                speed:500,
+                // 3.슬라이드 자동실행 전환사이 시간:숫자형값=(예)n초마다 다른이미지로 변환
+                pause:3000,
+                // 4.불릿(동그라미 버튼)노출 여부:논리형값 true,false
+                pager:true,
+                // 5.슬라이드 박스 가로 너비 설정: 숫자형값 | (중요) 구조스타일에 width값이 코딩되어있으면 안바뀜
+                slideWidth:1440,
+                // 6.콘트롤러 중 자동 슬라이드 멈추기 여부 : 논리형값 = true,false
+                stopAutoOnClick:true,
+                // 7.슬라이드 자동 전환 여부: 논리형값 true,false
+                auto : true,
+                // 8.슬라이드 마우스 호버시 자동전환 멈추기 여부 : 논리형값 true,false
+                autoHover:true,
+                // 9.플레이버튼 노출 여부 : 논리형값 = true,false
+                autoControls:true,
+                // 10.썸네일 이미지 연결 = 구조의 클래스명
+                pagerCustom:".slide_pager"
+
+                
+            });
+        });
+    </script> -->
+    <!-- 2.기본 효과 -->
+    <!-- <script>
+        $(function(){
+            $(".slide_gallery").bxSlider({
+                auto:true,
+                autoControls:true,
+                autoHover:true,
+                pager:true,
+                // pagerCustom:".slide_pager",
+                slideWidth:1440,
+                
+            });
+        });
+    </script> -->
+    <!-- 3.실제 사용효과 -->
+    <script>
+        $(function(){
+            $(".slide_gallery").bxSlider({
+                mode:"fade",
+                pager:true,
+                slideWidth:1440
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- BxSlider 박스 = 액자역할 -->
+    <div id="gallery_wrap">
+        <!-- BxSlider 이미지 -->
+        <ul class="slide_gallery">
+            <li><img src="image/slider1.png" alt="슬라이드01"></li>
+            <li><img src="image/slider2.png" alt="슬라이드02"></li>
+            <li><img src="image/slider3.png" alt="슬라이드03"></li>
+        </ul>
+        <!-- BxSlider 이미지 -->
+        <!-- data-*속성:
+        웹 문서의 레이아웃이나 내용에는 영향을 주지 않으면서, 구분할 특정 속성을 지정하고 싶을때 사용
+        (-뒤 속성명은 마음대로 지정 가능)
+        주로 스크립트와 연동해서 사용 -->
+        <ul class="slide_pager">
+            <li><a href="#" data-slide-index="0"><img src="image/photo1.png" alt="썸네일"></a></li>
+            <li><a href="#" data-slide-index="1"><img src="image/photo2.png" alt="썸네일"></a></li>
+            <li><a href="#" data-slide-index="2"><img src="image/photo3.png" alt="썸네일"></a></li>
+        </ul>
+    </div>
+    <!-- BxSlider 박스 = 액자역할 -->
+</body>
+</html>

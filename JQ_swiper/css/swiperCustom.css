@@ -1,0 +1,252 @@
+@charset "utf-8";
+#portfolio{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#000,#202020,#c1c1c1);
+    font-family: 'Noto Sans Kr',sans-serif;
+}
+/* 스와이퍼 최상위 구조 클래스 */
+#portfolio .swiper-container{
+    padding-top: 100px;
+    padding-bottom: 84px;
+}
+/* C-1. 스와이퍼 될 Slider 각각 내용들 */
+#portfolio .swiper-slide{
+    width: 1100px;
+    height: 614px;
+    background-color: #959595;
+}
+.swiper-slide{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    outline: none;
+}
+/* c스와이퍼될 slider 각각 내용들 */
+.slider1{
+    background-image: url(/400_JQ_swiper/image/grad1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 포지션 */
+    position: relative;
+}
+.slide1 h3{
+    font-size: 60px;
+    font-family: "Anton",sans-serif;
+    color: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 1;
+}
+.slide1 .btn{
+    margin-top: 440px;
+}
+.btn{
+    margin-left: 300px;
+}
+.slide1 .btn button{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    letter-spacing: -1px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.slide1 .btn button:hover{
+    background-color: #fff;
+    color: #454545;
+}
+
+/* c스와이퍼될 slider 각각 내용들 */
+.slider2{
+    background-image: url(/400_JQ_swiper/image/grad1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 포지션 */
+    position: relative;
+}
+.slide2 h3{
+    font-size: 60px;
+    font-family: "Anton",sans-serif;
+    color: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 1;
+}
+.slide2 .btn{
+    margin-top: 440px;
+}
+.slide2 .btn button{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    letter-spacing: -1px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.slide2 .btn button:hover{
+    background-color: #fff;
+    color: #454545;
+}
+
+/* c스와이퍼될 slider 각각 내용들 */
+.slider3{
+    background-image: url(/400_JQ_swiper/image/grad1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 포지션 */
+    position: relative;
+}
+.slide3 h3{
+    font-size: 60px;
+    font-family: "Anton",sans-serif;
+    color: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 1;
+}
+.slide3 .btn{
+    margin-top: 440px;
+}
+.slide3 .btn button{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    letter-spacing: -1px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.slide3 .btn button:hover{
+    background-color: #fff;
+    color: #454545;
+}
+
+/* c스와이퍼될 slider 각각 내용들 */
+.slider4{
+    background-image: url(/400_JQ_swiper/image/grad1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 포지션 */
+    position: relative;
+}
+.slide4 h3{
+    font-size: 60px;
+    font-family: "Anton",sans-serif;
+    color: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 1;
+}
+.slide4 .btn{
+    margin-top: 440px;
+}
+.slide4 .btn button{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    letter-spacing: -1px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.slide4 .btn button:hover{
+    background-color: #fff;
+    color: #454545;
+}
+
+/* c스와이퍼될 slider 각각 내용들 */
+.slider5{
+    background-image: url(/400_JQ_swiper/image/grad1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 포지션 */
+    position: relative;
+}
+.slide5 h3{
+    font-size: 60px;
+    font-family: "Anton",sans-serif;
+    color: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 1;
+}
+.slide5 .btn{
+    margin-top: 440px;
+}
+.slide5 .btn button{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    letter-spacing: -1px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.slide5 .btn button:hover{
+    background-color: #fff;
+    color: #454545;
+}
+
+/* c스와이퍼될 slider 각각 내용들 */
+.slider6{
+    background-image: url(/400_JQ_swiper/image/grad1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 포지션 */
+    position: relative;
+}
+.slide6 h3{
+    font-size: 60px;
+    font-family: "Anton",sans-serif;
+    color: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 1;
+}
+.slide6 .btn{
+    margin-top: 440px;
+}
+.slide6 .btn button{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    letter-spacing: -1px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.slide6 .btn button:hover{
+    background-color: #fff;
+    color: #454545;
+}

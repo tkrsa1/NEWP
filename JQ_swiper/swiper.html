@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리, 플러그인 스와이퍼</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- 스와이퍼 CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="css/swiperCustom.css">
+    <!-- 1. 제이쿼리 코어파일 사용 -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 2. 제이쿼리 CDN 방식이용 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <style>
+        img{
+            width: 600px;
+            height: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <!-- 1. 스와이퍼 페이지 영역 -->
+        <div id="portfolio">
+            <!-- A. 스와이퍼 최상위 구조 클래스 -->
+            <div class="swiper-container">
+                <!-- B. 스와이퍼 될 Contents 부모 클래스 -->
+                <div class="swiper-wrapper">
+
+                    <!-- C-1. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide1">
+                        <h3><em>Contemporary&nbsp;Dance</em></h3>
+                        <div class="p_mockup">
+                            <img src="image/img1.jpg" alt="목업이미지600x500">
+                        </div>
+                        <div class="btn">
+                            <button><a href="#">Mock&nbsp;Up</a></button>
+                            <button><a href="#">Web&nbsp;Site</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-1. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-2. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide2">
+                        <h3><em>Contemporary&nbsp;Dance</em></h3>
+                        <div class="p_mockup">
+                            <img src="image/img2.png" alt="목업이미지600x500">
+                        </div>
+                        <div class="btn">
+                            <button><a href="#">Mock&nbsp;Up</a></button>
+                            <button><a href="#">Web&nbsp;Site</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-2. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-3. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide3">
+                        <h3><em>Contemporary&nbsp;Dance</em></h3>
+                        <div class="p_mockup">
+                            <img src="image/img3.jpg" alt="목업이미지600x500">
+                        </div>
+                        <div class="btn">
+                            <button><a href="#">Mock&nbsp;Up</a></button>
+                            <button><a href="#">Web&nbsp;Site</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-3. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-4. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide4">
+                        <h3><em>Contemporary&nbsp;Dance</em></h3>
+                        <div class="p_mockup">
+                            <img src="image/img4.jpg" alt="목업이미지600x500">
+                        </div>
+                        <div class="btn">
+                            <button><a href="#">Mock&nbsp;Up</a></button>
+                            <button><a href="#">Web&nbsp;Site</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-4. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-5. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide5">
+                        <h3><em>Contemporary&nbsp;Dance</em></h3>
+                        <div class="p_mockup">
+                            <img src="image/img5.jpg" alt="목업이미지600x500">
+                        </div>
+                        <div class="btn">
+                            <button><a href="#">Mock&nbsp;Up</a></button>
+                            <button><a href="#">Web&nbsp;Site</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-5. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-6. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide6">
+                        <h3><em>Contemporary&nbsp;Dance</em></h3>
+                        <div class="p_mockup">
+                            <img src="image/img6.jpg" alt="목업이미지600x500">
+                        </div>
+                        <div class="btn">
+                            <button><a href="#">Mock&nbsp;Up</a></button>
+                            <button><a href="#">Web&nbsp;Site</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-6. 스와이퍼 될 Slider 각각 내용들 -->
+
+                </div>
+                <!-- /B. 스와이퍼 될 Contents 부모 클래스 -->
+                <!-- D. 스와이퍼 넘버링 클래스 -->
+                <div class="swiper-pagination"></div>
+                <!-- /D. 스와이퍼 넘버링 클래스 -->
+                <!-- E. 스와이퍼 좌우 화살표 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- /E. 스와이퍼 좌우 화살표 -->
+            </div>
+            <!-- /A. 스와이퍼 최상위 구조 클래스 -->
+        </div>
+        <!-- /1. 스와이퍼 페이지 영역 -->
+    </div>
+</body>
+</html>
+<!-- 3. 제이쿼리 플러그인 추가 -->
+<script src="js/swiper-bundle.js"></script>
+<!-- 본인 사이트에 맞게 속성값 변경 -->
+<script src="js/swiperCustom.js"></script>
