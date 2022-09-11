@@ -58,7 +58,6 @@
                 autoControls:true,
                 // 10.썸네일 이미지 연결 = 구조의 클래스명
                 pagerCustom:".slide_pager"
-
                 
             });
         });
@@ -83,7 +82,13 @@
             $(".slide_gallery").bxSlider({
                 mode:"fade",
                 pager:true,
-                slideWidth:1440
+                slideWidth:1440,
+                stopAutoOnClick:true,
+                autoHover:true,
+                speed:500,
+                pause:3000,
+                stopAutoOnClick:true,
+                auto : true,
             });
         });
     </script>
