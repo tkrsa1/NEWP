@@ -23,11 +23,11 @@
             margin: 0 auto;
         }
         .slide_gallery li{
-            /* display: none; */
+            display: none;
         }
         .slide_pager{
             text-align: center;
-            display: none;
+            /* display: none; */
         }
         .slide_pager li{
             display: inline-block;
@@ -86,9 +86,10 @@
                 stopAutoOnClick:true,
                 autoHover:true,
                 speed:500,
-                pause:3000,
+                pause:2000,
                 stopAutoOnClick:true,
                 auto : true,
+                pagerCustom:".slide_pager",
             });
         });
     </script>
