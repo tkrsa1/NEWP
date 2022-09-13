@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모바일퍼스트,미디어쿼리 실습</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <style>
+      #wrap {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 1000px;
+        background-color: silver;
+      }
+      h1 {
+        color: blue;
+        font-size: 1.5rem;
+        padding: 25px 0;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+      }
+      p {
+        font-size: 1.1rem;
+        letter-spacing: -1px;
+      }
+      @media all and (min-width: 768px) and (max-width: 959px) {
+        h1 {
+          font-size: 2rem;
+          color: white;
+        }
+        img {
+          display: inline;
+          padding: 0 30px;
+          width: 40%;
+        }
+        p {
+          margin-bottom: 30px;
+        }
+      }
+      @media all and (min-width: 1024px) {
+        h1 {
+          font-size: 2.3rem;
+          color: white;
+        }
+        img {
+          display: inline;
+          padding: 0 30px;
+          width: 40%;
+        }
+        p {
+          border: 1px solid white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>동전 하나로도 행복했던 구멍가게의 날들</h1>
+      <img src="image/boy.png" alt="" />
+      <img src="image/girl.png" alt="" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, nulla
+        consectetur. Aliquam enim aperiam expedita laboriosam tempora nostrum
+        quis perspiciatis odio deserunt unde veritatis officia facere, officiis,
+        eum sed ipsa.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit aut ab
+        maxime libero. Quos neque corrupti eveniet delectus omnis blanditiis
+        dicta, amet non in maxime possimus impedit quaerat, eligendi officiis.
+      </p>
+    </div>
+  </body>
+</html>
