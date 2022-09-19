@@ -1,0 +1,212 @@
+@charset "utf-8";
+.w1132 {
+  margin: 0 auto;
+  /* width: 1132px; */
+  /* 1132/1600*100=90.56 */
+  width: 70.75%;
+  max-width: 1132px;
+}
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+header h1 {
+  color: #2f4cf5;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 10px;
+  float: left;
+  width: 45%;
+}
+header ul {
+  width: 45%;
+}
+header ul li {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+header ul li:hover {
+  opacity: 50%;
+}
+header ul li:last-child {
+  margin-right: 0;
+}
+header ul {
+  float: right;
+  margin: 10px;
+}
+.sec1 {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.sec1 img {
+  width: 100%;
+}
+/* 섹션1 끝 */
+.sec2 {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 100px;
+}
+.sec2 h2 {
+  width: 50%;
+  color: #2f4cf5;
+  font-size: 2rem;
+  padding-left: 30px;
+  font-weight: 400;
+  float: left;
+}
+.sec2 h3 {
+  width: 50%;
+  float: right;
+  border-left: 2px solid #ccc;
+  padding-left: 5%;
+  opacity: 80%;
+}
+/* 섹션2 끝 */
+.sec3 {
+  width: 100%;
+  height: 300px;
+}
+.sec3 h2 {
+  color: #2f4cf5;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 15px 0;
+}
+.sec3 ul {
+  text-align: center;
+}
+.sec3 li {
+  float: left;
+  width: 25%;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 100px;
+}
+/* 섹션 3끝 */
+.sec4 {
+  width: 100%;
+}
+.sec4 h2 {
+  color: #2f4cf5;
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 30px;
+}
+.sec4 ul li img {
+  float: left;
+  width: 25%;
+}
+.sec4 ul {
+  margin-bottom: 100px;
+}
+.bb2 {
+  width: 20px;
+  background-color: #ccc;
+  height: 3px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+/* 섹션 4끝 */
+.sec5 {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.sec5 h2 {
+  width: 25%;
+  color: #2f4cf5;
+  font-size: 2.5rem;
+  font-weight: 300;
+  float: left;
+  padding-left: 30px;
+}
+.sec5 div {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+.sec5 div:last-child {
+  margin-right: 0;
+}
+.sec5 div li img {
+  width: 100%;
+  max-width: 100%;
+}
+.sec5 ul {
+  float: right;
+  width: 75%;
+}
+small {
+  opacity: 70%;
+}
+/* 섹션 5 끝 */
+.sec6 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.sec6 h2 {
+  width: 25%;
+  color: #2f4cf5;
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-left: 30px;
+  float: left;
+}
+.contactbox {
+  float: left;
+  width: 75%;
+}
+input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 50px;
+}
+textarea {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 150px;
+}
+.input {
+  float: left;
+  width: 49%;
+  margin-right: 10px;
+}
+.textarea {
+  float: left;
+  width: 49%;
+}
+.button {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  background-color: #2f4cf5;
+  color: white;
+  left: 86%;
+  top: 170px;
+  border: none;
+  cursor: pointer;
+}
+/* 섹션6끝 */
+footer {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+footer p {
+  opacity: 60%;
+}
