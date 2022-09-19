@@ -1,0 +1,30 @@
+@charset "utf-8";
+.w1132 {
+  margin: 0 auto;
+  /* width: 1132px; */
+  /* 1132/1600*100=70.75 */
+  width: 70.75%;
+  max-width: 1132px;
+}
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  color: #2f4cf5;
+  font-size: 30px;
+  font-weight: 300;
+  float: left;
+  margin: 10px;
+}
+header ul {
+  width: 500px;
+  width: 44.169611307420494699646643109541%;
+  float: right;
+  margin-top: 20px;
+}
+header ul li {
+  float: left;
+  margin-right: 30px;
+  opacity: 80%;
+}
