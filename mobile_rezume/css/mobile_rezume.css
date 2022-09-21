@@ -1,0 +1,86 @@
+@charset "utf-8";
+body{
+    font-family: "Noto sans KR",sans-serif;
+}
+#wrap{
+    width: 320px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    overflow: hidden;
+    padding: 2%;
+}
+span{
+    color: #ccc;
+    margin-right: 3%;
+}
+img{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    right: -180px;
+    z-index: -11111;
+}
+header{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30%;
+}
+/* 헤더끝 */
+.sec1{
+    position: relative;
+}
+.sec1 h2{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.sec1 h2:nth-child(2){
+    margin: 5% 0;
+}
+.sec1 h2:nth-child(3){
+    margin-bottom: 10%;
+}
+.sec1 p{
+    margin-top: 5%;
+    font-size: 0.8rem;
+}
+.sec1 p:nth-child(5){
+    margin-bottom: 10%;
+}
+.sec1 ul{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.sec1 ul li{
+    float: left;
+    margin-right: 5%;
+}
+.sec1 ul li:last-child{
+    margin-right: 0;
+}
+/* 섹션1끝 */
+.sec2{
+    font-size: 0.8rem;
+}
+.sec2 h2{
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 2%;
+}
+.sec2 h3{
+    color: #ccc;
+    margin-bottom: 2%;
+}
+.sec2 div{
+    margin-bottom: 5%;
+}
+footer{
+    margin-top: 10%;
+}
+footer p{
+    text-align: center;
+    width: 100%;
+    font-size: 0.6rem;
+}
