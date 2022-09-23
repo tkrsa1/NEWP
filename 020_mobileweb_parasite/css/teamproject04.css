@@ -1,0 +1,233 @@
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+
+    min-width: 1280px;
+}
+.w1280 {
+    width: 1280px;
+    margin: 0 auto;
+}
+/* 해더 */
+.bg_1 {
+    background: url("images/slide_back_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+
+}
+header nav .logo_img img {
+    /* 플롯 */
+    float: left;
+    margin-top: 20px;
+}
+
+header nav ul {
+    /* 플롯 */
+    float: right;
+    color: gray;
+}
+header nav ul li {
+    /* 플롯 */
+    float: left;
+    margin-top: 35px;
+    padding-left: 15px;
+}
+header nav ul li:hover {
+    font-weight: 700;
+    color: white;
+}
+header nav ul img {
+    /* 플롯 */
+    margin-top: 35px;
+    padding-left: 65px;
+}
+
+header h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 64px;
+    padding-top: 280px;
+    padding-left: 70px;
+    letter-spacing: 5px;
+    line-height: 70px;
+
+}
+header p {
+    color: gray;
+    padding-top: 10px;
+    padding-left: 70px;
+
+}
+header button {
+    border: 0;
+    outline: 0;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 205, 54);
+    margin-top: 10px;
+    margin-left: 70px;
+
+}
+
+/* 콘텐츠 영역 */
+.card_box {
+    width: 100%;
+    height: 560px;
+    color: rgb(108, 108, 108);
+    background-color: rgb(181, 181, 181);
+}
+.card {
+    width: 1280px;
+    margin: 0 auto;
+
+    position: relative;
+}
+.card_01 {
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: -70px;
+    z-index: 1;
+
+}
+.card_02 {
+    /* 포지션 */
+    position: absolute;
+    left: 440px;
+    top: -70px;
+    z-index: 1;
+}
+.card_03 {
+    /* 포지션 */
+    position: absolute;
+    right: 0;
+    top: -70px;
+    z-index: 1;
+}
+article h2 {
+    width: 400px;
+    padding-top: 480px;
+    /* 플롯 */
+    float: left;
+}
+article p {
+    width: 150px;
+    padding-top: 480px;
+    /* 플롯 */
+    float: right;
+    /* 포지션 위치설정 */
+    position: relative;
+}
+article p img {
+    /* 포지션 */
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    z-index: 1;
+}
+article strong:hover {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.back_white {
+    width: 100%;
+    background-color: #fff;
+}
+.textbox {
+    height: 800px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: rgb(108, 108, 108);
+}
+.photo {
+    height: 550px;
+    background-image: url("../images/mov_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* 포지션 위치설정 */
+    position: relative;
+}
+#img_position {
+    /* 포지션 설정 */
+    position: absolute;
+    left: 425px;
+    top: 310px;
+    z-index: 1;
+}
+.bg_gray {
+    width: 100%;
+    background-color: rgb(220,220,220);
+}
+.inquiry {
+    padding-top: 70px;
+    height: 650px;
+}
+.why {
+    height: 1000px;
+    padding-top: 400px;
+    background-color: white;
+}
+.bg_yellow {
+    width: 100%;
+    background-color: rgb(255,204,51);
+}
+
+.bottom_menu1 {
+    width: 500px;
+    margin-top: 100px;
+    /* 플롯 */
+    float: left;
+}
+.bottom_menu1 p {
+    font-size: 14px;
+    padding: 10px 0 30px;
+    color: gray;
+}
+.bottom_menu1 > a {
+    padding-right: 15px;
+}
+.bottom_menu2 {
+    width: 290px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    /* 플롯 */
+    float: left;
+}
+.bottom_menu3 {
+    width: 290px;
+    margin-top: 100px;
+    /* 플롯 */
+    float: left;
+}
+.bottom_menu4 {
+    width: 100px;
+    margin-top: 100px;
+    /* 플롯 */
+    float: left;
+}
+.bg_black {
+    background: black;
+    width: 100%;
+}
+/* 푸터 */
+footer {
+    height: 50px;
+    font-size: 18px;
+    padding-top: 25px;
+    text-align: center;
+    border-top: 1px solid white;
+    background-color: black;
+    color: white;
+    line-height: 0px;
+}
+.B_menu{
+    background-color: black;
+    color: white;
+}

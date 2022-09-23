@@ -1,0 +1,193 @@
+@charset "utf-8";
+#wrap{
+    border: none;
+}
+.header{
+    padding: 0;
+}
+/* ======================================== */
+/* FIXED 햄버거 메뉴 효과 */
+/* ======================================== */
+/* A.햄버거 메뉴 그리기 */
+input[id="menuicon"]{
+    display: none;
+}
+input[id="menuicon"]+label{
+    display: block;
+    width: 56px;
+    height: 60px;
+    cursor: pointer;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 92;
+    background: #195730;
+}
+input[id="menuicon"]+label span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    /* 포지션 */
+    position: fixed;
+    z-index: 90;
+    transition: all 0.3s;
+}
+input[id="menuicon"]+label span:nth-child(1){
+    left: 16px;
+    top: 24px;
+}
+input[id="menuicon"]+label span:nth-child(2){
+    left: 16px;
+    top: 30px;  
+}
+input[id="menuicon"]+label span:nth-child(3){
+    left: 16px;
+    top: 34px;
+}
+/* B.클릭시 X버튼 만들기 */
+input[id="menuicon"]:checked+label span:nth-child(1){
+    top: 34px;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked+label span:nth-child(2){
+    opacity: 0;
+}
+input[id="menuicon"]:checked+label span:nth-child(3){
+    top: 32px;
+    transform: translateY(50%) rotate(-45deg);
+}
+/* c.gnb 메뉴슬라이딩 효과  */
+.header nav[class="mobile_gnb"]{
+    width: 250px;
+    height: 100%;
+    background: #195730;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    z-index: 91;
+    transition: all 0.3s;
+}
+/* 햄버거 메뉴 클릭시 GNB 메뉴 나오도록 코딩 */
+input[id="menuicon"]:checked+label+nav{
+    transform: translateX(100%);
+}
+/* ======================================== */
+
+/* header */
+.header{
+    height: 60px;
+}
+.header .banner{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.header .banner img{
+    max-width: 100%;
+}
+
+/* Search Form - hover 검색창 */
+#contents form{
+    margin-top: 20px;
+}
+.box{
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+}
+.search_container{
+    width: 100%;
+    position: relative;
+}
+/* ::placeholder접두어 */
+.search_container input#search::-webkit-input-placeholder{
+    color: #fff;
+}
+.search_container input#search::-ms-input-placeholder{
+    color: #fff;
+}
+.search_container .icon{
+    color: #4f5b66;
+    /* 포지션 */
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    margin-top: 17px;
+    margin-left: 17px;
+}
+
+/* input form */
+.search_container input#search{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 11px;
+    padding-left: 45px;
+    outline: none;
+    float: left;
+    transition: all 0.5s ease;
+}
+.search_container input#search:hover,
+.search_container input#search:focus
+.search_container input#search:active{
+    background-color: teal;
+}
+#contents .promotion{
+    margin-top: 16px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: center;
+}
+#contents .promotion p {
+    font-weight: 500;
+}
+#contents .promotion p:last-child{
+    margin-top: 16px;
+}
+
+#contents .youtube{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+#contents .youtube iframe{
+    width: 100%;
+}
+/* 상영지역 section */
+#contents .area{
+    margin-top: 16px;
+    padding: 0 10px;
+}
+#contents .area h3{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 24px;
+}
+
+#contents .area p{
+    margin-top: 20px;
+}
+#contents .area p button{
+    display: inline-block;
+    padding: 14px 10px;
+    background: #003f37;
+    border: none;
+    border-radius: 4px;
+    margin: 0 4px 8px 0;
+    font-size: 0.6875rem;
+    color: #fff;
+}
+#myBtn{
+    cursor: pointer;
+}

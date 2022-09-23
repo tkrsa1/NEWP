@@ -1,0 +1,35 @@
+@charset "utf-8";
+#wrap {
+  background: #000;
+}
+input[id="menuicon"] + label {
+  background: none;
+}
+header {
+  /* 위치기준값 */
+  position: relative;
+}
+/* Ticket 링크 페이지 */
+aside.ticket {
+  /* 포지션 */
+  position: absolute;
+  right: 0;
+  top: 14px;
+  z-index: 1;
+  padding-right: 10px;
+}
+aside.ticket button {
+  width: 114px;
+  height: 32px;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+/* Contents */
+#contents .youtube {
+  padding: 0 10px;
+  transform: translateY(-100%);
+}
+#contents .youtube iframe {
+  width: 100%;
+}
