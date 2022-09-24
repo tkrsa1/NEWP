@@ -83,3 +83,10 @@ function quickClick() {
     return false;
   });
 }
+$(function () {
+  $(window).on("load", function () {
+    setTimeout(function () {
+      $(".loadDiv").fadeOut();
+    }, 2000);
+  });
+});
