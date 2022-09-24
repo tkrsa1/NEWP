@@ -50,11 +50,11 @@ body {
   height: 10px;
   margin-bottom: 10px;
   border-radius: 15px;
-  border: 2px solid #fff;
+  border: 2px solid #020217;
   cursor: pointer;
 }
 .quick .on {
-  background: #fff;
+  background: #020217;
 }
 img {
   width: 80%;
