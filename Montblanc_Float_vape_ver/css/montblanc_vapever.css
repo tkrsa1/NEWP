@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
 }
 #wrap {
-  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
 }
 /* Header */
@@ -186,8 +186,7 @@ header .img_deco button a {
 }
 /* footer */
 .footer {
-  background-color: #000;
-  color: white;
+  background-color: white;
   padding-top: 100px;
 }
 /* footer logo,sns */
@@ -199,7 +198,7 @@ header .img_deco button a {
 }
 .footer .footer_logo dd {
   font-size: 14px;
-  color: #e1e1e1;
+  color: #020217;
   line-height: 32px;
   margin-bottom: 32px;
 }
@@ -213,13 +212,13 @@ header .img_deco button a {
 }
 .footer .footer_services dt {
   font-size: 20px;
-  color: #fff;
+  color: #020217;
   font-weight: 500;
   margin-bottom: 32px;
 }
 .footer .footer_services dd {
   font-size: 14px;
-  color: #c7c4c4;
+  color: #020217;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -232,13 +231,13 @@ header .img_deco button a {
 }
 .footer .footer_assistance dt {
   font-size: 20px;
-  color: #fff;
+  color: #020217;
   font-weight: 500;
   margin-bottom: 32px;
 }
 .footer .footer_assistance dd {
   font-size: 14px;
-  color: #c7c4c4;
+  color: #020217;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -248,13 +247,13 @@ header .img_deco button a {
 /* footer about */
 .footer .footer_about dt {
   font-size: 20px;
-  color: #fff;
+  color: #020217;
   font-weight: 500;
   margin-bottom: 32px;
 }
 .footer .footer_about dd {
   font-size: 14px;
-  color: #c7c4c4;
+  color: #020217;
   font-weight: 400;
   margin-bottom: 20px;
 }
