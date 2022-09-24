@@ -1,0 +1,118 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-family: "Noto sans KR", sans-serif;
+  color: #7d6e83;
+}
+#fullpage {
+  position: relative;
+  top: 0px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+.fullsection {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.full1 {
+  background: none;
+}
+.full2 {
+  background-color: #f8ede3;
+}
+.full3 {
+  background-color: #dfd3c3;
+}
+.full4 {
+  background-color: #d0b8a8;
+}
+.full5 {
+  background-color: #f5efe6;
+}
+.full6 {
+  background-color: #e8dfca;
+}
+.quick {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100000;
+}
+.quick li {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 2px solid #020217;
+  cursor: pointer;
+}
+.quick .on {
+  background: #020217;
+}
+img {
+  width: 80%;
+  max-width: 100%;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+small {
+  display: block;
+  margin-top: 50px;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 80px;
+}
+.full1 h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: #020217;
+}
+.full1 img {
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.full4 img {
+  width: 110%;
+}
+.full5 img {
+  width: 70%;
+  height: 90%;
+}
+.loadDiv {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  background: white;
+  z-index: 999;
+  opacity: 0.9;
+}
+.loadDiv > img {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
