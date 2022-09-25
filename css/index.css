@@ -79,7 +79,7 @@ small {
   font-size: 2rem;
   text-align: center;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -30%);
   color: #020217;
@@ -87,7 +87,7 @@ small {
 .full1 img {
   width: 30%;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
@@ -115,4 +115,17 @@ small {
   width: fit-content;
   height: fit-content;
   margin: auto;
+}
+.scroll_down {
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000000000;
+}
+.scroll_down img {
+  width: 100%;
+  max-width: 100%;
 }
