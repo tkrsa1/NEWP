@@ -157,12 +157,13 @@ header .img_deco button a {
   background-size: 100% 100%;
   /* 위치기준값 */
   position: relative;
+  margin-bottom: 100px;
 }
 .mov .video {
   /* 포지션 */
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 30%;
   z-index: 1;
   transform: translateX(-50%);
 }
@@ -182,11 +183,20 @@ header .img_deco button a {
 
 /* Aside Banner */
 .banner {
-  background-color: #fc3;
+  background-color: white;
+  margin-bottom: 100px;
+}
+.banner_img {
+  text-align: center;
+}
+.banner img {
+  width: 80%;
+  max-width: 100%;
+  padding: 20px;
 }
 /* footer */
 .footer {
-  background-color: white;
+  background-color: #020217;
   padding-top: 100px;
 }
 /* footer logo,sns */
@@ -198,7 +208,7 @@ header .img_deco button a {
 }
 .footer .footer_logo dd {
   font-size: 14px;
-  color: #020217;
+  color: white;
   line-height: 32px;
   margin-bottom: 32px;
 }
@@ -212,13 +222,13 @@ header .img_deco button a {
 }
 .footer .footer_services dt {
   font-size: 20px;
-  color: #020217;
+  color: white;
   font-weight: 500;
   margin-bottom: 32px;
 }
 .footer .footer_services dd {
   font-size: 14px;
-  color: #020217;
+  color: white;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -231,13 +241,13 @@ header .img_deco button a {
 }
 .footer .footer_assistance dt {
   font-size: 20px;
-  color: #020217;
+  color: white;
   font-weight: 500;
   margin-bottom: 32px;
 }
 .footer .footer_assistance dd {
   font-size: 14px;
-  color: #020217;
+  color: white;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -247,13 +257,13 @@ header .img_deco button a {
 /* footer about */
 .footer .footer_about dt {
   font-size: 20px;
-  color: #020217;
+  color: white;
   font-weight: 500;
   margin-bottom: 32px;
 }
 .footer .footer_about dd {
   font-size: 14px;
-  color: #020217;
+  color: white;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -280,4 +290,19 @@ header .img_deco button a {
 }
 .copyright {
   clear: both;
+}
+
+/* 추가 */
+.vape_movie {
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 100px;
+}
+.vape_movie video {
+  width: 100%;
+  height: 600px;
+}
+.mov video {
+  width: 1280px;
 }
