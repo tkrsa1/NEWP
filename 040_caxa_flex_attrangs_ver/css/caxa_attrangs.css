@@ -326,7 +326,7 @@ footer {
   left: 0;
   position: fixed;
   display: flex;
-  z-index: 2;
+  z-index: 222222222222;
   background-color:rgba(0, 0, 0, 0.9)
 }
 .open_banner > img {
