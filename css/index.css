@@ -93,9 +93,13 @@ small {
   z-index: -1;
 }
 .full4 img {
-  width: 110%;
+  width: 100%;
 }
 .full5 img {
+  width: 100%;
+  height: 90%;
+}
+.full6 img {
   width: 70%;
   height: 90%;
 }
