@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="mcssam" />
+    <meta name="description" content="Portfolio, Flex, Caxa UI" />
+    <title>Portfolio, Flex, Caxa UI</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="./images/favicon/montblanc_fav32.png" />
+    <link
+      rel="apple-touch-icon=precomposed"
+      href="./images/favicon/montblanc_fav144.png"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css" />
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/caxa_attrangs.css" />
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- 페이지 JS -->
+    <script src="./js/caxa_attrangs.js"></script>
+  </head>
+  <body>
+    <div class="open_banner">
+      <img src="./image/open_banner.png" alt="">
+      <p>닫기</p>
+    </div>
+    <div id="wrap">
+      <!-- Aside SNB -->
+      <aside class="asidebar">
+        <div class="top_sub w1300">
+          <p>로그인하면 확인되는 차별화된 회원가!</p>
+          <p>
+            혜택확인하기 &nbsp;&nbsp;
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </p>
+          <p class="close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </p>
+        </div>
+      </aside>
+      <!-- /Aside SNB -->
+      <!-- Header -->
+      <header>
+        <div class="lnb_all">
+          <!-- Logo Area + LNB Menu -->
+          <div class="root_lnb w1300">
+            <!-- Logo Area -->
+            <h1>
+              <img src="./image/main_title.png" alt="카사로고" />
+            </h1>
+            <!-- /Logo Area -->
+            <!-- LNB Menu -->
+            <nav class="local">
+              <ul class="lnb">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                  <a href="#"
+                    >
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+              </ul>
+            </nav>
+            <!-- /LNB Menu -->
+          </div>
+          <!-- /Logo Area + LNB Menu -->
+        </div>
+        <!-- GNB Menu -->
+        <div class="gnb_all">
+          <div class="w1300">
+            <nav class="global">
+              <h2>
+                <a class="menu-trigger" href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+              </h2>
+              <nav class="full_gnb w1300 cf">
+                <div class="div1">
+                  <h2>
+                    회원 가입하고<br>
+                    다양한 혜택을 받아보세요!
+                  </h2>
+                  <h3>
+                    가입 혜택보기
+                    <img src="./image/arrow_silver.png" alt="">
+                  </h3>
+                  <button>로그인/회원가입</button>
+                  <p>sns간편로그인</p>
+                  <div>
+                    <ul class="sns">
+                      <li>
+                        <a href="#" class="facebook">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" class="twitter">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" class="insta">
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="div2">
+                  <h2>
+                    최근 본상품
+                    <img src="./image/arrow_silver.png" alt="">
+                  </h2>
+                  <h3>지금 로그인 하시면<br>
+                    최근 본 상품을 볼 수 있습니다
+                  </h3>
+                  <div class="icon1">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./image/mob_nav.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./image/mob_nav2.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./image/mob_nav3.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./image/mob_nav4.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./image/mob_nav5.png" alt="">
+                        </a>
+                      </li>
+                      <li class="no_mr">
+                        <a href="#">
+                          <img src="./image/mob_nav6.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./image/mob_nav7.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./image/mob_nav8.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./image/mob_nav9.png" alt="">
+                        </a>
+                      </li>
+                      <li class="no_mr">
+                        <a href="#">
+                          <img src="./image/mob_nav10.png" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="div3 no_mr">
+                  <h2>오늘의 할인</h2>
+                  <ul class="icon2">
+                    <li><a href="#"><img src="./image/mob_nav11.png" alt=""></a></li>
+                    <li><a href="#"><img src="./image/mob_nav12.png" alt=""></a></li>
+                    <li><a href="#"><img src="./image/mob_nav13.png" alt=""></a></li>
+                    <li><a href="#"><img src="./image/mob_nav14.png" alt=""></a></li>
+                    <li><a href="#"><img src="./image/mob_nav15.png" alt=""></a></li>
+                    <li><a href="#"><img src="./image/mob_nav16.png" alt=""></a></li>
+                  </ul>
+                  <div class="buttonall">
+                    <button>입고지연상품</button>
+                    <button class="no_mr">미확인입금자</button>
+                    <button>리크루트</button>
+                    <button class="no_mr">연예인협찬</button>
+                    <button>파트너쉽</button>
+                    <button class="no_mr">모델지원</button>
+                  </div>
+                </div>
+              </nav>
+              <ul class="gnb">
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">가을신상</a></li>
+                <li><a href="#">자체제작</a></li>
+                <li><a href="#">브랜드</a></li>
+                <li class="no_mr"><a href="#">이벤트</a></li>
+              </ul>
+              <ul class="snb">
+                <li class="no_ml"><a href="#">#테마룩</a></li>
+                <li><a href="#">#앳몰</a></li>
+                <li><a href="#">#하객룩</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /GNB Menu -->
+      </header>
+      <!-- /Header -->
+
+      <!-- Slider -->
+      <article>
+        <div class="slider">
+          <div><a href="#"><img src="./image/main_slider.webp" alt=""></a></div>
+          <div><a href="#"><img src="./image/main_slider2.webp" alt=""></a></div>
+          <div><a href="#"><img src="./image/main_slider3.webp" alt=""></a></div>
+          <div><a href="#"><img src="./image/main_slider4.webp" alt=""></a></div>
+        </div>
+      </article>
+      <!-- /Slider -->
+
+      <!-- Contents -->
+      <main role="main">
+        <!-- Section 01 -->
+        <section class="md_pick w1300">
+          <h2><img src="./image/md's_pick_tittle.png" alt=""></h2>
+          <ul>
+            <li><a href="#"><img src="./image/dessert.png" alt=""></a></li>
+            <li><a href="#"><img src="./image/lookbook.png" alt=""></a></li>
+            <li><a href="#"><img src="./image/autumn.png" alt=""></a></li>
+            <li><a href="#"><img src="./image/auter.png" alt=""></a></li>
+          </ul>
+        </section>
+        <!-- /Section 01 -->
+        <!-- Section 02 -->
+        <section class="real_title">
+          <h2 class="real_time w1300">
+            <ul>
+              <li>
+                <img class="real_title"
+                  src="./image/title2.png"
+                  alt="리얼타임타이틀"
+                />
+              </li>
+              <li><a href="#">#SK6006</a></li>
+              <li><a href="#">#플리츠 미니스커트</a></li>
+              <li><a href="#">#가을 무드에 3컬러</a></li>
+              <li><a href="#">#데일리로 좋은 뮤트컬러</a></li>
+              <li>
+                <a href="#"><button>
+                  제품 퀵뷰 보기
+                </button></a>
+              </li>
+            </ul>
+            <article class="realtime_img">
+              <div class="slider">
+                <div><a href="#"><img src="./image/realtime_1.jpg" alt=""></a></div>
+                <div><a href="#"><img src="./image/realtime_2.jpg" alt=""></a></div>
+                <div><a href="#"><img src="./image/realtime_3.jpg" alt=""></a></div>
+                <div><a href="#"><img src="./image/realtime_4.jpg" alt=""></a></div>
+              </div>
+            </article>
+          </h2>
+        </section>
+        <!-- /Section 02 -->
+        <!-- Section 03 -->
+        <section class="caxa w1300">
+          <h2>
+            <img src="./image/title3.png" alt="카사타이틀" />
+          </h2>
+          <div class="caxa_sns">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img class="w185"
+                    src="./image/caxa_sns1.jpg"
+                    alt="SNS 제품01"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="w185"
+                    src="./image/caxa_sns2.jpg"
+                    alt="SNS 제품02"
+                /></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img class="w375"
+                    src="./image/caxa_sns8.jpg"
+                    alt="SNS 제품03"
+                /></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img class="w185"
+                    src="./image/caxa_sns3.jpg"
+                    alt="SNS 제품04"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="w185"
+                    src="./image/caxa_sns4.jpg"
+                    alt="SNS 제품05"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="w185"
+                    src="./image/caxa_sns5.jpg"
+                    alt="SNS 제품06"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="w185"
+                    src="./image/caxa_sns6.jpg"
+                    alt="SNS 제품07"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="w185"
+                    src="image/caxa_sns7.jpg"
+                    alt="SNS 제품08"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="w185"
+                    src="./image/caxa_sns9.jpg"
+                    alt="SNS 제품09"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <p>
+            <a href="#"
+              ><img src="./image/buy_all.png" alt="전체구매"
+            /></a>
+          </p>
+        </section>
+        <!-- /Section 03 -->
+      </main>
+      <!-- /Contents -->
+      <!-- Footer -->
+      <footer>
+        <div class="footer_information w1300">
+          <div class="footer_left">
+            <nav>
+              <ul class="footer_gnb">
+                <li><a href="#">이용약관&nbsp;&nbsp;|</a></li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;쇼핑몰&nbsp;이용안내&nbsp;&nbsp;|</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;쇼핑몰&nbsp;이용안내&nbsp;&nbsp;|</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;|</a>
+                </li>
+                <li><a href="#">&nbsp;&nbsp;고객센터&nbsp;&nbsp;|</a></li>
+                <li><a href="#">&nbsp;&nbsp;1:1문의&nbsp;&nbsp;|</a></li>
+                <li><a href="#">&nbsp;&nbsp;매장안내&nbsp;&nbsp;|</a></li>
+              </ul>
+            </nav>
+            <div class="footer_info">
+              <p>
+                주식회사 | 웸씨웹 | 대표이사 : MCSSAM | <br />
+                사업자등록번호 : 120-21-05435 | 통신판매업신고번호 : 제
+                2021-서울강남-00810호<br />
+                주소 : 서울특별시 강남구 아차산로 123 | 대표전화 : 02-3424-3432
+                | 팩스 : 02-446-7323
+              </p>
+              <p class="footer_escrow">
+                <span>
+                  고객님의 안전 거래를 위해 현금 결제시,<br />
+                  구매안전 서비스를 이용하실 수 있습니다[가입사실 확인]
+                </span>
+              </p>
+              <p>Copyright &copy; 2020 MCWEB., Ltd. All Rights Reserved</p>
+            </div>
+          </div>
+          <div class="footer_contact">
+            <dl>
+              <dt>고객만족센터</dt>
+              <dd>080-555-9812</dd>
+              <dd>평일 09:00 ~ 18:00 | 점심 13:00 ~ 14:00</dd>
+            </dl>
+            <dl>
+              <dt>BANK INFO</dt>
+              <dd>국민은행 801-32-323236-39</dd>
+              <dd>예금주:(주)엠씨엠</dd>
+            </dl>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+    <script>
+        $(document).ready(function () {
+        $(".slider").bxSlider({
+          mode: 'horizontal',// 가로 방향 수평 슬라이드
+          speed: 300,        // 이동 속도를 설정
+          pager: false,      // 현재 위치 페이징 표시 여부 설정
+          moveSlides: 1,     // 슬라이드 이동시 개수
+          minSlides: 3,      // 최소 노출 개수
+          maxSlides: 3,      // 최대 노출 갯수
+          slideMargin: 5,    // 슬라이드간의 간격
+          auto: true,        // 자동 실행 여부
+          autoHover: true,   // 마우스 호버시 정지 여부
+          randomStart:true,
+        });
+      });
+    </script>
+  </body>
+</html>
