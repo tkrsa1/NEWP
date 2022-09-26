@@ -87,6 +87,6 @@ $(function () {
   $(window).on("load", function () {
     setTimeout(function () {
       $(".loadDiv").fadeOut();
-    }, 2000);
+    }, 1500);
   });
 });
