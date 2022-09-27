@@ -143,40 +143,40 @@ header .global .snb li a {
   font-size: 30rem;
 }
 /* Section 02 */
-.real_title {
-  margin-top: 150px;
+.article1{
+  width: 50%;
 }
-.real_title img{
+.article1 div img{
   width: 100%;
 }
-.realtime_img {
-  width: 100% ;
-}
-.real_title .real_time {
-  /* 플렉스 */
+.real_time{
   display: flex;
-  /* 교차축 레이아웃 */
+  margin: 0 auto;
+  text-align: center;
   align-items: center;
   padding-top: 88px;
   padding-left: 100px;
   padding-bottom: 88px;
 }
-.real_title .real_time ul {
+.real_time ul {
   text-align: center;
   margin-right: 76px;
   padding-bottom: 150px;
 }
-.real_title .real_time ul li {
+.real_time ul li {
   margin-bottom: 14px;
 }
-.real_title .real_time ul li:first-child {
+.real_time ul{
+  width: 50%;
+}
+.real_time ul li:first-child {
   margin-bottom: 36px;
 }
-.real_title .real_time ul li:last-child {
+.real_time ul li:last-child {
   margin-top: 64px;
   margin-bottom: 0;
 }
-.real_title .real_time ul li a {
+.real_time ul li a {
   font-size: 1.7rem;
   color: #393939;
   display: inline-block;
@@ -184,15 +184,14 @@ header .global .snb li a {
   height: 32px;
   line-height: 32px;
 }
-.real_title .real_time ul li a:hover {
+.real_time ul li a:hover {
   color: #fff;
   background-color: #a56fbb;
 }
 /* 마지막 li 버튼은 호버효과 없애기 */
-.real_title .real_time ul li:last-child a:hover {
+.real_time ul li:last-child a:hover {
   background-color: transparent;
 }
-
 /* Section 03 */
 .caxa {
   margin-top: 124px;
