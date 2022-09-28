@@ -23,7 +23,8 @@ body {
 .full1 {
   background: none;
 }
-.full2 {
+.full2,
+.full7 {
   background-color: #f8ede3;
 }
 .full3 {
@@ -93,13 +94,17 @@ small {
   z-index: -1;
 }
 .full4 img {
-  width: 100%;
+  width: 90%;
 }
 .full5 img {
   width: 90%;
   height: 90%;
 }
 .full6 img {
+  width: 70%;
+  height: 90%;
+}
+.full7 img {
   width: 70%;
   height: 90%;
 }
