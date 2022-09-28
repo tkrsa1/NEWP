@@ -1,0 +1,242 @@
+@charset "utf-8";
+@font-face{
+    font-family: "neo";
+    src: url("../font/neosanspro/Neo\ Sans\ Pro\ Medium.ttf");
+}
+html{
+    font-size: 62.5%;
+    font-family: "neo",sans-serif;
+}
+.w1280{
+    width: 1280px;
+    margin: 0 auto;
+}
+.advertise i{
+    cursor: pointer;
+}
+aside{
+    display: flex;
+    justify-content:center;
+}
+aside>i{
+    font-size: 4rem;
+    padding-top: 15px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.sec1{
+    background-color: rgb(240, 240, 240);
+}
+.sec1 div ul li{
+    float: left;
+    margin-right: 20px;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.sec1 div ul:first-child{
+    float: left;
+}
+.sec1 div ul:last-child{
+    float: right;
+}
+
+/* sec1 끝 */
+/* 호버시 나타나는 메뉴 효과들 */
+.sec2 .aside_div{
+    background-color: rgb(66, 133, 244);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.sec2 div span{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    position: absolute;
+}
+.sec2 div span:nth-child(1){
+    top: 40%;
+}
+.sec2 div span:nth-child(3){
+    top: 60%;
+}
+.sec2 .aside_div h2{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 10%;
+    font-size: 1.2rem;
+    color: white;
+}
+.full_menu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    box-shadow: 2px 2px 2px #ccc;
+    display: none;
+    z-index: 11111111111111;
+    background-color: white;
+}
+.full_menu ul li{
+    width: 150px;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.full_menu ul li i{
+    width: 20px;
+}
+/* /호버시 나타나는 메뉴 효과들 */
+.under{
+    float: left;
+}
+.under_gnb li{
+    float: left;
+    margin-right: 20px;
+    font-size: 1.3rem;
+}
+.header_title{
+    display: flex;
+}
+.title{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.title img{
+    width: 80%;
+}
+input{
+    width: 350px;
+    height: 50px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+}
+.home{
+    display: flex;
+    font-size: 2rem;
+}
+.home li{
+    margin-right: 30px;
+    padding-top: 30px;
+}
+.home i{
+    margin-right: 10px;
+}
+label[for="search"]{
+    position: relative;
+    margin-right: 30px;
+}
+label[for="search"] i{
+    position: absolute;
+    left: 90%;
+    top: 30px;
+    font-size: 3rem;
+}
+/* 헤더끝 */
+.slider img{
+    width: 100%;
+}
+.slider_article{
+    position: relative;
+}
+.banner_next{
+    box-shadow: 2px 2px 2px #ccc;
+    background-color: white;
+    position: absolute;
+    left: 80%;
+    top: 12%;
+}
+.onborder{
+    border: 1px solid lightblue;
+}
+.todays_hot h2{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+.todays_hot span{
+    font-size: 1.2rem;
+}
+.todays_hot ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.todays_shopping{
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+.todays_shopping h2{
+    font-size: 2.5rem;
+    line-height: 50px;
+}
+.todays_hot ul li{
+    margin-right: 25px;
+    margin-top: 20px;
+}
+.todays_shopping ul{
+    display: flex;
+}
+.todays_shopping li img{
+    width: 90%;
+}
+.todays_div1 h4{
+    display: inline;
+}
+.todays_div1 h3{
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+.todays_div1 h3 img{
+    width: 30%;
+    text-align: center;
+}
+
+/* 메인끝 /// */
+footer{
+    margin-top: 50px;
+}
+footer ul{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    padding: 30px 0;
+}
+footer ul li{
+    font-size: 1.2rem;
+    margin-right: 20px;
+    text-align: center;
+}
+.footer_under{
+    display: flex;
+    padding-top: 50px;
+}
+.footer_under img{
+    width: 50%;
+}
+.footer_under h3{
+    font-size: 1.4rem;
+    width: 500px;
+    margin-right: 100px;
+    opacity: 70%;
+}
+footer p{
+    text-align: center;
+}
+.copyright{
+    background-color: rgb(51, 51, 51);
+    color: #ccc;
+    padding: 20px;
+    font-size: 1.2rem;
+}
