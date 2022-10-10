@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="mcssam">
+        <meta name="description" content="Portfolio, Flex, Caxa UI">
+        <title>AUDI | 게시판</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./images/favicon/audi_favicon.png">
+        <link rel="apple-touch-icon=precomposed" href="./images/favicon/audi_favicon.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+        <link rel="stylesheet" href="./css/AudiType-WideNormal_4.03.ttf">
+        <!-- 페이지 CSS -->
+        <link rel="stylesheet" href="./css/audi_board.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/audi_footer.css">
+        <!-- JS 플러그인 파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        
+        <!-- 페이지 JS -->
+        
+        <script src="../js/topbtn.js"></script>
+
+    </head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <nav class="depth1">
+                <h1 class="logo"><a href="../index.html"><img src="./images/main_logo.png" alt="HOME"></a></h1>
+                <ul class="gnb">
+                    <li><a href="../audi_newmodel/NewModel.html">New Models</a></li>
+                    <li>Company</li>
+                    <li>Audi Service</li>
+                    <li>Audi Experience</li>
+                    <li>Audi Sustainability</li>
+                </ul>
+                <p><img src="./images/search.png" alt="검색" class="search"></p>
+            </nav>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="../audi_info/audi_info.html">아우디코리아 소개</a></li>
+                    <li><a href="#">고객 안내</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디코리아 소식</a></li>
+                    <li><a href="#">아우디 공식 인증 중고차</a></li>
+                </ul>
+                <p class="cf"><img src="./images/nav1.webp" alt="전시장 찾기" class="cf"></p>
+                <p><a href="#">전시장 찾기<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 서비스</a></li>
+                    <li><a href="../audi_center/center.html">고객지원센터</a></li>
+                    <li><a href="#">부품 가격 정보</a></li>
+                    <li><a href="#">서비스 프로그램</a></li>
+                    <li><a href="#">아우디 순정부품</a></li>
+                    <li><a href="#">사설수리업체를 위한 권고사항</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디 순정 액세서리</a></li>
+                    <li><a href="#">아우디 영상 매뉴얼</a></li>
+                </ul>
+                <p><img src="./images/nav2.jpg" alt="서비스 센터"></p>
+                <p><a href="../audi_center/center.html">서비스 센터<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 스토리</a></li>
+                    <li><a href="#">quattro 시스템</a></li>
+                    <li><a href="#">e-tron GT concept</a></li>
+                    <li><a href="../audi_info/audi_info.html">아우디 브랜드 소개</a></li>
+                    <li><a href="#">Audi Connect</a></li>
+                    <li><a href="#">myAudiworld</a></li>
+                    <li><a href="#">More possibilities</a></li>
+                    <li><a href="#">아우디 브랜드 히스토리</a></li>
+                    <li><a href="#">아우디 드라이빙 익스피리언스</a></li>
+                </ul>
+                <p><img src="./images/nav3.jpg" alt="Future"></p>
+                <p><a href="#">Future is an attitude<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">전기 모빌리티</a></li>
+                    <li><a href="#">플러그인 하이브리드</a></li>
+                    <li><a href="./Audi_board_main.html">게시판</a></li>
+                    <li></li>
+                </ul>
+                <p><img src="./images/nav4.jpg" alt="전기 모빌리티"></p>
+                <p><a href="#">전기 모빌리티<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <!-- 검색창 -->
+            <section class="gnb_search">
+<!-- 합치면 action 링크를 name="q" 와 함께 아우디 홈페이지로 바꿀 것 -->
+                <form action="https://www.google.com/search" method="GET">
+                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                    <input name="q" id="keyword" type="text" placeholder="검색/아우디 코드" required autofocus>
+                    <p><i class="fa fa-times" aria-hidden="true"></i></p>
+                    <p>빠른 링크</p>
+                    <ul class="search_keyword">
+<!-- 팀 프로젝트에서 제작된 링크 채울 것 -->
+                        <li><a href="../audi_info/audi_info.html">company</a></li>
+                        <li><a href="../audi_center/center.html">audi 고객지원센터</a></li>
+                        <li><a href="../audi_newmodel/NewModel.html">audi new model</a></li>
+                        <li><a href="./Audi_board/Audi_board_main.html">게시판</a></li>
+                        <li><a href="#">audi sustainability</a></li>
+                        <li><a href="#">audi experience</a></li>
+                    </ul>
+                </form>
+            </section>
+            <!-- 검색창 -->
+        </header>   
+        <aside class="cf">
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html"><img src="./images/icon_steering.png" alt="시승신청"></a></p>
+                <p><a href="#"><img src="./images/icon_cart.png" alt="예약금 결제"></a></p>
+                <p><a href="#"><img src="./images/icon_cars.png" alt="전시장/AS 센터"></a></p>
+                <p><a href="#"><img src="./images/icon_chat.png" alt="상담신청"></a></p>
+            </div>
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html">시승신청</a></p>
+                <p><a href="#">예약금 결제</a></p>
+                <p><a href="#">전시장/AS 센터</a></p>
+                <p><a href="#">상담신청</a></p>
+            </div>
+        </aside>
+        <!-- /Header -->
+        <section class="board w1132">
+            <img src="./images/audi_logo.png" alt="LOGO">
+            <h2>
+                개인정보 처리방침
+            </h2>
+            <h3>
+                2022-09-21
+            </h3>
+            <p>
+                폭스바겐그룹코리아 주식회사(이하 “당사”)는 개인정보 보호법에 따라 정보주체의 개인정보 및 권익을 보호하고 개인정보와 관련한 정보주체의 고충을 원활하게 처리하고자 다음과 같은 개인정보 처리방침을 두고 있습니다.<br><br><br>
+
+
+
+                당사는 현재 아우디, 폭스바겐, 벤틀리, 람보르기니 등 4개의 브랜드를 소유하고 있으며, 각 브랜드의 고객정보는 브랜드간 공유됨이 없이 전적으로 해당 브랜드에만 귀속됩니다.<br><br><br>
+
+                제1조 (수집하는 개인정보의 항목)<br>
+                당사가 수집하는 개인정보의 항목은 아래와 같습니다.<br>
+                당사는 만 14세 미만 아동의 개인정보를 수집하는 등 처리하지 않으며,<br>
+                당사가 만 14세 미만 아동의 개인정보를 처리한 사실을 인지한 경우 해당 정보를 즉시 삭제할 것입니다.<br><br>
+
+                * 차량구매 고객과 서비스센터 이용 고객<br>
+
+                이름(상호), 성별, 생년월일, 주소, 전화번호, 이메일주소, 구입유형, 구입방법, 주민등록번호(법령상 허용된 경우에 한함)<br>
+                차종(모델명), 차대번호, 자동차등록번호, 연식, 용도, 차명, 형식 및 모델연도, 차량등록일, 사용본거지, 기타 자동차등록증 기재사항, 출고일자, 차량가격, 리콜·보증수리 등 대상여부<br>
+                구매 전시장 및 담당 딜러사, 차량정비 및 수리이력, 서비스센터 및 고객센터 이용이력, 차량구매 및 수리 등 서비스에 대한 만족도 조사결과, 주행거리, 차량 위치정보, 서비스 품질향상 조사 결과, 폭스바겐 수리 보장성<br>
+                상품 가입 및 이용 내역(가입 상품의 종류, 가입처, 상품 가입일과 만료일 등)<br>
+                이전 보유차량 정보, 직업, 회사명, 취미, 관심분야, 차량구입 상담내역, 온라인/오프라인 캠페인 및 이벤트 참여이력<br>
+                IP Address, MAC주소, 쿠키, 방문 일시, 서비스 이용 기록, 불량 이용 기록, 고객불만 등 민원사항, 민원이력<br>
+                [전기통신이 가능한 차량을 구매하는 경우] 생년월일을 포함한 신분증 기재정보, (대리인을 통한 계약 체결시) 위임장, 인감증명서, 대리인 신분증 기재 정보 등<br><br><br>
+
+
+
+                * my Volkswagen 서비스 가입 및 이용 고객<br><br>
+
+                [필수항목]<br>
+                A. my Volkswagen 서비스 회원 가입시 수집하는 정보<br>
+                이름, 출생년도, 휴대폰 번호, 이메일(ID), 비밀번호, (지문 또는 간편비밀번호 로그인 시) 이용자의 기기로부터 받은 지문/간편비밀번호 일치 여부에 대한 정보<br>
+                위치정보<br>
+                고객불만을 비롯한 민원사항, 민원이력<br>
+                IP Address, MAC주소, 쿠키, 기기 정보(기기ID, 운영체계(IOS/ Android), 고유식별번호(IMEI)), 방문 일시, 서비스 이용 기록, 불량 이용 기록<br>
+                B. my Volkswagen 서비스 관련 차량 등록시 수집하는 정보<br>
+                이름, 휴대폰 번호, 이메일(ID)<br>
+                차종(모델명), 자동차등록번호, 차대번호, 차량등록일, 보증 만료일, 소유주 성명, 소유주 휴대전화 번호, 차량정비 및 수리이력, 주행거리, 각종 서비스 프로그램 및 바우처 이용 내역,이벤트 쿠폰 보유 및 사용 내역,<br>
+                폭스바겐 수리 보장성 상품의 가입 및 이용 내역, 보유 차량 리콜 및 캠페인 정보, 온라인 서비스 예약 관련 정보(예약 일시, 방문 서비스센터, 예약서비스 항목),<br>
+                차량수리견적 서비스 관련 정보(차량의 사진, 사고 또는 고장 관련 차량 상태 정보, 견적 의뢰 서비스센터), 서비스 품질향상 조사 결과, 차량구매 및 수리를 비롯한 서비스에 대한 만족도 조사 결과, 위치정보<br>
+                IP Address, MAC주소, 쿠키, 기기 정보(기기ID, 운영체계(IOS/ Android), 고유식별번호(IMEI)), 방문 일시, 서비스 이용 기록, 불량 이용 기록<br>
+                고객불만을 비롯한 민원사항, 민원이력<br>
+                C. 딜러사로부터 제공받는 정보<br>
+                이름, 휴대폰 번호, 온라인 서비스 예약 및 사고수리견적서비스 제공 관련 정보(온라인 서비스 예약번호, 견적번호, 신청경로, 서비스 신청 접수 딜러사명, 담당 서비스센터명, 차종, 차량번호, 차대번호, 담당자,<br>
+                온라인 서비스 예약접수일시, 견적 접수일시, 온라인 서비스 예약일시, 견적요청사항, 예약서비스 항목, 접수상태, 상담 종료일시, 상담 소요시간, 입고일, 온라인 서비스 예약상태, 요청상태, RO 번호, 차량의 사진,<br>
+                사고 또는 고장 관련 차량 상태 정보)<br>
+                [선택항목]<br>
+                미스터리 쇼핑 조사 과정에서 수집되는 항목(설문답변내용, 음성정보)<br>
+                ※ 위 필수항목도 구체적인 개인정보 이용 목적(ex. 마케팅 목적)에 따라 정보주체의 선택적 동의를 받아 선택항목으로도 수집·이용함<br>
+                <br><br>
+
+
+                * myAudi 회원서비스 가입 고객<br><br>
+
+                이름(닉네임으로도 이용됨), 성, 국가, 언어, 호칭, 휴대전화번호, 생년월일, 성별, 주소, 이메일주소, 보유차종(모델명), 차대번호, 차량번호(자동차번호판 번호), myAudi로그인용 비밀번호, 주행거리 등 차량 관련정보<br>
+                IP 주소, MAC 주소, 쿠키, 기기 정보(운영체계, 브라우저), 방문 일시 정보, 서비스 이용 기록, 불량 이용 기록<br>
+                네비게이션 업데이트 및 소모품 관리 이력<br>
+                <br><br>
+
+
+                * Audi Connect 서비스 가입 및 이용 고객<br>
+                <br>
+                이름(닉네임으로도 이용됨), 성, 국가, 언어, 호칭, 휴대전화번호, 생년월일, 성별, 주소, 이메일주소, 보유차종(모델명), 차대번호, 차량번호(자동차번호판 번호), 차량의 위치정보, 주행거리 등 차량 관련정보, myAudi 로그<br>
+                인용 비밀번호, 출생지<br>
+                IP 주소, MAC 주소, 쿠키, 방문 일시 정보, 서비스 이용 기록, 불량 이용 기록, technical UserID<br><br><br>
+
+
+
+                * my Audi World 서비스 가입 및 이용 고객<br><br>
+
+                [필수항목]<br>
+                A. my Audi World 서비스 회원 가입시 수집하는 정보<br>
+                이름, 휴대폰 번호, 주소, 이메일(ID), 비밀번호, (생체로그인 시) 이용자의 기기로부터 받은 얼굴/지문 일치 여부에 대한 정보<br>
+                서비스 품질향상 조사 결과, 차량구매 및 수리를 비롯한 서비스 및 앱 이용에 대한 만족도 조사 결과, 위치 정보 고객불만을 비롯한 민원사항, 민원이력<br>
+                B. my Audi World 서비스 관련 차량 등록시 수집하는 정보<br>
+                이름, 휴대폰 번호, 이메일(ID), 비밀번호<br>
+                차종(모델명), 자동차등록번호, 차대번호, 차량등록일, 보증 만료일, 소유주 성명, 소유주 휴대전화 번호, 차량정비 및 수리이력, 주행거리, 각종 서비스 프로그램 및 바우처 보유 및 이용 내역, 쿠폰 보유 및 사용 내역,<br>
+                보유 차량 리콜 및 캠페인 정보, 서비스 센터 온라인 예약 정보(예약 일자, 방문 서비스센터, 예약서비스 항목, 고장 증상 및 경고등 점등 현황, 고객명, 휴대폰 번호, 차종, 차량번호, 위치, 점검항목), 온라인 서비스 예약<br>
+                관련 정보(예약 일자, 방문 서비스센터, 예약서비스 항목, 고장 증상 및 경고등 점등 현황, 차량 번호, 정비이력) 서비스캠 관련 정보(방문 서비스센터, 담당 어드바이저 정보, 수리 승인 여부 등), 서비스 품질향상 조사<br>
+                결과, 차량구매 및 수리를 비롯한 서비스 및 앱 이용에 대한 만족도 조사 결과, 위치 정보<br>
+                고객불만을 비롯한 민원사항, 민원이력<br>
+                [e-tron 고객에 한하여] 대영채비 회원 계정정보/로그인 인증키 (ID / 비밀번호), 충전 카드 번호, 위치정보, 충전기 예약정보, 충전기 사용 정보<br>
+                C. 딜러사로부터 제공받는 정보<br>
+                이름, 휴대폰 번호, 서비스 센터 온라인 예약 정보 (온라인 서비스 예약번호, 신청경로, 서비스 신청 접수 딜러사명, 담당 서비스센터명, 차종, 차량번호, 차대번호, 담당자, 온라인 서비스 예약접수일시, 온라인 서비스 예<br>
+                약일시, 예약서비스 항목, 접수상태, 상담 종료일시, 상담 소요시간, 입고일, 온라인 서비스 예약상태, 요청상태, RO 번호, 고장 증상 및 경고등 점등 현황), (e-tron 고객에 한함: 충전 크레딧 카드 번호, 충전 예약 정보,<br>
+                충전 이력)<br>
+                [선택항목]<br>
+                출생년도, 성별<br>
+                미스터리 쇼핑 조사 과정에서 수집되는 항목(설문답변내용, 음성정보, 정비이력)<br>
+                온라인 서비스 예약 관련 정보(예약 일자, 방문 서비스센터, 예약서비스 항목, 고장 증상 및 경고등 점등 현황, 차량 번호, 정비이력)<br>
+                ※ 위 필수항목도 구체적인 개인정보 이용 목적(ex. 마케팅 목적)에 따라 정보주체의 선택적 동의를 받아 선택항목으로도 수집·이용함<br><br><br>
+
+
+
+                * Audi 이외 차량에서의 커넥티드카 서비스 가입 및 이용 고객<br><br>
+
+                휴대전화번호, 이메일 주소, 성명 및 생년월일을 포함한 신분증 기재 정보, 위임장, 인감증명서, 대리인 신분증 기재 정보<br><br><br>
+
+
+
+                * 시승·상담, 뉴스레터 등 신청고객, 이벤트 참여고객 등 기타 고객 및 웹사이트 이용자<br><br>
+
+                이름, 휴대전화번호, 성별, 생년월일, 주소, 이메일주소, 고객번호, 관심차종(모델명, 색상, 트림), 보유차종(브랜드 및 모델명), 차량구매계획, 딜러선택, 시승희망일, 신청경로, 시승·상담 진행 경과, 신청경로, 영리목적<br>
+                광고성 정보 수신동의 여부, 영상(본사 등 방문고객의 경우), 주민등록번호(법령상 허용된 경우에 한함), 골프 핸디캡, 사진·영상, 설문답변<br>
+                쿠키, IP주소, 웹사이트 방문일시 정보, 로그기록, 서비스 이용기록<br>
+                고객불만 등 민원사항, 민원이력<br>
+                [사회공헌 사업관련 일부 인원에 한하여] 아이디/비밀번호, 학교 정보(명, 주소, 코드)<br><br><br>
+
+
+
+                * 입사지원자<br><br>
+
+                성명(국문/영문), 사진, 성별, 주소 및 우편번호, 이메일 주소, 전화번호(자택, 직장, 휴대전화), 국적, 거주국가<br>
+                학력사항(최종학력, 주요분야, 전공분야, 추가학력 등), 외국어 능력(구사가능 외국어의 종류, 수준 등), 경력사항(직장명, 최종 직무(직책), 현재 재직 여부, 경력 연수, 전문성 분야 등), 자격사항(자격의 종류, 식별번호,<br>
+                인증기관, 인증일자, 만료일자 등), 병역사항(미필인 경우 미필 사유), 국가보훈대상자 여부, 현재 연봉 및 기대 연봉, 입사가능일, 특기, 취미, 본인의 장, 단점, 회사의 평가<br>
+                기타 귀하가 회사에 제출하는 서류(이력서, 자격증, 증명서, 추천서, 성적증명서 등)에 기재된 개인정보 또는 면접 시 제공하는 개인정보 일체<br>
+                <br><br>
+
+
+                * 딜러사 등 관계사 임직원<br><br>
+
+                이름(국/영문), 소속 딜러사, 사원 ID, 근무지(전시장, 서비스센터 등), 직위/직책/직군, 성별, 연락처(휴대전화번호, 근무지 전화번호, 팩스번호, 이메일주소), 주소, 입/퇴사일, 퇴직사유, 생년월일, 관련분야 업무경력, 관련<br>
+                자격증, 당사 브랜드 관련 근무이력, 업무평가결과, 고객 만족도 조사결과, 여권번호 및 여권사본 기재정보, 사진, 주민등록번호(법령상 허용된 경우에 한함), 사진영상, 가족정보(배우자/자녀 유무 및 이벤트 참가여부,<br>
+                배우자/자녀연령, 자녀 수, 사진, 영상; 이벤트 참가 임직원의 가족에 한함)<br>
+                교육 프로그램(Ausbildung 프로그램 포함) 이수여부 및 관련 성적, 교육 이수이력 및 인증 취득여부, 온라인 교육 서비스 아이디/비밀번호, 교육 프로그램 관련 설문조사 결과<br>
+                당사 시스템 아이디/비밀번호(접속이 필요한 딜러사 임직원에 한함) 및 판매한 차량 관련 정보, 음성정보(미스터리 쇼핑 및/또는 서비스 예약 대기 시간 조사 진행 시) 및 미스터리 쇼핑 및/또는 서비스 예약 대기 시간<br>
+                조사 관련 점검결과 정보수리업무(Service) 직원의 경우 음성정보(미스터리 쇼핑 진행 시) 및 미스터리 쇼핑 관련 점검결과 정보, 차량 수리 서비스 등에 대한 고객 만족도 조사 결과 정보<br>
+                IT 시스템 이용 데이터 (이용자 ID, 승인사항, 로그인 시각 등 로그 기록, 컴퓨터 고유번호, IP 주소, GID 등)<br>
+            </p>
+        </section>
+        <button class="board_list">
+            <!-- Audi_board_main 링크 -->
+            <a href="./Audi_board_main.html">목록</a>
+        </button>
+        <aside>
+            <div>
+                <button>
+                    TOP
+                </button>
+            </div>
+        </aside>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="safe_w1728">
+            <!-- TopButton, SNS -->
+            <div class="topbtn_snsicon">
+                <div class="topbtn">
+                    <a href="#topbtn">
+                        <span>위로</span>
+                        <img src="./images/up_arrow.png" alt="top_button">
+                    </a>
+                </div>
+                <div class="snsicon">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                </div>
+            </div>
+            <!-- /TopButton, SNSicon -->
+            <div class="footer_flex cf">
+                <!-- Model -->
+                <dl class="model">
+                    <dt>Model</dt>
+                    <dd><a href="#">세단</a></dd>
+                    <dd><a href="#">SUV</a></dd>
+                    <dd><a href="#">쿠페</a></dd>
+                    <dd><a href="#">스포트백</a></dd>
+                    <dd><a href="#">카브리올레</a></dd>
+                    <dd><a href="#">전기차</a></dd>
+                    <dd><a href="#">S 모델</a></dd>
+                    <dd><a href="#">R/RS 모델</a></dd>
+                </dl>
+                <!-- /Model -->
+                <!-- Company -->
+                <dl class="company">
+                    <dt>Company</dt>
+                    <dd><a href="#">아우디코리아 소개</a></dd>
+                    <dd><a href="#">아우디코리아 소식</a></dd>
+                    <dd><a href="#">고객안내</a></dd>
+                    <dd><a href="#">아우디 공식 인증 중고차</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                </dl>
+                <!-- /Company -->
+                <!-- Audi Service -->
+                <dl class="service">
+                    <dt>Audi Service</dt>
+                    <dd><a href="#">아우디 서비스</a></dd>
+                    <dd><a href="#">서비스 프로그램</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                    <dd><a href="#">고객지원센터</a></dd>
+                    <dd><a href="#">아우디 순정부품</a></dd>
+                    <dd><a href="#">아우디 순정 액세서리</a></dd>
+                    <dd><a href="#">부품 가격 정보</a></dd>
+                    <dd><a href="#">사설수리업체를 위한 권고사항</a></dd>
+                    <dd><a href="#">아우디 영상 메뉴얼</a></dd>
+                </dl>
+                <!-- /Audi Service -->
+                <!-- Audi Experience -->
+                <dl class="service">
+                    <dt>Audi Experience</dt>
+                    <dd><a href="#">아우디 스토리</a></dd>
+                    <dd><a href="#">아우디 브랜드 소개</a></dd>
+                    <dd><a href="#">아우디 브랜드 히스토리</a></dd>
+                    <dd><a href="#">quattro 시스템</a></dd>
+                    <dd><a href="#">Audi Connect</a></dd>
+                    <dd><a href="#">More possibilities</a></dd>
+                    <dd><a href="#">Future is an attitude</a></dd>
+                    <dd><a href="#">myAudiworld</a></dd>
+                    <dd><a href="#">아우디 드라이빙 익스피리언스</a></dd>
+                </dl>
+                <!-- /Audi Experience -->
+                <!-- Audi Sustainability -->
+                <dl class="service">
+                    <dt>Audi Sustainability</dt>
+                    <dd><a href="#">전기 모빌리티</a></dd>
+                    <dd><a href="#">플러그인 하이브리드</a></dd>
+                </dl>
+            </div>
+                <!-- /Audi Sustainability -->
+                
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="copyright_flex cf">
+                    <p>
+                        &copy; 2022 Audi Korea. All rights reserved
+                    </p>
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">부정제보</a></li>
+                        <li><a href="#">타이어 에너지 소비 효율 등급 정보 조회</a></li>
+                        <li><a href="#">스마트키 KC인증 정보조회</a></li>
+                        <li><a href="#">AUDI AG의 개인정보처리에 관한 정보</a></li>
+                    </ul>
+                </div>
+                <p>
+                    본 웹사이트에서 제공되는 정보는 실제 판매 차량과 다를 수 있습니다.
+                </p>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="./fonts/AudiType-Normal_4.03.ttf"></script>
+    <script src="./js/header.js"></script>
+    </div>
+</body>
+</html>

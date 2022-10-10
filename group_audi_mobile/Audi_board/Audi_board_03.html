@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="mcssam">
+        <meta name="description" content="Portfolio, Flex, Caxa UI">
+        <title>AUDI | 게시판</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./images/favicon/audi_favicon.png">
+        <link rel="apple-touch-icon=precomposed" href="./images/favicon/audi_favicon.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+        <link rel="stylesheet" href="./css/AudiType-WideNormal_4.03.ttf">
+        <!-- 페이지 CSS -->
+        <link rel="stylesheet" href="./css/audi_board.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/audi_footer.css">
+        <!-- JS 플러그인 파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        
+        <!-- 페이지 JS -->
+        <script src="./js/header.js"></script>
+        <script src="../js/topbtn.js"></script>
+
+    </head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <nav class="depth1">
+                <h1 class="logo"><a href="../index.html"><img src="./images/main_logo.png" alt="HOME"></a></h1>
+                <ul class="gnb">
+                    <li><a href="../audi_newmodel/NewModel.html">New Models</a></li>
+                    <li>Company</li>
+                    <li>Audi Service</li>
+                    <li>Audi Experience</li>
+                    <li>Audi Sustainability</li>
+                </ul>
+                <p><img src="./images/search.png" alt="검색" class="search"></p>
+            </nav>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="../audi_info/audi_info.html">아우디코리아 소개</a></li>
+                    <li><a href="#">고객 안내</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디코리아 소식</a></li>
+                    <li><a href="#">아우디 공식 인증 중고차</a></li>
+                </ul>
+                <p class="cf"><img src="./images/nav1.webp" alt="전시장 찾기" class="cf"></p>
+                <p><a href="#">전시장 찾기<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 서비스</a></li>
+                    <li><a href="../audi_center/center.html">고객지원센터</a></li>
+                    <li><a href="#">부품 가격 정보</a></li>
+                    <li><a href="#">서비스 프로그램</a></li>
+                    <li><a href="#">아우디 순정부품</a></li>
+                    <li><a href="#">사설수리업체를 위한 권고사항</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디 순정 액세서리</a></li>
+                    <li><a href="#">아우디 영상 매뉴얼</a></li>
+                </ul>
+                <p><img src="./images/nav2.jpg" alt="서비스 센터"></p>
+                <p><a href="../audi_center/center.html">서비스 센터<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 스토리</a></li>
+                    <li><a href="#">quattro 시스템</a></li>
+                    <li><a href="#">e-tron GT concept</a></li>
+                    <li><a href="../audi_info/audi_info.html">아우디 브랜드 소개</a></li>
+                    <li><a href="#">Audi Connect</a></li>
+                    <li><a href="#">myAudiworld</a></li>
+                    <li><a href="#">More possibilities</a></li>
+                    <li><a href="#">아우디 브랜드 히스토리</a></li>
+                    <li><a href="#">아우디 드라이빙 익스피리언스</a></li>
+                </ul>
+                <p><img src="./images/nav3.jpg" alt="Future"></p>
+                <p><a href="#">Future is an attitude<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">전기 모빌리티</a></li>
+                    <li><a href="#">플러그인 하이브리드</a></li>
+                    <li><a href="./Audi_board_main.html">게시판</a></li>
+                    <li></li>
+                </ul>
+                <p><img src="./images/nav4.jpg" alt="전기 모빌리티"></p>
+                <p><a href="#">전기 모빌리티<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <!-- 검색창 -->
+            <section class="gnb_search">
+<!-- 합치면 action 링크를 name="q" 와 함께 아우디 홈페이지로 바꿀 것 -->
+                <form action="https://www.google.com/search" method="GET">
+                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                    <input name="q" id="keyword" type="text" placeholder="검색/아우디 코드" required autofocus>
+                    <p><i class="fa fa-times" aria-hidden="true"></i></p>
+                    <p>빠른 링크</p>
+                    <ul class="search_keyword">
+<!-- 팀 프로젝트에서 제작된 링크 채울 것 -->
+                        <li><a href="../audi_info/audi_info.html">company</a></li>
+                        <li><a href="../audi_center/center.html">audi 고객지원센터</a></li>
+                        <li><a href="../audi_newmodel/NewModel.html">audi new model</a></li>
+                        <li><a href="./Audi_board_main.html">게시판</a></li>
+                        <li><a href="#">audi sustainability</a></li>
+                        <li><a href="#">audi experience</a></li>
+                    </ul>
+                </form>
+            </section>
+            <!-- 검색창 -->
+        </header>   
+        <aside class="cf">
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html"><img src="./images/icon_steering.png" alt="시승신청"></a></p>
+                <p><a href="#"><img src="./images/icon_cart.png" alt="예약금 결제"></a></p>
+                <p><a href="#"><img src="./images/icon_cars.png" alt="전시장/AS 센터"></a></p>
+                <p><a href="#"><img src="./images/icon_chat.png" alt="상담신청"></a></p>
+            </div>
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html">시승신청</a></p>
+                <p><a href="#">예약금 결제</a></p>
+                <p><a href="#">전시장/AS 센터</a></p>
+                <p><a href="#">상담신청</a></p>
+            </div>
+        </aside>
+        <!-- /Header -->
+        <section class="board w1132">
+            <img src="./images/audi_logo.png" alt="LOGO">
+            <h2>
+                아우디, 2022년 상반기 사상 최대 영업이익 달성
+            </h2>
+            <h3>
+                2022-08-22
+            </h3>
+            <img src="https://www.audi.co.kr/content/dam/nemo/kr/news/2022/_%EC%82%AC%EC%A7%84%201_%EC%95%84%EC%9A%B0%EB%94%94%20RS%20e-%ED%8A%B8%EB%A1%A0%20GT.JPG" alt="아우디">
+            <p>                
+                - 아우디 AG CEO 마커스 듀스만, “전세계적인 화석 연료의 위기로 인해 e-모빌리티와 탄소중립적인 생산이 더욱 중요해졌다.<br>
+                - 아우디 AG CFO 위르겐 리터스베르거, “ 탄탄한 상반기 실적은 우리가 난기류를 잘 이겨내고 동시에 조직적으로 위기를 기회로 바꾸었음을 보여준다"<br>
+                - 299억 유로 매출, 49억 유로 영업이익, 16.5% 영업 마진, 26억 유로의 순현금 흐름 기록<br><br>
+
+                독일 아우디 그룹은 2022년 상반기 사상 최대 영업 이익을 달성하며 견고한 재무 성과를 기록했다. 계속되는 반도체 공급난과 코로나-19로 인한 중국 시장 폐쇄의 영향으로 아우디는 핵심 차종에 대한 높은 수요를 충족시키지 못했다. 그럼에도 불구하고 아우디 그룹의 매출은 2% 증가하여 299억 유로에 달했고, 영업이익은 49억 유로로 사상 최고치를 경신했다. 영업이익률은 16.5%로 전년도를 크게 웃돌았으며 동시에 전략 목표였던 9~11%를 초과했다. 적절한 가격 포지셔닝, 람보르기니와 벤틀리의 탄탄한 영업실적 그리고 원자재 헷징 등이 실적 호조를 이끌었다고 설명했다. 아우디 그룹은 차량 판매와 매출, 그리고 수익에 대한 전망을 확신했다.<br><br>
+
+                마커스 듀스만 (Markus Duesmann) 아우디 AG의 CEO는 "2022년 상반기 재무 성과를 보면 프리미엄 브랜드 그룹이 얼마나 강하고 수익성이 높은지 잘 알 수 있다. 매우 어려운 상황에도 불구하고 매출과 수익을 모두 크게 증대할 수 있었다."라고 말했다. "동시에, 세계의 현 상황은 화석 연료로부터 경제와 사회가 빨리 벗어나야 한다는 것을 분명히 보여주고 있다. 따라서 재생 에너지의 확대와 e-모빌리티로의 전환은 매우 중요한 단계이며 이것이 바로 우리가 e-모빌리티와 탄소 중립 생산에 전략적으로 초점을 맞추고 있는 이유이다." 라고 덧붙였다.<br><br>
+
+                전기차와 럭셔리 브랜드의 성장세<br>
+                전세계적 공급난에도 불구하고 프리미엄 브랜드 그룹은 상반기 79만7,587대의 차량을 고객에게 인도했다(2021년: 98만6,567대). 아우디 브랜드는 2021년 상반기 대비 20% 감소한 78만5,099대를 기록했다(2021년: 98만1,681대). 계속되는 반도체 공급난과 코로나-19 로 인한 중국 시장 폐쇄에도 불구하고 여전히 프리미엄 브랜드 그룹 차량에 대한 수요는 높았다.<br><br>
+
+                두카티는 33,265대의 모터사이클을 판매했으며, 이는 전년 동기 대비 3.6% 감소한 것으로 (2021년: 34,515대) 반도체 공급난이 반영된 것이다. 람보르기니는 5,090대 의 차량을 인도했으며 4.9%의 증가율을 기록했고(2021년: 4,852대), 벤틀리는 7,398대의 차량을 판매했다. (2021년: 7,199대)<br><br>
+
+                아우디, 지속적인 전동화 전략 추진<br>
+                아우디 브랜드의 순수 전기차 판매 대수는 전년 대비 52.7% 증가한 50,033대를 기록했다(2021년: 32,775대). 아우디 e-트론이 특히 인기가 높았으며 아우디 Q4 e-트론은 가장 높은 성장률을 기록했다. 이러한 상황을 토대로 프리미엄 브랜드 그룹이 고객에게 인도한 순수 전기 차량의 점유율은 6.3%를 달성했다.<br><br>
+
+                성공적인 아우디 충전 허브의 도입과 함께 아우디는 도심 안에서의 빠르고 간편하게 전기차 충전이 가능한 솔루션을 선보였다. 아우디 AG세일즈 및 마케팅 이사인 힐데가르트 보트만(Hildegard Wortmann) 은 “뉘른베르크 충전 허브 시범 운영에 대한 고객들의 반응은 매우 긍정적이며 2022년에는 잘츠부르크의 허브와 다<br><br>른 장소들이 뒤를 이을 것이다."라고 말했다. 2023년부터 독일 대도시에 문을 열게 될 3곳의 새로운 충전 허브는 도시 내에서 증가하는 충전 수요를 충족하는 데 도움이 될 것이다. 또한, 아우디는 2024년 중반까지 독일 내 도시들에 더욱 많은 충전 허브를 설치할 계획이다. 전동화 전략의 또 다른 이정표는 6월 말 중국 장춘에 전기차를 위한 스마트 팩토리를 건설하는 것이다. 장춘 스마트 팩토리는 2024년 말 완공을 목표로 하며, 이 곳에서 지속 가능하고 디지털화된 생산 방식을 통해 프리미엄 플랫폼 일렉트릭(PPE) 기반의 차량들이 중국 시장에 출시될 예정이다. 150 헥타르 면적의 이 공장은 연간 15만 대 이상의 차량 생산이 가능할 것이다.
+
+                전략적인 브랜드 그룹 합병을 통한 수익 증대<br>
+                아우디 그룹은 올 상반기 298억6,900만 (2021년: 292억1,200만 유로) 유로의 수익을 기록했다. 매출 감소에도 불구하고, 그룹은 수익을 2%까지 높일 수 있었다. 이러한 성장에는 2022년 1월 1일 이후 럭셔리 브랜드 벤틀리와의 첫 합병이 큰 역할을 했다. 그룹은 벤틀리 브랜드의 매력적인 모델 라인업 대한 높은 수요 덕분에 강력한 가격 포지션을 공고히 하는데 성공했다. 아우디 그룹의 총 수익과 비교했을 때, EU-조례 준수 수익의 비율은 2022년 상반기에 12.3%로 증가했다. 이러한 방식으로 회사는 모든 회사 및 제품 의사 결정에 대해 "진보 2030 (Vorsprung2030)" 전략에 명시된 ESG 지속 가능성 기준의 중요성을 강조했다.<br><br>
+
+                전략 목표치를 크게 상회한 영업이익률<br>
+                아우디 그룹은 2022년 상반기 영업이익이 58.5% 증가한 49억 유로(2021년: 31억 유로)로 사상 최고치를 경신했다. 영업이익률도 16.5%(2021년: 10.7%)로 상승했다. 람보르기니, 벤틀리, 두카티 브랜드의 탄탄한 가격 포지션과 강력한 영업 실적 외에도 영업 이익에는 총 4억 유로의 원자재 헷징 효과도 포함되어 있는데, 1분기(12억 유로) 동안 상당한 효과를 거두었으나 그 후, 영향은 상당히 줄어들었다.<br><br>
+
+                아우디 AG 재무 및 법률 담당 이사 위르겐 리터스베르거 (Jürgen Rittersberger)는 "2022년 상반기의 전략적 목표였던 9~11%를 훨씬 웃도는 영업이익과 큰 실적 증가는 우리가 난기류를 잘 이겨내고 동시에 조직적으로 위기를 기회로 바꾸었음을 보여준다"고 말했다.<br><br>
+
+                람보르기니, 벤틀리, 두카티의 우수한 영업 실적<br>
+                람보르기니는 상반기 매출이 30.6% 증가한 13억 유로(2021년: 10억 유로)를 기록했다. 영업이익은 69.3% 증가한 4억 2,500만 유로(2021년: 2억 5,100만 유로)로 31.9%(2021년: 24.6%)의 마진을 기록했다. 벤틀리는 17억 700만 유로(2021:13억2,400만 유로)의 매출을 달성했으며, 영업이익은 3억9,800만 유로(2021:1억7,800만 유로)로 증가하여 사상 최고치를 경신했으며 마진은 23.3%(2021년 13.4%)이었다. 두카티는 판매 하락세를 강한 가격 포지션으로 상쇄하여 5.4% 증가한 5억4,200만 유로(2021년 5억1,400만 유로)의 매출을 올렸고, 영업이익은 6,800만 유로(2021년 5,900만 유로)로 영업이익률은 12.6%(2021년 11.5%)에 달했다.<br><br>
+
+                재무성과 및 순현금 흐름<br>
+                상반기의 재무 성과는 7억5,400만 유로 (2021:7억6,200만 유로)를 기록했으며 여기에는 전년 보다 감소한 중국 시장의 판매 성과인 4억3,100만 유로(2021:5억6,500만유로) 가 포함됐다. 이러한 감소는 2분기 중국의 코로나-19 봉쇄에 따른 것이다. 세후 실적은 43억 9,000만 유로 (2021:33억8,600만 유로)로 29.6% 증가했다.<br><br>
+
+                지난해 상반기 이례적으로 매우 높은 수치를 기록했던 순현금 흐름은 2022년 상반기(2021년: 55억1,200만 유로)에 25억9,300만 유로로 정상화되었다. 무엇보다 물류와 공급망 차질로 인한 재고 증가, 특히 중국 내 코로나-19 봉쇄와 반도체 공급 부족 등이 원인으로 작용했다. 이 외에도 장춘의 FAW NEV 사의 새로운 공장에 대한 투<br><br>자와 폭스바겐 그룹 내 지분 이전 등으로 아우디의 순 현금 흐름이 감소했다.
+
+                차량 인도, 매출과 수익에 대한 전망<br>
+                아우디 그룹의 전망에는 현재 예상 가능한 러-우크라이나 전쟁, 진행 중인 반도체 대란, 상반기에 중국 내 코로나-19 봉쇄 상황 등이 포함돼 있다. 지정학적 상황과 가스 공급 부족이 세계 경제에 미치는 다른 영향에 대해서는 정확한 예측이 불가능하다.<br><br>
+
+                브랜드 그룹은 2022년 한 해 동안 180만~190만 대의 차량을 인도하고 620억~ 650억 유로의 수익을 거둘 것으로 예상하고 있다. 영업이익률은9~11% 정도가 될 전망이다. 순현금 흐름은 45억 유로에서 55억 유로에 이를 것으로 예상된다. 아우디는 자본비용 비율이 4~5%에 이를 것으로 예상하고 있으며, 미래 기술에 대한 선행 지출이 높아짐에 따라 연구개발비 비중은 현재 6~7% 수준을 약간 상회할 것으로 예상된다.<br><br>
+            </p>
+        </section>
+        <button class="board_list">
+            <!-- Audi_board_main 링크 -->
+            <a href="./Audi_board_main.html">목록</a>
+        </button>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="safe_w1728">
+            <!-- TopButton, SNS -->
+            <div class="topbtn_snsicon">
+                <div class="topbtn">
+                    <a href="#topbtn">
+                        <span>위로</span>
+                        <img src="./images/up_arrow.png" alt="top_button">
+                    </a>
+                </div>
+                <div class="snsicon">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                </div>
+            </div>
+            <!-- /TopButton, SNSicon -->
+            <div class="footer_flex cf">
+                <!-- Model -->
+                <dl class="model">
+                    <dt>Model</dt>
+                    <dd><a href="#">세단</a></dd>
+                    <dd><a href="#">SUV</a></dd>
+                    <dd><a href="#">쿠페</a></dd>
+                    <dd><a href="#">스포트백</a></dd>
+                    <dd><a href="#">카브리올레</a></dd>
+                    <dd><a href="#">전기차</a></dd>
+                    <dd><a href="#">S 모델</a></dd>
+                    <dd><a href="#">R/RS 모델</a></dd>
+                </dl>
+                <!-- /Model -->
+                <!-- Company -->
+                <dl class="company">
+                    <dt>Company</dt>
+                    <dd><a href="#">아우디코리아 소개</a></dd>
+                    <dd><a href="#">아우디코리아 소식</a></dd>
+                    <dd><a href="#">고객안내</a></dd>
+                    <dd><a href="#">아우디 공식 인증 중고차</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                </dl>
+                <!-- /Company -->
+                <!-- Audi Service -->
+                <dl class="service">
+                    <dt>Audi Service</dt>
+                    <dd><a href="#">아우디 서비스</a></dd>
+                    <dd><a href="#">서비스 프로그램</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                    <dd><a href="#">고객지원센터</a></dd>
+                    <dd><a href="#">아우디 순정부품</a></dd>
+                    <dd><a href="#">아우디 순정 액세서리</a></dd>
+                    <dd><a href="#">부품 가격 정보</a></dd>
+                    <dd><a href="#">사설수리업체를 위한 권고사항</a></dd>
+                    <dd><a href="#">아우디 영상 메뉴얼</a></dd>
+                </dl>
+                <!-- /Audi Service -->
+                <!-- Audi Experience -->
+                <dl class="service">
+                    <dt>Audi Experience</dt>
+                    <dd><a href="#">아우디 스토리</a></dd>
+                    <dd><a href="#">아우디 브랜드 소개</a></dd>
+                    <dd><a href="#">아우디 브랜드 히스토리</a></dd>
+                    <dd><a href="#">quattro 시스템</a></dd>
+                    <dd><a href="#">Audi Connect</a></dd>
+                    <dd><a href="#">More possibilities</a></dd>
+                    <dd><a href="#">Future is an attitude</a></dd>
+                    <dd><a href="#">myAudiworld</a></dd>
+                    <dd><a href="#">아우디 드라이빙 익스피리언스</a></dd>
+                </dl>
+                <!-- /Audi Experience -->
+                <!-- Audi Sustainability -->
+                <dl class="service">
+                    <dt>Audi Sustainability</dt>
+                    <dd><a href="#">전기 모빌리티</a></dd>
+                    <dd><a href="#">플러그인 하이브리드</a></dd>
+                </dl>
+            </div>
+                <!-- /Audi Sustainability -->
+                
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="copyright_flex cf">
+                    <p>
+                        &copy; 2022 Audi Korea. All rights reserved
+                    </p>
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">부정제보</a></li>
+                        <li><a href="#">타이어 에너지 소비 효율 등급 정보 조회</a></li>
+                        <li><a href="#">스마트키 KC인증 정보조회</a></li>
+                        <li><a href="#">AUDI AG의 개인정보처리에 관한 정보</a></li>
+                    </ul>
+                </div>
+                <p>
+                    본 웹사이트에서 제공되는 정보는 실제 판매 차량과 다를 수 있습니다.
+                </p>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="./fonts/AudiType-Normal_4.03.ttf"></script>
+
+    </div>
+</body>
+</html>

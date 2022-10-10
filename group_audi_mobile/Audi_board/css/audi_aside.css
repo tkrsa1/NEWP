@@ -1,0 +1,16 @@
+@charset "utf-8";
+.aside{
+    position: relative;
+}
+
+.aside .ul1{
+    position: fixed;
+    right: 0;
+    top: 48%;
+}
+.aside .ul2{
+    position: fixed;
+    right: 0;
+    top: 48%;
+    
+}

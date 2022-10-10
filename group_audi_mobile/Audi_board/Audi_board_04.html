@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="mcssam">
+        <meta name="description" content="Portfolio, Flex, Caxa UI">
+        <title>AUDI | 게시판</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./images/favicon/audi_favicon.png">
+        <link rel="apple-touch-icon=precomposed" href="./images/favicon/audi_favicon.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+        <link rel="stylesheet" href="./css/AudiType-WideNormal_4.03.ttf">
+        <!-- 페이지 CSS -->
+        <link rel="stylesheet" href="./css/audi_board.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/audi_footer.css">
+        <!-- JS 플러그인 파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        
+        <!-- 페이지 JS -->
+        <script src="../js/topbtn.js"></script>
+
+    </head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <nav class="depth1">
+                <h1 class="logo"><a href="../index.html"><img src="./images/main_logo.png" alt="HOME"></a></h1>
+                <ul class="gnb">
+                    <li><a href="../audi_newmodel/NewModel.html">New Models</a></li>
+                    <li>Company</li>
+                    <li>Audi Service</li>
+                    <li>Audi Experience</li>
+                    <li>Audi Sustainability</li>
+                </ul>
+                <p><img src="./images/search.png" alt="검색" class="search"></p>
+            </nav>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="../audi_info/audi_info.html">아우디코리아 소개</a></li>
+                    <li><a href="#">고객 안내</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디코리아 소식</a></li>
+                    <li><a href="#">아우디 공식 인증 중고차</a></li>
+                </ul>
+                <p class="cf"><img src="./images/nav1.webp" alt="전시장 찾기" class="cf"></p>
+                <p><a href="#">전시장 찾기<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 서비스</a></li>
+                    <li><a href="../audi_center/center.html">고객지원센터</a></li>
+                    <li><a href="#">부품 가격 정보</a></li>
+                    <li><a href="#">서비스 프로그램</a></li>
+                    <li><a href="#">아우디 순정부품</a></li>
+                    <li><a href="#">사설수리업체를 위한 권고사항</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디 순정 액세서리</a></li>
+                    <li><a href="#">아우디 영상 매뉴얼</a></li>
+                </ul>
+                <p><img src="./images/nav2.jpg" alt="서비스 센터"></p>
+                <p><a href="../audi_center/center.html">서비스 센터<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 스토리</a></li>
+                    <li><a href="#">quattro 시스템</a></li>
+                    <li><a href="#">e-tron GT concept</a></li>
+                    <li><a href="../audi_info/audi_info.html">아우디 브랜드 소개</a></li>
+                    <li><a href="#">Audi Connect</a></li>
+                    <li><a href="#">myAudiworld</a></li>
+                    <li><a href="#">More possibilities</a></li>
+                    <li><a href="#">아우디 브랜드 히스토리</a></li>
+                    <li><a href="#">아우디 드라이빙 익스피리언스</a></li>
+                </ul>
+                <p><img src="./images/nav3.jpg" alt="Future"></p>
+                <p><a href="#">Future is an attitude<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">전기 모빌리티</a></li>
+                    <li><a href="#">플러그인 하이브리드</a></li>
+                    <li><a href="./Audi_board_main.html">게시판</a></li>
+                    <li></li>
+                </ul>
+                <p><img src="./images/nav4.jpg" alt="전기 모빌리티"></p>
+                <p><a href="#">전기 모빌리티<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <!-- 검색창 -->
+            <section class="gnb_search">
+<!-- 합치면 action 링크를 name="q" 와 함께 아우디 홈페이지로 바꿀 것 -->
+                <form action="https://www.google.com/search" method="GET">
+                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                    <input name="q" id="keyword" type="text" placeholder="검색/아우디 코드" required autofocus>
+                    <p><i class="fa fa-times" aria-hidden="true"></i></p>
+                    <p>빠른 링크</p>
+                    <ul class="search_keyword">
+<!-- 팀 프로젝트에서 제작된 링크 채울 것 -->
+                        <li><a href="../audi_info/audi_info.html">company</a></li>
+                        <li><a href="../audi_center/center.html">audi 고객지원센터</a></li>
+                        <li><a href="../audi_newmodel/NewModel.html">audi new model</a></li>
+                        <li><a href="./Audi_board_main.html">게시판</a></li>
+                        <li><a href="#">audi sustainability</a></li>
+                        <li><a href="#">audi experience</a></li>
+                    </ul>
+                </form>
+            </section>
+            <!-- 검색창 -->
+        </header>   
+        <aside class="cf">
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html"><img src="./images/icon_steering.png" alt="시승신청"></a></p>
+                <p><a href="#"><img src="./images/icon_cart.png" alt="예약금 결제"></a></p>
+                <p><a href="#"><img src="./images/icon_cars.png" alt="전시장/AS 센터"></a></p>
+                <p><a href="#"><img src="./images/icon_chat.png" alt="상담신청"></a></p>
+            </div>
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html">시승신청</a></p>
+                <p><a href="#">예약금 결제</a></p>
+                <p><a href="#">전시장/AS 센터</a></p>
+                <p><a href="#">상담신청</a></p>
+            </div>
+        </aside>
+        <!-- /Header -->
+        <section class="board w1132">
+            <img src="./images/audi_logo.png" alt="LOGO">
+            <h2>
+                아우디, 2026년 포뮬러1 출전 계획 발표
+            </h2>
+            <h3>
+                2022-08-29
+            </h3>
+            <img src="https://www.audi.co.kr/content/dam/nemo/kr/news/2022/_%E2%98%85Audi%20F1_800x383.jpg" alt="아우디">
+            <p>                
+                - 세계 최고의 모터스포츠 경기 포뮬러1 합류 발표... 2026 시즌을 위한 파워 유닛 개발<br>
+                - 노이부르크에 위치한 아우디 스포트 연구소에서 하이브리드 파워 유닛 개발<br>
+                - 지속가능성과 비용 효율성에 중점을 둔 새로운 규정이 합류 결정의 핵심 요소<br>
+                - 아우디 스포트, 9월 1일부터 롤프 미쉘이 총괄<br><br>
+
+                독일 아우디 그룹이 세계 최고의 모터스포츠에 합류한다. 아우디는 2026년부터 특별히 개발된 파워 유닛으로 FIA 포뮬러1(F1) 월드 챔피언십에 참여하기로 결정했다. 해당 프로젝트는 잉골슈타트 인근 노이부르크의 아우디 스포트 연구소를 주축으로 진행될 예정이며 이로써 10년 여 만에 포뮬러1의 파워 트레인이 독일에서 개발될 예정이다.<br><br>
+                아우디는 포뮬러1 벨기에 그랑프리 스파프랑코르샹 서킷에서 기자회견을 통해 포뮬러1 진출을 공식적으로 발표했다. 이번 기자회견에는 아우디 AG의 마커스 듀스만(Markus Duesmann) CEO와 올리버 호프만(Oliver Hoffmann) 기술개발 최고운영책임자, 스테파노 도메니칼리(Stefano Domenicali) 포뮬러1 회장과 모하메드 벤 슐라옘(Mohammed ben Sulayem) 국제자동차연맹 (FIA) 회장이 참석하여 기자들의 질문에 답했다.<br><br>
+
+                마커스 듀스만 CEO는 “모터스포츠는 아우디 DNA의 필수요소이다.” 라며 “포뮬러1은 아우디 브랜드에게 국제적인 무대인 동시에, 매우 까다로운 개발 연구실과 같다. 자동차 산업에서 고성능 자동차로 경쟁하는 것은 언제나 혁신과 기술 이전을 이끄는 원동력이다. 새로운 규정이 마련된 만큼, 이제 아우디가 참여할 적절한 시기가 된 것이며, 이는 포뮬러1과 아우디 모두 지속가능성이라는 명백한 목표를 추구하고 있음을 의미한다.” 라고 덧붙였다.
+
+                더욱 확고한 지속가능성과 비용 효율성을 추구하는 포뮬러1의 변화가 아우디가 가장 인기 있는 레이싱 시리즈인 포뮬러1에 참가하는 핵심 배경이다. 2026년부터 적용 예정인 새로운 기술 규정은 전동화 확대와 지속가능 연료 사용 확대에 중점을 두고 있다. 참가 팀에 대한 기존의 비용 상한선에 더해, 2023년에는 파워 유닛 (동력장치) 제작사에 대한 비용 상한선이 도입될 예정이다. 포뮬러1은 2030년까지 그 자체로 탄소중립적인 레이싱 시리즈가 되겠다는 야심 찬 계획을 세운 바 있다.<br><br>
+
+                포뮬러1의 변화에 적극적으로 참여<br>
+                아우디 기술개발 최고운영책임자 올리버 호프만은 포뮬러1의 변화에 대해 “ 지속가능성을 이룩하고자 포뮬러1이 추진하는 2026년의 주요한 기술적 도약을 살펴보면, 그야말로 새로운 포뮬러1이라고 부르기에 충분하다. 포뮬러1은 변화하고 있고, 아우디는 그 변화의 여정을 적극적으로 지원하고자 한다. 포뮬러 1 프로젝트와 아우디 AG 기술개발팀의 긴밀한 관계가 시너지를 발휘할 것”이라고 말했다.<br><br>
+
+                2026년부터 전기 모터, 배터리, CE(control electronics), 내연기관으로 구성된 파워 유닛의 전기 출력은 기존 포뮬러1 드라이브 시스템과 비교해 현저히 증가해, 전기 모터는 400kW(544마력)의 출력이 가능하게 되며 이는 내연기관과 거의 동등한 출력이다. 또한 고효율 1.6리터 터보 엔진은 한 단계 발전한 지속가능 연료로 작동되며, 이는 아우디가 포뮬러1에 진출하기 위한 전제 조건이다.<br><br>
+
+                젊은 타깃층과 핵심 시장에서의 높은 인기
+                잘 알려진 것과 같이 고도의 기술력을 필요로 하는 열정적인 레이스인 포뮬러1은 아우디가 추구하는 바를 모두 충족시키고 있다. 포뮬러1 레이스는 모두 아우디의 주요 시장에서 개최된다. 또한 세계에서 가장 까다로운 경주용 전기차 레이스로써 자동차 제조사의 관심이 집중되는 곳이다. 이 치열한 경쟁이 벌어지는 곳에서 아우디는 ‘기술을 통한 진보(Vorsprung durch Technik)‘ 를 증명하기 위한 도전에 나서는 것이다.<br><br>
+
+                전 세계적으로 높은 관심을 받고 있는 포뮬러1은 가장 많은 팬을 확보하고 있는 스포츠 이벤트 중 하나로, 2021년에는 15억 명 이상의 시청자들이 텔레비전으로 경기를 관람했다. 포뮬러1은 또한 중국이나 미국 같은 핵심 시장에서 큰 인기를 끌고 있으며, 그 인기는 젊은층 사이에서도 계속적으로 증가하고 있다. 또한 SNS 상에서 전세계적으로 가장 빠른 성장세를 보이고 있는 스포츠 경기 역시 포뮬러1이다.<br><br>
+
+                노이부르크 센터에서 파워 유닛 개발
+                파워 유닛은 잉골슈타트 아우디 AG 본사에서 멀지 않은 노이부르크안데어도나우의 최첨단 아우디 ‘컴피턴스 센터 모터스포트 (Competence Center Motorsport)’에서 제작될 예정이다. 아우디 모터스포츠 부문 재편의 일환으로 포뮬러1 진출을 추진한 아우디 스포트 (Audi Sport)의 수장 율리우스 시바흐(Julius Seebach)는 “포뮬러1 파워트레인 개발 및 제작을 위해 아우디 모터스포츠 전문가들의 전문지식과 경험을 활용하고, 지속적으로 투자하며, 고도의 전문 인력을 기용할 것이다.” 라고 말했다.<br><br>
+
+                노이부르크에는 이미 포뮬러1 엔진 테스트와 전기 엔진, 배터리 테스트를 위한 부서가 준비되어 있다. 추가로 필요한 인력, 건물, 기술 인프라를 마련 중이며, 연말까지 필요한 모든 준비가 마무리될 예정이다. 최근 아우디 스포트가 전액 출자하여 파워 유닛 프로젝트를 위한 별도의 자회사를 설립했으며, 아담 바커(Adam Baker)가 CEO로서 해당 회사의 경영을 맡아 포뮬러1 프로젝트를 책임지게 된다. 숙련된 엔지니어 바커는 여러 모터스포츠 제작사 및 드라이버 팀에서 임원으로 일했고, 2021년 아우디에 합류하기 전까지는 3년간 FIA에서 일했다.<br><br>
+
+                아우디는 올 해 안에 2026년 포뮬러1에서 함께할 팀을 공식적으로 발표할 예정이다.<br><br>
+
+                포뮬러1 진출 결정, 모터스포츠 분야에 대한 선택과 집중<br>
+                아우디 스포트는 포뮬러1 프로젝트에 역량을 집중하기 위해 르망 데이토나 하이브리드(LMDh) 프로젝트를 중단하기로 결정했으며 이미 모터스포츠 부문에서 내구레이스를 위한 스포츠카 생산을 중단한 상태다. 한편, 아우디 스포트에서는 고객 참여 레이싱과 더불어 다카르 랠리를 위한 혁신적인 RS-Q e-tron 프로젝트를 지속적으로 추진할 예정이며, 내년 다카르 랠리에서 종합 우승을 노리고 있다.<br><br>
+
+                월드 랠리 챔피언십, 월드 스포츠카 챔피언십, US 모터스포츠, DTM, 르망, 그리고 포뮬러 E까지, 아우디 스포트는 수많은 타이틀을 따내며 다양한 부문에서 하나의 기준으로 자리매김 해왔다. 율리우스 시바흐는 “포뮬러 1은 아우디 모터스포츠 역사의 또 다른 전환점이다.” 라고 말했다.<br><br>
+
+                아우디 스포트의 새로운 CEO, 율리우스 시바흐(Julius Seebach)의 뒤를 잇는 롤프 미쉘(Rolf Michl)<br>
+                아우디의 포뮬러1 진출은 모터스포츠 부문 재편의 결과인 동시에 아우디 스포트 (Audi Sport GmbH)의 완성을 의미한다. 율리우스 시바흐는 2022년 9월 1일부터 아우디 AG에 합류해 기술 개발 부문의 새로운 전략적 비즈니스 담당으로 이사회에 직접 보고하는 역할을 맡게 된다.<br><br>
+
+                아우디 스포트의 자문 위원회 의장인 올리버 호프만은 “율리우스는 어려운 시기에 선견지명과 일관된 정책으로 지속 가능한 결과를 보여주었다.” 라며 율리우스 시바흐의 노고에 감사를 표했다. 율리우스 시바흐의 리더십 덕분에 아우디 스포트 GmbH는 수 차례 기록적인 판매와 매출을 달성했다. RS 모델의 공세로 판매는 두 배 증가했으며, 순수 전기차 RS e-tron GT를 성공적으로 출시했다.<br><br>
+
+                율리우스 시바흐는 2020년부터 아우디의 모터스포츠 부문까지 맡게 되었으며, 그의 리더십 아래 다카르 랠리를 위해 아우디 역사상 가장 고도화된 레이싱 카 RS Q e-tro의 개발이 기록적으로 짧은 시간 안에 마무리 되었다. 1월 다카르 랠리에서 네 번의 스테이지 우승을 거머쥐며 성공적으로 데뷔한 아우디 RS Q e-tron은 3월 아부다비 데저트 챌린지에서는 첫 종합 우승을 거뒀으며, 이것은 전기 파워트레인으로서는 첫 번째 데저트 랠리 우승이었다. 포뮬러1 입성은 율리우스 시바흐가 이뤄낸 마지막 쾌거이다.<br><br>
+
+                지난 2월부터 아우디 스포트의 레이싱 COO(Chief Operating Officer)로 일하고 있는 롤프 미쉘(Rolf Michl)이 오는 9월 1일부터 율리우스 시바흐의 뒤를 잇게 된다. 롤프 미쉘은 세바스찬 그램(Sebastian Grams) 박사와 함께 아우디 스포트의 이사회를 구성하게 된다. 비즈니스를 전공한 롤프 미쉘은 오랜 시간 아우디 스포트의 일원으로서 아우디 AG와 아우디 스포트 마케팅 부문의 다양한 직책을 역임했고, 2016년에는 RS 모델 마케팅 총괄이 되었다. 이후 Abt 스포츠라인에서 차량 커스터마이징 책임자로 일했고 2019년 다시 아우디 스포트 GmBH로 복귀, 세일즈 및 마케팅 부문 수장을 맡았다. 롤프 미쉘은 오랜 시간 아우디가 탄탄한 포트폴리오를 구성하고 성공적인 판매 실적을 내는 데 핵심적인 역할을 해왔다. 올리버 호프만은 “롤프는 진정한 리더로써, 모터스포츠와 양산을 위해 필요한 경험을 제공한다.” 라고 말했다. 롤프 미쉘은 마케팅 부문 직책 외에도 2014년 아우디 스포트의 TT 컵 기획과 운영을 총괄한 바 있다.<br><br>
+            </p>
+        </section>
+        <button class="board_list">
+            <!-- Audi_board_main 링크 -->
+            <a href="./Audi_board_main.html">목록</a>
+        </button>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="safe_w1728">
+            <!-- TopButton, SNS -->
+            <div class="topbtn_snsicon">
+                <div class="topbtn">
+                    <a href="#topbtn">
+                        <span>위로</span>
+                        <img src="./images/up_arrow.png" alt="top_button">
+                    </a>
+                </div>
+                <div class="snsicon">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                </div>
+            </div>
+            <!-- /TopButton, SNSicon -->
+            <div class="footer_flex cf">
+                <!-- Model -->
+                <dl class="model">
+                    <dt>Model</dt>
+                    <dd><a href="#">세단</a></dd>
+                    <dd><a href="#">SUV</a></dd>
+                    <dd><a href="#">쿠페</a></dd>
+                    <dd><a href="#">스포트백</a></dd>
+                    <dd><a href="#">카브리올레</a></dd>
+                    <dd><a href="#">전기차</a></dd>
+                    <dd><a href="#">S 모델</a></dd>
+                    <dd><a href="#">R/RS 모델</a></dd>
+                </dl>
+                <!-- /Model -->
+                <!-- Company -->
+                <dl class="company">
+                    <dt>Company</dt>
+                    <dd><a href="#">아우디코리아 소개</a></dd>
+                    <dd><a href="#">아우디코리아 소식</a></dd>
+                    <dd><a href="#">고객안내</a></dd>
+                    <dd><a href="#">아우디 공식 인증 중고차</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                </dl>
+                <!-- /Company -->
+                <!-- Audi Service -->
+                <dl class="service">
+                    <dt>Audi Service</dt>
+                    <dd><a href="#">아우디 서비스</a></dd>
+                    <dd><a href="#">서비스 프로그램</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                    <dd><a href="#">고객지원센터</a></dd>
+                    <dd><a href="#">아우디 순정부품</a></dd>
+                    <dd><a href="#">아우디 순정 액세서리</a></dd>
+                    <dd><a href="#">부품 가격 정보</a></dd>
+                    <dd><a href="#">사설수리업체를 위한 권고사항</a></dd>
+                    <dd><a href="#">아우디 영상 메뉴얼</a></dd>
+                </dl>
+                <!-- /Audi Service -->
+                <!-- Audi Experience -->
+                <dl class="service">
+                    <dt>Audi Experience</dt>
+                    <dd><a href="#">아우디 스토리</a></dd>
+                    <dd><a href="#">아우디 브랜드 소개</a></dd>
+                    <dd><a href="#">아우디 브랜드 히스토리</a></dd>
+                    <dd><a href="#">quattro 시스템</a></dd>
+                    <dd><a href="#">Audi Connect</a></dd>
+                    <dd><a href="#">More possibilities</a></dd>
+                    <dd><a href="#">Future is an attitude</a></dd>
+                    <dd><a href="#">myAudiworld</a></dd>
+                    <dd><a href="#">아우디 드라이빙 익스피리언스</a></dd>
+                </dl>
+                <!-- /Audi Experience -->
+                <!-- Audi Sustainability -->
+                <dl class="service">
+                    <dt>Audi Sustainability</dt>
+                    <dd><a href="#">전기 모빌리티</a></dd>
+                    <dd><a href="#">플러그인 하이브리드</a></dd>
+                </dl>
+            </div>
+                <!-- /Audi Sustainability -->
+                
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="copyright_flex cf">
+                    <p>
+                        &copy; 2022 Audi Korea. All rights reserved
+                    </p>
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">부정제보</a></li>
+                        <li><a href="#">타이어 에너지 소비 효율 등급 정보 조회</a></li>
+                        <li><a href="#">스마트키 KC인증 정보조회</a></li>
+                        <li><a href="#">AUDI AG의 개인정보처리에 관한 정보</a></li>
+                    </ul>
+                </div>
+                <p>
+                    본 웹사이트에서 제공되는 정보는 실제 판매 차량과 다를 수 있습니다.
+                </p>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="./fonts/AudiType-Normal_4.03.ttf"></script>
+    <script src="./js/header.js"></script>
+    </div>
+</body>
+</html>
