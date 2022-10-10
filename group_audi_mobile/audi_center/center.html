@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi center</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/audi_favicon.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/audi_favicon.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./fonts/AudiType-Normal_4.03.ttf">
+
+    <!-- js 플러그인 파일 --> 
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script> 
+    <!-- 페이지 JS,css -->
+    <link rel="stylesheet" href="./css/center.css"> 
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/audi_footer.css">
+    <!-- <link rel="stylesheet" href="./css/audi_footer.css"> -->
+    <link rel="stylesheet" href="./css/audikorea_sns.css">
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('.center_submenu').stop().toggle();
+            })
+        });
+    </script>
+
+    <style>
+        #center_wrap{
+            width: 1920px;
+            margin: 0 auto !important;
+        }
+        
+        .footer{
+            margin: 0 auto;
+        }
+        .safe_w1728 {
+            /* width: 1666px; */
+            width: 1728px;
+            margin: 0 auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="center_wrap">
+        <header>
+            <nav class="depth1 cf">
+                <h1 class="logo"><a href="../index.html"><img src="./images/main_logo.png" alt="HOME"></a></h1>
+                <ul class="gnb cf">
+                    <li><a href="../audi_newmodel/NewModel.html">New Model</a></li>
+                    <li>Company</li>
+                    <li>Audi Service</li>
+                    <li>Audi Experience</li>
+                    <li>Audi Sustainability</li>
+                    <p><img src="./images/search.png" alt="검색" class="search"></p>
+                </ul>
+            </nav>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="../audi_info/audi_info.html">아우디코리아 소개</a></li>
+                    <li><a href="#">고객 안내</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디코리아 소식</a></li>
+                    <li><a href="#">아우디 공식 인증 중고차</a></li>
+                </ul>
+                <p class="cf"><img src="./images/nav1.webp" alt="전시장 찾기" class="cf"></p>
+                <p><a href="#">전시장 찾기<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <div class="depth2">
+                <ul class="gnb2">
+                    <li><a href="#">아우디 서비스</a></li>
+                    <li><a href="./center.html">고객지원센터</a></li>
+                    <li><a href="#">부품 가격 정보</a></li>
+                    <li><a href="#">서비스 프로그램</a></li>
+                    <li><a href="#">아우디 순정부품</a></li>
+                    <li><a href="#">사설수리업체를 위한 권고사항</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디 순정 액세서리</a></li>
+                    <li><a href="#">아우디 영상 매뉴얼</a></li>
+                </ul>
+                <p><img src="./images/nav2.jpg" alt="서비스 센터"></p>
+                <p><a href="./center.html">서비스 센터<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2">
+                    <li><a href="#">아우디 스토리</a></li>
+                    <li><a href="#">quattro 시스템</a></li>
+                    <li><a href="#">e-tron GT concept</a></li>
+                    <li><a href="../audi_info/audi_info.html">아우디 브랜드 소개</a></li>
+                    <li><a href="#">Audi Connect</a></li>
+                    <li><a href="#">myAudiworld</a></li>
+                    <li><a href="#">More possibilities</a></li>
+                    <li><a href="#">아우디 브랜드 히스토리</a></li>
+                    <li><a href="#">아우디 드라이빙 익스피리언스</a></li>
+                </ul>
+                <p><img src="./images/nav3.jpg" alt="Future"></p>
+                <p><a href="#">Future is an attitude<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2">
+                    <li><a href="#">전기 모빌리티</a></li>
+                    <li><a href="#">플러그인 하이브리드</a></li>
+                    <li><a href="../Audi_board/Audi_board_main.html">게시판</a></li>
+                    <li></li>
+                </ul>
+                <p><img src="./images/nav4.jpg" alt="전기 모빌리티"></p>
+                <p><a href="#">전기 모빌리티<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <!-- 검색창 -->
+            <section class="gnb_search">
+<!-- 합치면 action 링크를 name="q" 와 함께 아우디 홈페이지로 바꿀 것 -->
+                <form action="https://www.google.com/search" method="GET">
+                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                    <input name="q" id="keyword" type="text" placeholder="검색/아우디 코드" required autofocus>
+                    <p><i class="fa fa-times" aria-hidden="true"></i></p>
+                    <p>빠른 링크</p>
+                    <ul class="search_keyword">
+<!-- 팀 프로젝트에서 제작된 링크 채울 것 -->
+                        <li><a href="../audi_info/audi_info.html">company</a></li>
+                        <li><a href="./center.html">audi service</a></li>
+                        <li><a href="../audi_newmodel/NewModel.html">audi new model</a></li>
+                        <li><a href="../Audi_board/Audi_board_main.html">게시판</a></li>
+                        <li><a href="./center.html">audi 고객지원센터</a></li>
+                        <li><a href="#">audi sustainability</a></li>
+                        <li><a href="#">audi experience</a></li>
+                    </ul>
+                </form>
+            </section>
+            <!-- 검색창 --> 
+        </header>
+    
+        <section class="center_slider">
+            <h2 class="center_main_img">
+                <img src="./images/center/2019_1400x438_topmain_13.jpg" alt="탑메인 이미지">
+            </h2>
+        </section>
+        <div class="center_position">
+            <nav class="center_list">
+                <ul class="center_gnb">
+                    <li><a href="#">아우디 서비스</a></li>
+                    <li><a href="#">서비스 프로그램</a></li>
+                    <li><a href="#">서비스 센터</a></li>
+                    <li><a href="#">고객지원센터</a></li>
+                    <li><a href="#">아우디 순정부품</a></li>
+                    <li><a href="#">아우디 순정액세서리</a></li>
+                    <li><a href="#">부품 가격 정보</a></li>
+                    <li class="more_btn">
+                        <input type="checkbox" id="btn">
+                        <label for="btn">더보기</label>
+                    </li>
+                </ul>
+                <ul class="center_submenu">
+                    <li><a href="#">사설수리업체를 위한 권고사항</a></li>
+                    <li><a href="#">아우디 영상 메뉴얼</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="call">
+                <p>
+                    아우디 고객지원센터 <br>
+                    <span>080 - 767 - 2834</span> <br>
+                    <span>(080 - sos - Audi)</span>
+                </p>
+                <p>
+                    아우디는 고객님 개개인에 맞는 맞춤형 서비스를 제공하기 위해 고객지원센터를 운영하고 있습니다. <br>
+                    언제 어디서나 최상의 서비스를 보다 빠르게 만나실 수 있습니다.
+                </p>
+            </div>
+            <section class="center_time">
+                <div class="center_time_box">
+                    <div class="time_img">
+                        <img src="./images/center/MainstageTeaser_730x730.jpg" alt="운영시간">
+                    </div>
+                    <h2>
+                        <span>운영시간</span>  <br>
+                        >&nbsp;&nbsp;365일 24시간 운영
+                    </h2>
+                </div>
+            </section>
+            <article class="center_service">
+                <div class="service_list">
+                    <h2>서비스항목</h2>
+                    <p>>&nbsp;&nbsp;긴급 출동 및 견인 서비스</p>
+                    <p>>&nbsp;&nbsp;사고 차량 지원 서비스</p>
+                    <p>>&nbsp;&nbsp;차량 구입 및 각종 이벤트 안내</p>
+                    <p>>&nbsp;&nbsp;아우디 서비스 안내</p>
+                </div>
+                <h2>
+                    <img src="./images/center/ew.jpg" alt="서비스 항목">
+                </h2>
+            </article>
+            <section class="vvip cf">
+                <h2>
+                    <img src="./images/center/vvip.jpg" alt="브이아이피">
+                </h2>
+                <div class="vvip_list">
+                    <h2>VVIP 고객지원센터</h2>
+                    <p>
+                        >&nbsp;&nbsp;Audi A8 고객전용 VVIP 고객지원센터는 <br>
+                        고객님께서 언제 어디에 계시든 도움이 <br>
+                        필요하실 때 신속하고 만족스러운 <br>
+                        서비스를 받으실 수 있도록 연중무휴로 <br>
+                        운영되고 있습니다.
+                    </p>
+                    <p>
+                        VVIP Audi(080-847-2834)와 함께 <br>
+                        품격 있는 최상의 서비스를 경험해 <br>
+                        보시기 바랍니다.
+                    </p>
+                </div>
+            </section>
+            <div class="katri">
+                <p><a href="#"><b>></b> &nbsp;&nbsp;KATRI(자동차안전연구원)의 자동차결함신고센터(car.go.kr) 바로 가기</a></p>
+            </div>
+        </main>
+        <section class="card_box">
+            <h4>아우디 서비스 더보기</h3>
+            <h2>
+                <ul class="card_box_list">
+                    <li>
+                        <a href="#">
+                            <img src="./images/center/img1.jpg" alt="카 서비스">
+                            <h3>카 서비스 플러스</h3>
+                            <p>
+                                아우디 공식 서비스센터에서 제공되는 차량 유지관리 서비스입니다.
+                            </p>
+                            <p>상세보기&nbsp;&nbsp;></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/center/img2.jpg" alt="아우디 사고지원">
+                            <h3>아우디 사고 수리 지원 프로그램</h3>
+                            <p>
+                                고객님의 안전한 이동과 차량의 완벽한 수리를 약속 드립니다.
+                            </p> 
+                            <p>상세보기&nbsp;&nbsp;></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/center/img3.jpg" alt="아우디 서비스">
+                            <h3>아우디 서비스 연장 패키지 프로</h3>
+                            <p>
+                                고객님의 차량을 최적의 컨디션으로 운행하시는데 도움을 드리는 차량 유지관리 프로그램
+                            </p>
+                            <p>상세보기&nbsp;&nbsp;></p>
+                        </a>
+                    </li>
+                </ul>
+            </h2>
+        </section>
+        <aside class="cf">
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html"><img src="./images/icon_steering.png" alt="시승신청"></a></p>
+                <p><a href="#"><img src="./images/icon_cart.png" alt="예약금 결제"></a></p>
+                <p><a href="#"><img src="./images/icon_cars.png" alt="전시장/AS 센터"></a></p>
+                <p><a href="#"><img src="./images/icon_chat.png" alt="상담신청"></a></p>
+            </div>
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html">시승신청</a></p>
+                <p><a href="#">예약금 결제</a></p>
+                <p><a href="#">전시장/AS 센터</a></p>
+                <p><a href="#">상담신청</a></p>
+            </div>
+        </aside>
+        <footer class="footer">
+            <div class="safe_w1728">
+                <!-- TopButton, SNS -->
+                <div class="topbtn_snsicon">
+                    <div class="topbtn">
+                        <a href="#topbtn">
+                            <span>위로</span>
+                            <img src="./images/up_arrow.png" alt="top_button">
+                        </a>
+                    </div>
+                    <div class="snsicon">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    </div>
+                </div>
+                <!-- /TopButton, SNSicon -->
+                <div class="footer_flex cf">
+                    <!-- Model -->
+                    <dl class="model">
+                        <dt>Model</dt>
+                        <dd><a href="#">세단</a></dd>
+                        <dd><a href="#">SUV</a></dd>
+                        <dd><a href="#">쿠페</a></dd>
+                        <dd><a href="#">스포트백</a></dd>
+                        <dd><a href="#">카브리올레</a></dd>
+                        <dd><a href="#">전기차</a></dd>
+                        <dd><a href="#">S 모델</a></dd>
+                        <dd><a href="#">R/RS 모델</a></dd>
+                    </dl>
+                    <!-- /Model -->
+                    <!-- Company -->
+                    <dl class="company">
+                        <dt>Company</dt>
+                        <dd><a href="#">아우디코리아 소개</a></dd>
+                        <dd><a href="#">아우디코리아 소식</a></dd>
+                        <dd><a href="#">고객안내</a></dd>
+                        <dd><a href="#">아우디 공식 인증 중고차</a></dd>
+                        <dd><a href="#">전시장/AS센터</a></dd>
+                    </dl>
+                    <!-- /Company -->
+                    <!-- Audi Service -->
+                    <dl class="service">
+                        <dt>Audi Service</dt>
+                        <dd><a href="#">아우디 서비스</a></dd>
+                        <dd><a href="#">서비스 프로그램</a></dd>
+                        <dd><a href="#">전시장/AS센터</a></dd>
+                        <dd><a href="#">고객지원센터</a></dd>
+                        <dd><a href="#">아우디 순정부품</a></dd>
+                        <dd><a href="#">아우디 순정 액세서리</a></dd>
+                        <dd><a href="#">부품 가격 정보</a></dd>
+                        <dd><a href="#">사설수리업체를 위한 권고사항</a></dd>
+                        <dd><a href="#">아우디 영상 메뉴얼</a></dd>
+                    </dl>
+                    <!-- /Audi Service -->
+                    <!-- Audi Experience -->
+                    <dl class="service">
+                        <dt>Audi Experience</dt>
+                        <dd><a href="#">아우디 스토리</a></dd>
+                        <dd><a href="#">아우디 브랜드 소개</a></dd>
+                        <dd><a href="#">아우디 브랜드 히스토리</a></dd>
+                        <dd><a href="#">quattro 시스템</a></dd>
+                        <dd><a href="#">Audi Connect</a></dd>
+                        <dd><a href="#">More possibilities</a></dd>
+                        <dd><a href="#">Future is an attitude</a></dd>
+                        <dd><a href="#">myAudiworld</a></dd>
+                        <dd><a href="#">아우디 드라이빙 익스피리언스</a></dd>
+                    </dl>
+                    <!-- /Audi Experience -->
+                    <!-- Audi Sustainability -->
+                    <dl class="service">
+                        <dt>Audi Sustainability</dt>
+                        <dd><a href="#">전기 모빌리티</a></dd>
+                        <dd><a href="#">플러그인 하이브리드</a></dd>
+                    </dl>
+                </div>
+                    <!-- /Audi Sustainability -->
+                    
+                
+                <!-- Copyright -->
+                <div class="copyright">
+                    <div class="copyright_flex cf">
+                        <p>
+                            &copy; 2022 Audi Korea. All rights reserved
+                        </p>
+                        <ul>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">부정제보</a></li>
+                            <li><a href="#">타이어 에너지 소비 효율 등급 정보 조회</a></li>
+                            <li><a href="#">스마트키 KC인증 정보조회</a></li>
+                            <li><a href="#">AUDI AG의 개인정보처리에 관한 정보</a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        본 웹사이트에서 제공되는 정보는 실제 판매 차량과 다를 수 있습니다.
+                    </p>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </div>
+    <script src="./fonts/AudiType-Normal_4.03.ttf"></script>
+    <script src="./js/header.js"></script>
+</body>
+</html>
