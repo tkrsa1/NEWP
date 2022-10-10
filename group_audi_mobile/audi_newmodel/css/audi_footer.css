@@ -1,0 +1,109 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'AudiType_footer';
+    src: url(../fonts/AudiType-ExtendedNormal_4.03.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'AudiType_ExBold';
+    src: url(../fonts/AudiType-ExtendedBold_4.03.ttf) format('truetype'); 
+}
+.safe_w1728 {
+    width: 1728px;
+    margin: 0 auto;
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 124px 0 60px;
+    height: 770px;
+    text-align: left;
+}
+.footer .footer_flex {
+    padding-bottom: 120px;
+    font-size: 12px;
+    border-bottom: 1px solid #494949;
+}
+.footer .footer_flex dl dd {
+    padding-top: 20px;
+    text-align: left;
+}
+.footer .footer_flex dl dt {
+    padding-bottom: 36px;
+    font-family: 'AudiType_footer';
+    letter-spacing: 1px;
+    
+    font-size: 18px;
+}
+.footer .footer_flex dl:last-child {
+    margin-right: -80px;
+}
+.footer .footer_flex dl:nth-child(1) {
+    float: left;
+    width: 354px;
+}
+.footer .footer_flex dl:nth-child(2) {
+    float: left;
+    width: 354px;
+}
+.footer .footer_flex dl:nth-child(3) {
+    float: left;
+    width: 354px;
+}
+.footer .footer_flex dl:nth-child(4) {
+    float: left;
+    width: 354px;
+}
+.footer .footer_flex dl:nth-child(5) {
+    float: left;
+    width: 354px;
+}
+.footer .topbtn_snsicon {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.footer .topbtn {
+    position: absolute;
+    right: 0;
+    top: -100px;
+}
+.footer .topbtn span {
+    margin-right: 20px;
+    font-size: 12px;
+}
+.footer .topbtn img {
+    width: 12px;
+    margin-top: 6px;            
+    filter:  brightness(0) invert(1);
+}
+.footer .snsicon {
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 400px;
+}
+.footer .snsicon a:first-child {
+    margin-right: 26px;
+}
+.footer .copyright {
+    padding-top: 24px;
+    font-size: 12px;
+}
+.footer .copyright_flex p:nth-child(1) {
+    float: left;
+    width: 297px;
+}
+.footer .copyright ul {
+    display: table;
+}
+.footer .copyright ul li {
+    display: table-cell;
+    padding-right: 26px;
+    font-size: 12px;
+    font-family: 'AudiType_normal_sns';
+    text-align: left;
+}
+.footer .copyright>p {
+    margin-top: 60px;
+}
