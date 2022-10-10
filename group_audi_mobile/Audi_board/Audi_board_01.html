@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="mcssam">
+        <meta name="description" content="Portfolio, Flex, Caxa UI">
+        <title>AUDI KOREA | 아우디 e-트론 GT 콰트로 </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./images/favicon/audi_favicon.png">
+        <link rel="apple-touch-icon=precomposed" href="./images/favicon/audi_favicon.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+        <link rel="stylesheet" href="./css/AudiType-WideNormal_4.03.ttf">
+        <!-- 페이지 CSS -->
+        <link rel="stylesheet" href="./css/audi_board.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/audi_footer.css">
+        <!-- JS 플러그인 파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        <!-- 페이지 JS -->
+        <script src="./js/header.js"></script>
+        <script src="../js/topbtn.js"></script>
+    </head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <nav class="depth1">
+                <h1 class="logo"><a href="../index.html"><img src="./images/main_logo.png" alt="HOME"></a></h1>
+                <ul class="gnb">
+                    <li><a href="../audi_newmodel/NewModel.html">New Models</a></li>
+                    <li>Company</li>
+                    <li>Audi Service</li>
+                    <li>Audi Experience</li>
+                    <li>Audi Sustainability</li>
+                </ul>
+                <p><img src="./images/search.png" alt="검색" class="search"></p>
+            </nav>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="../audi_info/audi_info.html">아우디코리아 소개</a></li>
+                    <li><a href="#">고객 안내</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디코리아 소식</a></li>
+                    <li><a href="#">아우디 공식 인증 중고차</a></li>
+                </ul>
+                <p class="cf"><img src="./images/nav1.webp" alt="전시장 찾기" class="cf"></p>
+                <p><a href="#">전시장 찾기<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 서비스</a></li>
+                    <li><a href="../audi_center/center.html">고객지원센터</a></li>
+                    <li><a href="#">부품 가격 정보</a></li>
+                    <li><a href="#">서비스 프로그램</a></li>
+                    <li><a href="#">아우디 순정부품</a></li>
+                    <li><a href="#">사설수리업체를 위한 권고사항</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디 순정 액세서리</a></li>
+                    <li><a href="#">아우디 영상 매뉴얼</a></li>
+                </ul>
+                <p><img src="./images/nav2.jpg" alt="서비스 센터"></p>
+                <p><a href="../audi_center/center.html">서비스 센터<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 스토리</a></li>
+                    <li><a href="#">quattro 시스템</a></li>
+                    <li><a href="#">e-tron GT concept</a></li>
+                    <li><a href="../audi_info/audi_info.html">아우디 브랜드 소개</a></li>
+                    <li><a href="#">Audi Connect</a></li>
+                    <li><a href="#">myAudiworld</a></li>
+                    <li><a href="#">More possibilities</a></li>
+                    <li><a href="#">아우디 브랜드 히스토리</a></li>
+                    <li><a href="#">아우디 드라이빙 익스피리언스</a></li>
+                </ul>
+                <p><img src="./images/nav3.jpg" alt="Future"></p>
+                <p><a href="#">Future is an attitude<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">전기 모빌리티</a></li>
+                    <li><a href="#">플러그인 하이브리드</a></li>
+                    <li><a href="./Audi_board_main.html">게시판</a></li>
+                    <li></li>
+                </ul>
+                <p><img src="./images/nav4.jpg" alt="전기 모빌리티"></p>
+                <p><a href="#">전기 모빌리티<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <!-- 검색창 -->
+            <section class="gnb_search">
+<!-- 합치면 action 링크를 name="q" 와 함께 아우디 홈페이지로 바꿀 것 -->
+                <form action="https://www.google.com/search" method="GET">
+                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                    <input name="q" id="keyword" type="text" placeholder="검색/아우디 코드" required autofocus>
+                    <p><i class="fa fa-times" aria-hidden="true"></i></p>
+                    <p>빠른 링크</p>
+                    <ul class="search_keyword">
+<!-- 팀 프로젝트에서 제작된 링크 채울 것 -->
+                        <li><a href="../audi_info/audi_info.html">company</a></li>
+                        <li><a href="../audi_center/center.html">audi 고객지원센터</a></li>
+                        <li><a href="../audi_newmodel/NewModel.html">audi new model</a></li>
+                        <li><a href="./Audi_board_main.html">게시판</a></li>
+                        <li><a href="#">audi sustainability</a></li>
+                        <li><a href="#">audi experience</a></li>
+                    </ul>
+                </form>
+            </section>
+            <!-- 검색창 -->
+        </header>   
+
+        <aside class="cf">
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html"><img src="./images/icon_steering.png" alt="시승신청"></a></p>
+                <p><a href="#"><img src="./images/icon_cart.png" alt="예약금 결제"></a></p>
+                <p><a href="#"><img src="./images/icon_cars.png" alt="전시장/AS 센터"></a></p>
+                <p><a href="#"><img src="./images/icon_chat.png" alt="상담신청"></a></p>
+            </div>
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html">시승신청</a></p>
+                <p><a href="#">예약금 결제</a></p>
+                <p><a href="#">전시장/AS 센터</a></p>
+                <p><a href="#">상담신청</a></p>
+            </div>
+        </aside>
+        <!-- /Header -->
+        <section class="board w1132">
+            
+            <img src="./images/audi_logo.png" alt="LOGO">
+            <h2>
+                아우디 e-트론 GT 콰트로, ‘월드 카 어워즈’에서 ‘올해의 월드 퍼포먼스 카’ 수상
+            </h2>
+            <h3>
+                2022-04-18
+            </h3>
+            <img src="https://www.audi.co.kr/content/dam/nemo/kr/main/sns/2022/%EC%82%AC%EC%A7%84%201.%20%EC%95%84%EC%9A%B0%EB%94%94%20e-%ED%8A%B8%EB%A1%A0%20GT%20%EC%BD%B0%ED%8A%B8%EB%A1%9C.jpg" alt="아우디">
+            <p>                
+                -‘아우디 e-트론 GT 콰트로’, 아우디에서 다섯 번째 ‘올해의 월드 퍼포먼스 카’ 수상<br>
+                -2005년부터 ‘월드 카 어워즈’에서 총 11번의 수상을 기록, ‘월드 카 어워즈’ 역사상 가장 성공적인 제조사 영예<br>
+                -‘아우디 e-트론 GT 콰트로’의 다재다능함과 정교한 지능형 열관리 시스템의 우수성 인정받아<br><br>
+                            
+                아우디는 순수 전기구동 쿠페 ‘아우디 e-트론 GT 콰트로’가 ‘월드 카 어워즈(World Car Awards)’에서 ‘올해의 월드 퍼포먼스 카(World Performance Car)’를 수상했다고 밝혔다.<br><br>
+                            
+                ‘아우디 e-트론 GT 콰트로’는 지난 13일 열린 2022 ‘월드 카 어워즈’에서 ‘올해의 월드 전기차(World Car of the Year)’, ‘올해의 월드 퍼포먼스 카(World Performance Car)’, ‘올해의 월드 자동차 디자인(World Car Design)’ 등 3개 부문에서 후보에 올랐으며, ‘올해의 월드 퍼포먼스 카’를 수상하는 쾌거를 달성했다. 이번 수상으로 아우디는 5번째 ‘올해의 월드 퍼포먼스 카’ 수상을 포함해 ‘월드 카 어워즈’에서 총 11번의 수상을 기록하며 월드 카 어워즈 역사상 가장 많은 수상을 기록한 브랜드이자 세계에서 성공적인 자동차 기업으로의 영예를 안았다.<br><br>
+                            
+                ‘아우디 e-트론 GT 콰트로’는 지난해 2월, 월드 프리미어를 통해 전 세계 첫 선을 보였다. 아우디가 제시하는 지속가능한 모빌리티의 미래를 가장 잘 보여주는 4도어 쿠페로 진보적인 엔지니어링 기술, 감성적인 디자인, 혁신적인 기술, 안전성과 일상적인 실용성, 스포티한 주행 성능을 갖춘 다재다능하고 선구적인 전기차다. 그 중에서도, 이상적인 온도를 유지하여 배터리와 구동 시스템의 요소들이 어떠한 환경에서도 최적의 퍼포먼스를 가능하게 해주는 ‘아우디 e-트론 GT 콰트로’의 정교한 지능형 열관리시스템의 우수성을 인정받아 수상하게 되었다.<br><br>
+                            
+                아우디의 기술 개발 최고운영책임자인 올리버 호프만은 시상식 이후 "아우디의 순수 전기차인 ‘아우디 e-트론 GT 콰트로’가 월드 프리미어 1년 만에 3개 부문에서 최종 후보에 오른 것을 기쁘게 생각한다"며 “특히, 아우디 e-트론 GT 콰트로가 이번 수상으로 아우디에 다섯 번째의 ‘올해의 월드 퍼포먼스 카’를 안겨줬다는 사실이 자랑스럽다. ‘아우디 e-트론 GT 콰트로’는 e-모빌리티의 지속가능성, 역동성과 매력을 증명했으며, 이것은 e-모빌리티 대한 아우디의 약속의 중요한 부분 중 하나다"라고 말했다.<br><br>
+                            
+                아우디는 2026년부터 글로벌 시장에 순수 전기 구동 시스템을 갖춘 모델만 출시할 계획이다. 그리고 2025년부터는 아우디가 진출한 지역에서 이루어지는 모든 생산은 탄소 중립을 유지할 것이며, 이미 아우디 브뤼셀과 기요르, ‘아우디 e-트론 GT 콰트로’가 생산되는 볼링거 호페 공장에서는 탄소 중립 생산이 이루어지고 있다.<br><br>
+                            
+                ‘월드 카 어워즈’는 자동차 업계의 ‘오스카(Oscars)’로 불리는 세계에서 가장 크고 권위 있는 자동차 어워즈로 2004년 시작해 올해로 18회째를 맞았다. 올해 시상 부문은 올해의 월드카, 올해의 월드 전기차, 올해의 월드 자동차 디자인, 올해의 월드 럭셔리 카, 올해의 월드 퍼포먼스 카, 올해의 월드 어반 카 등 6개로, 전 세계 100명이 넘는 저명한 자동차 기자들로 구성된 심사위원단의 평가와 투표로 부문별 최고의 차량을 선정했다.<br><br>
+            </p>
+        </section>
+        <button class="board_list">
+            <!-- Audi_board_main 링크 -->
+            <a href="./Audi_board_main.html">목록</a>
+        </button>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="safe_w1728">
+            <!-- TopButton, SNS -->
+            <div class="topbtn_snsicon">
+                <div class="topbtn">
+                    <a href="#topbtn">
+                        <span>위로</span>
+                        <img src="./images/up_arrow.png" alt="top_button">
+                    </a>
+                </div>
+                <div class="snsicon">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                </div>
+            </div>
+            <!-- /TopButton, SNSicon -->
+            <div class="footer_flex cf">
+                <!-- Model -->
+                <dl class="model">
+                    <dt>Model</dt>
+                    <dd><a href="#">세단</a></dd>
+                    <dd><a href="#">SUV</a></dd>
+                    <dd><a href="#">쿠페</a></dd>
+                    <dd><a href="#">스포트백</a></dd>
+                    <dd><a href="#">카브리올레</a></dd>
+                    <dd><a href="#">전기차</a></dd>
+                    <dd><a href="#">S 모델</a></dd>
+                    <dd><a href="#">R/RS 모델</a></dd>
+                </dl>
+                <!-- /Model -->
+                <!-- Company -->
+                <dl class="company">
+                    <dt>Company</dt>
+                    <dd><a href="#">아우디코리아 소개</a></dd>
+                    <dd><a href="#">아우디코리아 소식</a></dd>
+                    <dd><a href="#">고객안내</a></dd>
+                    <dd><a href="#">아우디 공식 인증 중고차</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                </dl>
+                <!-- /Company -->
+                <!-- Audi Service -->
+                <dl class="service">
+                    <dt>Audi Service</dt>
+                    <dd><a href="#">아우디 서비스</a></dd>
+                    <dd><a href="#">서비스 프로그램</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                    <dd><a href="#">고객지원센터</a></dd>
+                    <dd><a href="#">아우디 순정부품</a></dd>
+                    <dd><a href="#">아우디 순정 액세서리</a></dd>
+                    <dd><a href="#">부품 가격 정보</a></dd>
+                    <dd><a href="#">사설수리업체를 위한 권고사항</a></dd>
+                    <dd><a href="#">아우디 영상 메뉴얼</a></dd>
+                </dl>
+                <!-- /Audi Service -->
+                <!-- Audi Experience -->
+                <dl class="service">
+                    <dt>Audi Experience</dt>
+                    <dd><a href="#">아우디 스토리</a></dd>
+                    <dd><a href="#">아우디 브랜드 소개</a></dd>
+                    <dd><a href="#">아우디 브랜드 히스토리</a></dd>
+                    <dd><a href="#">quattro 시스템</a></dd>
+                    <dd><a href="#">Audi Connect</a></dd>
+                    <dd><a href="#">More possibilities</a></dd>
+                    <dd><a href="#">Future is an attitude</a></dd>
+                    <dd><a href="#">myAudiworld</a></dd>
+                    <dd><a href="#">아우디 드라이빙 익스피리언스</a></dd>
+                </dl>
+                <!-- /Audi Experience -->
+                <!-- Audi Sustainability -->
+                <dl class="service">
+                    <dt>Audi Sustainability</dt>
+                    <dd><a href="#">전기 모빌리티</a></dd>
+                    <dd><a href="#">플러그인 하이브리드</a></dd>
+                </dl>
+            </div>
+                <!-- /Audi Sustainability -->
+                
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="copyright_flex cf">
+                    <p>
+                        &copy; 2022 Audi Korea. All rights reserved
+                    </p>
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">부정제보</a></li>
+                        <li><a href="#">타이어 에너지 소비 효율 등급 정보 조회</a></li>
+                        <li><a href="#">스마트키 KC인증 정보조회</a></li>
+                        <li><a href="#">AUDI AG의 개인정보처리에 관한 정보</a></li>
+                    </ul>
+                </div>
+                <p>
+                    본 웹사이트에서 제공되는 정보는 실제 판매 차량과 다를 수 있습니다.
+                </p>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="./fonts/AudiType-Normal_4.03.ttf"></script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="mcssam">
+        <meta name="description" content="Portfolio, Flex, Caxa UI">
+        <title>AUDI KOREA| 아우디, ‘뉴 아우디 A3 40 TFSI’ 출시</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./images/favicon/audi_favicon.png">
+        <link rel="apple-touch-icon=precomposed" href="./images/favicon/audi_favicon.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+        <link rel="stylesheet" href="./css/AudiType-WideNormal_4.03.ttf">
+        <!-- 페이지 CSS -->
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/audi_board.css">
+        <link rel="stylesheet" href="./css/audi_footer.css">
+        <!-- JS 플러그인 파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>        
+        <!-- 페이지 JS -->
+        <script src="./js/header.js"></script>
+        <script src="../js/topbtn.js"></script>
+    </head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <nav class="depth1">
+                <h1 class="logo"><a href="../index.html"><img src="./images/main_logo.png" alt="HOME"></a></h1>
+                <ul class="gnb">
+                    <li><a href="../audi_newmodel/NewModel.html">New Models</a></li>
+                    <li>Company</li>
+                    <li>Audi Service</li>
+                    <li>Audi Experience</li>
+                    <li>Audi Sustainability</li>
+                </ul>
+                <p><img src="./images/search.png" alt="검색" class="search"></p>
+            </nav>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="../audi_info/audi_info.html">아우디코리아 소개</a></li>
+                    <li><a href="#">고객 안내</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디코리아 소식</a></li>
+                    <li><a href="#">아우디 공식 인증 중고차</a></li>
+                </ul>
+                <p class="cf"><img src="./images/nav1.webp" alt="전시장 찾기" class="cf"></p>
+                <p><a href="#">전시장 찾기<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 서비스</a></li>
+                    <li><a href="../audi_center.html">고객지원센터</a></li>
+                    <li><a href="#">부품 가격 정보</a></li>
+                    <li><a href="#">서비스 프로그램</a></li>
+                    <li><a href="#">아우디 순정부품</a></li>
+                    <li><a href="#">사설수리업체를 위한 권고사항</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디 순정 액세서리</a></li>
+                    <li><a href="#">아우디 영상 매뉴얼</a></li>
+                </ul>
+                <p><img src="./images/nav2.jpg" alt="서비스 센터"></p>
+                <p><a href="../audi_center/center.html">서비스 센터<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 스토리</a></li>
+                    <li><a href="#">quattro 시스템</a></li>
+                    <li><a href="#">e-tron GT concept</a></li>
+                    <li><a href="../audi_info/audi_info.html">아우디 브랜드 소개</a></li>
+                    <li><a href="#">Audi Connect</a></li>
+                    <li><a href="#">myAudiworld</a></li>
+                    <li><a href="#">More possibilities</a></li>
+                    <li><a href="#">아우디 브랜드 히스토리</a></li>
+                    <li><a href="#">아우디 드라이빙 익스피리언스</a></li>
+                </ul>
+                <p><img src="./images/nav3.jpg" alt="Future"></p>
+                <p><a href="#">Future is an attitude<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">전기 모빌리티</a></li>
+                    <li><a href="#">플러그인 하이브리드</a></li>
+                    <li><a href="./Audi_board_main.html">게시판</a></li>
+                    <li></li>
+                </ul>
+                <p><img src="./images/nav4.jpg" alt="전기 모빌리티"></p>
+                <p><a href="#">전기 모빌리티<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <!-- 검색창 -->
+            <section class="gnb_search">
+<!-- 합치면 action 링크를 name="q" 와 함께 아우디 홈페이지로 바꿀 것 -->
+                <form action="https://www.google.com/search" method="GET">
+                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                    <input name="q" id="keyword" type="text" placeholder="검색/아우디 코드" required autofocus>
+                    <p><i class="fa fa-times" aria-hidden="true"></i></p>
+                    <p>빠른 링크</p>
+                    <ul class="search_keyword">
+<!-- 팀 프로젝트에서 제작된 링크 채울 것 -->
+                        <li><a href="../audi_info/audi_info.html">company</a></li>
+                        <li><a href="../audi_center/center.html">audi 고객지원센터</a></li>
+                        <li><a href="../audi_newmodel/NewModel.html">audi new model</a></li>
+                        <li><a href="./Audi_board_main.html">게시판</a></li>
+                        <li><a href="#">audi sustainability</a></li>
+                        <li><a href="#">audi experience</a></li>
+                    </ul>
+                </form>
+            </section>
+            <!-- 검색창 -->
+        </header>   
+        <aside class="cf">
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html"><img src="./images/icon_steering.png" alt="시승신청"></a></p>
+                <p><a href="#"><img src="./images/icon_cart.png" alt="예약금 결제"></a></p>
+                <p><a href="#"><img src="./images/icon_cars.png" alt="전시장/AS 센터"></a></p>
+                <p><a href="#"><img src="./images/icon_chat.png" alt="상담신청"></a></p>
+            </div>
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html">시승신청</a></p>
+                <p><a href="#">예약금 결제</a></p>
+                <p><a href="#">전시장/AS 센터</a></p>
+                <p><a href="#">상담신청</a></p>
+            </div>
+        </aside>
+        <!-- /Header -->
+        <section class="board w1132">
+            <img src="./images/audi_logo.png" alt="LOGO">
+            <h2>
+                아우디, ‘뉴 아우디 A3 40 TFSI’ 출시
+            </h2>
+            <h3>
+                2022-07-11
+            </h3>
+            <img src="https://www.audi.co.kr/content/dam/nemo/kr/news/2022/audi01_800x383.jpg" alt="아우디">
+            <p>                
+                - 민첩하고 안정적인 드라이빙 퍼포먼스를 겸비한 컴팩트 세단… ‘뉴 아우디 A3 40 TFSI’ 및 ‘뉴 아우디 A3 40 TFSI 프리미엄’의 두가지 트림으로 출시<br>
+                - 2.0L 직렬 4기통 가솔린 직분사 터보차저 엔진과 S트로닉 7단 자동 변속기 탑재… 이전 모델 대비 20마력 향상으로 최고 출력 204마력, 최대 토크 30.59kg.m 발휘<br>
+                - 이전 모델 대비 4cm 길어진 전장, 2cm 넓어진 폭과 1cm 높아진 전고로 보다 여유 있는 실내공간 제공<br><br>
+
+                아우디 코리아(사장: 임현기)가 ‘뉴 아우디 A3 40 TFSI(New Audi A3 40 TFSI)’와 ‘뉴 아우디 A3 40 TFSI 프리미엄(New Audi A3 40 TFSI Premium)’을 출시하고 7월 14일부터 판매를 시작한다고 밝혔다.<br><br>
+
+                이번에 선보이는 2세대 ‘뉴 아우디 A3’는 탁월한 승차감, 민첩하고 안정적인 드라이빙 성능, 여유로운 실내 공간으로 4도어 컴팩트 세단의 가치를 혁신적으로 끌어올렸다는 평가를 받고 있다. ‘뉴 아우디 A3 40 TFSI’는 기본형과 프리미엄의 2가지 트림으로 출시되며, 이전 모델 대비 4cm 길어진 전장, 2cm 넓어진 폭과 1cm 높아진 전고로 보다 여유 있는 레그룸과 헤드룸을 제공한다. 또한, 이전 모델 대비 약 20마력 향상된 204마력으로 역동적이고 스포티한 주행성능을 자랑하며, 사용자 중심적인 인포테인먼트 시스템을 비롯해 업그레이드된 다양한 안전 및 편의 사양을 탑재하고 있다.<br><br>
+
+                눈길을 사로잡는 우아하고 스포티한 디자인<br>
+                ‘뉴 아우디 A3’는 컴팩트한 비율과 스포티한 디자인이 특징이다. 전면부의 눈에 띄는 헤드라이트, 넓은 싱글 프레임과 대형 공기 흡입구는 역동적인 A3만의 특성을 강조한다. 확장된 측면의 라인과 쿠페 디자인 루프라인은 이전 세대 대비 더욱 낮은 공기저항계수를 달성하는 동시에 우아하면서도 강인한 외관을 완성했다. 두 모델에 탑재된 ‘LED 헤드라이트 및 주간주행등’과 다이내믹 턴 시그널이 적용된 ‘LED 테일라이트’는 높은 밝기와 촘촘하게 배열된 광선을 통해 보다 넓은 가시범위를 제공하며, 뛰어난 시인성으로 안전한 주행을 도와준다. ‘뉴 아우디 A3 40 TFSI’에는 17인치 5-스포크 휠과 플래티넘 그레이 인레이를 적용했으며, ‘뉴 아우디 A3 40 TFSI 프리미엄’에는 18인치 5-스포크 Y-스타일 휠, 다크 알루미늄 스펙트럼 인레이, S라인 익스테리어 패키지를 적용하여 보다 역동적인 인상을 준다.<br><br>
+
+                ‘뉴 아우디 A3 40 TFSI’와 ‘뉴 아우디 A3 40 TFSI 프리미엄’의 실내는 아우디 브랜드만의 프리미엄 감성을 보여주며, 다기능 3-스포크 가죽 스티어링 휠, 앞좌석 전동 및 열선 가죽 시트, 4방향 요추 지지대 등은 운전자와 동승자에게 편안한 주행 환경을 선사한다. 특히, ‘뉴 아우디 A3 40 TFSI 프리미엄’에는 스포츠 시트, S로고 도어 실 플레이트, 알루미늄 룩 인테리어, 서른 가지 색상 옵션을 제공하는 앰비언트 라이트, 블랙 헤드라이닝 등을 통해 아우디만의 섬세하고 고급스러운 분위기를 연출한다.<br><br>
+
+                컴팩트한 바디에 숨겨진 강력한 파워트레인<br>
+                ‘뉴 아우디 A3 40 TFSI’과 ‘뉴 아우디 A3 40 TFSI 프리미엄’ 두 모델 모두 2.0L 직렬 4기통 가솔린 직분사 터보차저 (TFSI) 엔진과 7단 S트로닉 자동 변속기를 탑재해 최고 출력 204마력, 최대 토크 30.59kg.m의 강력한 주행성능을 발휘한다. 정지상태에서 100km/h까지 가속 시간은 7초, 최고 속도는 209km/h, 연비는 복합 연비 기준 13km/l이다(도심: 11.4km/l, 고속도로: 15.5km/l). 또한, ‘아우디 드라이브 셀렉트’를 통해 주행 상황에 따라 주행 모드를 변경하거나 개인별 취향에 맞는 주행 모드를 선택할 수 있다.<br><br>
+
+                사용자 중심적이며 향상된 안전 및 편의 사양<br>
+                ‘뉴 아우디 A3 40 TFSI’과 ‘뉴 아우디 A3 40 TFSI 프리미엄’에는 보다 사용자 중심적이고 높은 연결성을 자랑하는 인포테인먼트 시스템, 업그레이드된 안전 및 편의 기능과 운전자 보조시스템 등 풀 사이즈 세그먼트에서만 볼 수 있는 다양한 기능을 기본으로 탑재했다. 사각지대나 후방에서 차량이 접근해 오는 경우 사이드 미러에 경고등을 점멸하는 ‘사이드 어시스트’, 앞차의 위험한 주행 상황을 감지하면 운전자에게 경고 및 감속을 돕는 ‘프리센스 프론트’ 등은 안전한 주행을 돕는다.<br><br>
+
+                이와 함께, 차량과 스마트폰을 연결하여 네비게이션, 통화, 음악 등 스마트폰의 다양한 기능을 조절할 수 있는 ‘아우디 스마트폰 인터페이스’, 아우디 사운드 시스템, 무선충전 등 다양한 인포테인먼트 시스템을 갖춰 드라이빙의 즐거움을 더했다. 특히, ‘뉴 아우디 A3 40 TFSI 프리미엄’에는 ‘10.25인치 버츄얼 콕핏’과 MMI내비게이션 플러스가 탑재되어 운전자가 모든 차량 정보를 통합적이고 직관적으로 컨트롤 할 수 있도록 도와주며, ‘아우디 커넥트’ 시스템을 통해 온라인 교통정보 서비스, 위성지도 등 운전자를 위한 다양한·정보를 제공한다.<br><br>
+
+                ‘뉴 아우디 A3 40 TFSI’의 가격은 40,203,000원, ‘뉴 아우디 A3 40 TFSI 프리미엄’의 가격은 44,130,000 원이다 (부가세 포함, 개별 소비세 인하 적용 기준).<br><br>
+
+                한편, 아우디는 공식 딜러사를 통해 판매하는 모든 아우디 모델의 기본 보증인 “Audi Warranty”를 5년 또는 최종 주행거리 15만km까지 (선 도래 조건) 보장하고 있다. 또한, 아우디는 모든 차종 대상으로 기본적인 차량 보증 서비스 외에도 차량 유지 관리를 위해 정기점검 및 소모성 부품 교환 등을 제공하는 ‘아우디 카 서비스 플러스’ 프로그램을 제공하고 있다. ‘아우디 카 서비스 플러스’는 제조사에서 권장하는 차량 점검 주기에 맞는 필수 교환 부품 및 서비스를 제공하여 보다 전문적이고 체계적인 차량 유지관리를 도와주는 프로그램으로 전국 아우디 공식 서비스센터에서 별도의 비용 없이 이용할 수 있다.<br><br>
+            </p>
+        </section>
+        <button class="board_list">
+            <!-- Audi_board_main 링크 -->
+            <a href="./Audi_board_main.html">목록</a>
+        </button>
+       <!-- Footer -->
+    <footer class="footer">
+        <div class="safe_w1728">
+            <!-- TopButton, SNS -->
+            <div class="topbtn_snsicon">
+                <div class="topbtn">
+                    <a href="#topbtn">
+                        <span>위로</span>
+                        <img src="./images/up_arrow.png" alt="top_button">
+                    </a>
+                </div>
+                <div class="snsicon">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                </div>
+            </div>
+            <!-- /TopButton, SNSicon -->
+            <div class="footer_flex cf">
+                <!-- Model -->
+                <dl class="model">
+                    <dt>Model</dt>
+                    <dd><a href="#">세단</a></dd>
+                    <dd><a href="#">SUV</a></dd>
+                    <dd><a href="#">쿠페</a></dd>
+                    <dd><a href="#">스포트백</a></dd>
+                    <dd><a href="#">카브리올레</a></dd>
+                    <dd><a href="#">전기차</a></dd>
+                    <dd><a href="#">S 모델</a></dd>
+                    <dd><a href="#">R/RS 모델</a></dd>
+                </dl>
+                <!-- /Model -->
+                <!-- Company -->
+                <dl class="company">
+                    <dt>Company</dt>
+                    <dd><a href="#">아우디코리아 소개</a></dd>
+                    <dd><a href="#">아우디코리아 소식</a></dd>
+                    <dd><a href="#">고객안내</a></dd>
+                    <dd><a href="#">아우디 공식 인증 중고차</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                </dl>
+                <!-- /Company -->
+                <!-- Audi Service -->
+                <dl class="service">
+                    <dt>Audi Service</dt>
+                    <dd><a href="#">아우디 서비스</a></dd>
+                    <dd><a href="#">서비스 프로그램</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                    <dd><a href="#">고객지원센터</a></dd>
+                    <dd><a href="#">아우디 순정부품</a></dd>
+                    <dd><a href="#">아우디 순정 액세서리</a></dd>
+                    <dd><a href="#">부품 가격 정보</a></dd>
+                    <dd><a href="#">사설수리업체를 위한 권고사항</a></dd>
+                    <dd><a href="#">아우디 영상 메뉴얼</a></dd>
+                </dl>
+                <!-- /Audi Service -->
+                <!-- Audi Experience -->
+                <dl class="service">
+                    <dt>Audi Experience</dt>
+                    <dd><a href="#">아우디 스토리</a></dd>
+                    <dd><a href="#">아우디 브랜드 소개</a></dd>
+                    <dd><a href="#">아우디 브랜드 히스토리</a></dd>
+                    <dd><a href="#">quattro 시스템</a></dd>
+                    <dd><a href="#">Audi Connect</a></dd>
+                    <dd><a href="#">More possibilities</a></dd>
+                    <dd><a href="#">Future is an attitude</a></dd>
+                    <dd><a href="#">myAudiworld</a></dd>
+                    <dd><a href="#">아우디 드라이빙 익스피리언스</a></dd>
+                </dl>
+                <!-- /Audi Experience -->
+                <!-- Audi Sustainability -->
+                <dl class="service">
+                    <dt>Audi Sustainability</dt>
+                    <dd><a href="#">전기 모빌리티</a></dd>
+                    <dd><a href="#">플러그인 하이브리드</a></dd>
+                </dl>
+            </div>
+                <!-- /Audi Sustainability -->
+                
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="copyright_flex cf">
+                    <p>
+                        &copy; 2022 Audi Korea. All rights reserved
+                    </p>
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">부정제보</a></li>
+                        <li><a href="#">타이어 에너지 소비 효율 등급 정보 조회</a></li>
+                        <li><a href="#">스마트키 KC인증 정보조회</a></li>
+                        <li><a href="#">AUDI AG의 개인정보처리에 관한 정보</a></li>
+                    </ul>
+                </div>
+                <p>
+                    본 웹사이트에서 제공되는 정보는 실제 판매 차량과 다를 수 있습니다.
+                </p>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="./fonts/AudiType-Normal_4.03.ttf"></script>
+    <script src="./fonts/AudiType-Normal_4.03.ttf"></script>
+
+    </div>
+</body>
+</html>

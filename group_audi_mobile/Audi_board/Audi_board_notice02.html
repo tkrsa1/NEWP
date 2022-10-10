@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="mcssam">
+        <meta name="description" content="Portfolio, Flex, Caxa UI">
+        <title>AUDI | 게시판</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./images/favicon/audi_favicon.png">
+        <link rel="apple-touch-icon=precomposed" href="./images/favicon/audi_favicon.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+        <link rel="stylesheet" href="./css/AudiType-WideNormal_4.03.ttf">
+        <!-- 페이지 CSS -->
+        <link rel="stylesheet" href="./css/audi_board.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/audi_footer.css">
+        <!-- JS 플러그인 파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        
+        <!-- 페이지 JS -->
+        
+        <script src="../js/topbtn.js"></script>
+
+    </head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <nav class="depth1">
+                <h1 class="logo"><a href="../index.html"><img src="./images/main_logo.png" alt="HOME"></a></h1>
+                <ul class="gnb">
+                    <li><a href="../audi_newmodel/NewModel.html">New Models</a></li>
+                    <li>Company</li>
+                    <li>Audi Service</li>
+                    <li>Audi Experience</li>
+                    <li>Audi Sustainability</li>
+                </ul>
+                <p><img src="../images/search.png" alt="검색" class="search"></p>
+            </nav>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="../audi_info/audi_info.html">아우디코리아 소개</a></li>
+                    <li><a href="#">고객 안내</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디코리아 소식</a></li>
+                    <li><a href="#">아우디 공식 인증 중고차</a></li>
+                </ul>
+                <p class="cf"><img src="./images/nav1.webp" alt="전시장 찾기" class="cf"></p>
+                <p><a href="#">전시장 찾기<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 서비스</a></li>
+                    <li><a href="../audi_center/center.html">고객지원센터</a></li>
+                    <li><a href="#">부품 가격 정보</a></li>
+                    <li><a href="#">서비스 프로그램</a></li>
+                    <li><a href="#">아우디 순정부품</a></li>
+                    <li><a href="#">사설수리업체를 위한 권고사항</a></li>
+                    <li><a href="#">전시장/AS센터</a></li>
+                    <li><a href="#">아우디 순정 액세서리</a></li>
+                    <li><a href="#">아우디 영상 매뉴얼</a></li>
+                </ul>
+                <p><img src="./images/nav2.jpg" alt="서비스 센터"></p>
+                <p><a href="../audi_center/center.html">서비스 센터<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">아우디 스토리</a></li>
+                    <li><a href="#">quattro 시스템</a></li>
+                    <li><a href="#">e-tron GT concept</a></li>
+                    <li><a href="../audi_info/audi_info.html">아우디 브랜드 소개</a></li>
+                    <li><a href="#">Audi Connect</a></li>
+                    <li><a href="#">myAudiworld</a></li>
+                    <li><a href="#">More possibilities</a></li>
+                    <li><a href="#">아우디 브랜드 히스토리</a></li>
+                    <li><a href="#">아우디 드라이빙 익스피리언스</a></li>
+                </ul>
+                <p><img src="./images/nav3.jpg" alt="Future"></p>
+                <p><a href="#">Future is an attitude<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div> 
+            <div class="depth2">
+                <ul class="gnb2 cf">
+                    <li><a href="#">전기 모빌리티</a></li>
+                    <li><a href="#">플러그인 하이브리드</a></li>
+                    <li><a href="./Audi_board_main.html">게시판</a></li>
+                    <li></li>
+                </ul>
+                <p><img src="./images/nav4.jpg" alt="전기 모빌리티"></p>
+                <p><a href="#">전기 모빌리티<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+            <!-- 검색창 -->
+            <section class="gnb_search">
+<!-- 합치면 action 링크를 name="q" 와 함께 아우디 홈페이지로 바꿀 것 -->
+                <form action="https://www.google.com/search" method="GET">
+                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                    <input name="q" id="keyword" type="text" placeholder="검색/아우디 코드" required autofocus>
+                    <p><i class="fa fa-times" aria-hidden="true"></i></p>
+                    <p>빠른 링크</p>
+                    <ul class="search_keyword">
+<!-- 팀 프로젝트에서 제작된 링크 채울 것 -->
+                        <li><a href="../audi_info/audi_info.html">company</a></li>
+                        <li><a href="../audi_center/center.html">audi 고객지원센터</a></li>
+                        <li><a href="../audi_newmodel/NewModel.html">audi new model</a></li>
+                        <li><a href="./Audi_board_main.html">게시판</a></li>
+                        <li><a href="#">audi sustainability</a></li>
+                        <li><a href="#">audi experience</a></li>
+                    </ul>
+                </form>
+            </section>
+            <!-- 검색창 -->
+        </header>   
+        <aside class="cf">
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html"><img src="./images/icon_steering.png" alt="시승신청"></a></p>
+                <p><a href="#"><img src="./images/icon_cart.png" alt="예약금 결제"></a></p>
+                <p><a href="#"><img src="./images/icon_cars.png" alt="전시장/AS 센터"></a></p>
+                <p><a href="#"><img src="./images/icon_chat.png" alt="상담신청"></a></p>
+            </div>
+            <div>
+                <p><a href="../audi_consulting/audi_consulting.html">시승신청</a></p>
+                <p><a href="#">예약금 결제</a></p>
+                <p><a href="#">전시장/AS 센터</a></p>
+                <p><a href="#">상담신청</a></p>
+            </div>
+        </aside>
+        <!-- /Header -->
+        <section class="board w1132">
+            <img src="./images/audi_logo.png" alt="LOGO">
+            <h2>
+                Audi Connect 서비스 위치정보사업 이용약관
+            </h2>
+            <h3>
+                2021-06-11
+            </h3>
+            <p>
+                <span class="board_span01">제1장 총칙</span><br>
+                <span class="board_span02">제1조 (목적)</span><br>
+                본 약관은 아우디폭스바겐코리아 주식회사(이하 “회사”)가 제공하는 위치기반서비스인 Audi Connect 서비스(이하 “서비스”)를 이용하고자 하는 자로서 회사와 Audi Connect 서비스 이용약관(이하 “이용계약”)를 체결한 회원(이하 “회원”)에게 서비스를 제공하기 위하여, 위치정보의 보호 및 이용 등에 관한 법률(이하 “위치정보법”)에 따라 회사가 개인위치정보를 수집하고 서비스 제공과정에서 사용함에 있어 필요한 회사와 회원의 권리·의무 등 제반 사항을 규정함을 목적으로 합니다.<br>
+                <span class="board_span02">제2조(약관 외 준칙)</span><br>
+                본 약관에 명시되지 않은 사항에 대해서는 위치정보법, 전기통신사업법, 정보통신망 이용촉진 및보호 등에 관한 법률(이하 “정보통신망법”) 등 관계 법령 및 이용계약 등의 규정에 따릅니다.<br>
+                <span class="board_span02">제3조 (회사의 연락처)</span><br>
+                회사의 상호, 대표자, 주소, 전화번호는 다음과 같습니다.<br>
+                1. 상 호 : 아우디폭스바겐코리아 주식회사<br>
+                2. 대 표 자 : 페터 크리스티안 파트<br>
+                3. 주 소 : 서울특별시 강남구 영동대로 731(청담동, 신영빌딩)<br>
+                4. 전화번호 : 02-6009-0000<br>
+                제4조(이용약관의 효력 및 변경)<br>
+                ① 본 약관은 서비스를 신청한 회원이 본인인증 등 회사가 정한 소정의 절차에 따라 이용계약을 체결하여 서비스의 이용자로 등록하는 한편, 본 약관에 동의함으로써 효력이 발생합니다.<br>
+                ② 회원이 온라인에서 본 약관의 “동의하기” 버튼을 클릭하였을 경우 본 약관의 내용을 모두 읽고 이를 충분히 이해하였으며, 그 적용에 동의한 것으로 봅니다.<br>
+                ③ 회사는 위치정보법 등 관련 법령에 위배하지 않는 범위에서 본 약관을 개정할 수 있습니다.<br>
+                ④ 회사가 약관을 개정할 경우에는 기존약관과 개정약관 및 개정약관의 적용일자와 개정사유를 명시하여 현행약관과 함께 그 적용일자 10일 전부터 적용일 이후 상당한 기간 동안 공지합니다. 다만, 개정 내용이 회원에게 불리한 경우에는 그 적용일자 30일 전부터 적용일 이후 상당한 기간 동안 각각 이를 서비스 홈페이지에 게시하는 한편 회원에게 전자적 형태(전자우편 등)로 약관 개정 사실을 발송하여 고지합니다.<br>
+                ⑤ 회사가 제4항에 따라 회원에게 통지하면서 공지 또는 공지·고지일로부터 개정약관 시행일 7일 후까지 거부의사를 표시하지 아니하면 이용약관에 승인한 것으로 봅니다. 회원이 개정약관에 동의하지 않을 경우 회원은 이용계약을 해지할 수 있습니다.<br>
+                <span class="board_span01">제2장 서비스의 이용</span><br>
+                <span class="board_span02">제5조 (개인위치정보 수집에 관한 동의)</span><br>
+                회사는 서비스를 제공하기 위하여 회원이 등록한 차량의 위치정보를 수집하며, 회원은 본 약관에 동의의사표시를 함으로써 회사의 개인위치정보 수집에 동의하는 것으로 간주됩니다. 회원은 차량을 등록하기 위하여 본인인증 등 회사가 정한 절차를 거쳐야 합니다.<br>
+                <span class="board_span02">제6조 (개인위치정보 수집에 관한 동의 철회)</span><br>
+                회원은 이용계약 해지, 본 약관에 대한 동의철회, 개인위치정보 처리에 대한 동의철회 등의 방법을 통하여 개인위치정보의 수집에 대한 동의를 철회할 수 있습니다.<br>
+                <span class="board_span02">제7조 (개인위치정보의 수집방법)</span><br>
+                회사는 등록된 차량에 탑재된 Connected Hardware를 통하여 차량의 위치정보를 수집합니다. 위 개인위치정보 수집방법이 변경되는 경우, 회사는 인터넷 등에 공지하거나 고객에게 통지합니다.<br>
+                <span class="board_span01">제3장 위치정보서비스 제공</span><br>
+                <span class="board_span02">제8조 (위치정보서비스의 내용 및 개인위치정보의 제공)</span><br>
+                ① 회사는 본 약관에 대한 회원의 동의를 얻어 등록된 차량의 위치정보를 수집합니다.<br>
+                ② 회사는 위 제1항에 따라 수집된 개인위치정보를 회사와 회원이 별도로 체결하는 위치기반서비스 이용약관에 따라 적시된 위치기반서비스 제공을 위한 용도로만 이용합니다.<br>
+                ③ 회사는 위 제1항에 따라 수집된 개인위치정보를 회사가 회원과 체결한 위치기반서비스 이용약관에 따라 제공하게 되는 위치기반서비스 제공 이외의 목적으로 제3자에게 제공하지 않습니다.<br>
+                <span class="board_span01">제4장 개인위치정보의 보호</span><br>
+                <span class="board_span02">제9조 (고객의 개인위치정보 보호)</span><br>
+                회사는 위치정보법 등 관련 법령에 정하는 바에 따라 고객의 개인위치정보를 보호할 것입니다.<br>
+                <span class="board_span02">제10조 (위치정보 수집·이용·제공사실 확인자료의 보유근거 및 보유기간)</span><br>
+                ① 회사는 위치정보법에 따라 위치정보 수집·이용·제공 사실 확인자료를 위치정보시스템에 자동으로 기록하고 보존합니다. 해당 자료는 회원의 서비스 가입일로부터 서비스 해지 시점까지 보유합니다.<br>
+                ② 회사는 회원이 본 약관 제6조에 따라 동의의 전부 또는 일부를 철회한 경우, 지체 없이 수집된 개인위치정보 및 위치정보 수집·이용·제공사실 확인자료(동의의 일부를 철회하는 경우에는 철회하는 부분의 개인위치정보 및 위치정보 이용·제공사실 확인자료에 한함)를 파기합니다. 다만, 회원이 별도로 동의하거나, 회원의 불만/분쟁 처리 또는 국세기본법, 법인세법, 부가가치세법 기타 관련 법령의 규정에 의하여 보존할 필요성이 있는 경우에는 그에 따라 보존합니다.<br>
+                IT 시스템 이용 데이터 (이용자 ID, 승인사항, 로그인 시각 등 로그 기록, 컴퓨터 고유번호, IP 주소, GID 등)<br><br>
+            </p>
+        </section>
+        <button class="board_list">
+            <!-- Audi_board_main 링크 -->
+            <a href="./Audi_board_main.html">목록</a>
+        </button>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="safe_w1728">
+            <!-- TopButton, SNS -->
+            <div class="topbtn_snsicon">
+                <div class="topbtn">
+                    <a href="#topbtn">
+                        <span>위로</span>
+                        <img src="./images/up_arrow.png" alt="top_button">
+                    </a>
+                </div>
+                <div class="snsicon">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                </div>
+            </div>
+            <!-- /TopButton, SNSicon -->
+            <div class="footer_flex cf">
+                <!-- Model -->
+                <dl class="model">
+                    <dt>Model</dt>
+                    <dd><a href="#">세단</a></dd>
+                    <dd><a href="#">SUV</a></dd>
+                    <dd><a href="#">쿠페</a></dd>
+                    <dd><a href="#">스포트백</a></dd>
+                    <dd><a href="#">카브리올레</a></dd>
+                    <dd><a href="#">전기차</a></dd>
+                    <dd><a href="#">S 모델</a></dd>
+                    <dd><a href="#">R/RS 모델</a></dd>
+                </dl>
+                <!-- /Model -->
+                <!-- Company -->
+                <dl class="company">
+                    <dt>Company</dt>
+                    <dd><a href="#">아우디코리아 소개</a></dd>
+                    <dd><a href="#">아우디코리아 소식</a></dd>
+                    <dd><a href="#">고객안내</a></dd>
+                    <dd><a href="#">아우디 공식 인증 중고차</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                </dl>
+                <!-- /Company -->
+                <!-- Audi Service -->
+                <dl class="service">
+                    <dt>Audi Service</dt>
+                    <dd><a href="#">아우디 서비스</a></dd>
+                    <dd><a href="#">서비스 프로그램</a></dd>
+                    <dd><a href="#">전시장/AS센터</a></dd>
+                    <dd><a href="#">고객지원센터</a></dd>
+                    <dd><a href="#">아우디 순정부품</a></dd>
+                    <dd><a href="#">아우디 순정 액세서리</a></dd>
+                    <dd><a href="#">부품 가격 정보</a></dd>
+                    <dd><a href="#">사설수리업체를 위한 권고사항</a></dd>
+                    <dd><a href="#">아우디 영상 메뉴얼</a></dd>
+                </dl>
+                <!-- /Audi Service -->
+                <!-- Audi Experience -->
+                <dl class="service">
+                    <dt>Audi Experience</dt>
+                    <dd><a href="#">아우디 스토리</a></dd>
+                    <dd><a href="#">아우디 브랜드 소개</a></dd>
+                    <dd><a href="#">아우디 브랜드 히스토리</a></dd>
+                    <dd><a href="#">quattro 시스템</a></dd>
+                    <dd><a href="#">Audi Connect</a></dd>
+                    <dd><a href="#">More possibilities</a></dd>
+                    <dd><a href="#">Future is an attitude</a></dd>
+                    <dd><a href="#">myAudiworld</a></dd>
+                    <dd><a href="#">아우디 드라이빙 익스피리언스</a></dd>
+                </dl>
+                <!-- /Audi Experience -->
+                <!-- Audi Sustainability -->
+                <dl class="service">
+                    <dt>Audi Sustainability</dt>
+                    <dd><a href="#">전기 모빌리티</a></dd>
+                    <dd><a href="#">플러그인 하이브리드</a></dd>
+                </dl>
+            </div>
+                <!-- /Audi Sustainability -->
+                
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="copyright_flex cf">
+                    <p>
+                        &copy; 2022 Audi Korea. All rights reserved
+                    </p>
+                    <ul>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">부정제보</a></li>
+                        <li><a href="#">타이어 에너지 소비 효율 등급 정보 조회</a></li>
+                        <li><a href="#">스마트키 KC인증 정보조회</a></li>
+                        <li><a href="#">AUDI AG의 개인정보처리에 관한 정보</a></li>
+                    </ul>
+                </div>
+                <p>
+                    본 웹사이트에서 제공되는 정보는 실제 판매 차량과 다를 수 있습니다.
+                </p>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="./fonts/AudiType-Normal_4.03.ttf"></script>
+    <script src="./js/header.js"></script>
+    </div>
+</body>
+</html>
