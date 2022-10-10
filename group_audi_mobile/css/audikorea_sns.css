@@ -1,0 +1,147 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'AudiType_sns';
+    src: url(../fonts/AudiType-ExtendedNormal_4.03.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'AudiType_Wide_sns';
+    src: url(../fonts/AudiType-WideNormal_4.03.ttf);
+}
+@font-face {
+    font-family: 'AudiType_normal_sns';
+    src: url(../fonts/AudiType-Normal_4.03.ttf);
+}
+
+.safe_w1770 {
+    width: 1770px;
+    margin: 0 auto;
+}
+.audikorea_sns {
+    max-width: 1903px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.audikorea_sns_flex {
+    display: flex;
+    padding-bottom: 360px;
+    margin-left: -20px;
+}
+.audikorea_sns h3 {
+    font-size: 42px;
+    font-family: 'AudiType_sns';
+    font-weight: 600;
+    margin-bottom: 60px;
+    margin-left: -20px;
+}
+.audikorea_sns_flex div {
+    margin-right: 6px;
+    background-color: #f2f2f2;
+    width: 586px;
+}
+.audikorea_service_flex div img {
+    width: 586px;
+}
+.audikorea_sns_flex div:nth-child(3) {
+    margin-right: 0;
+}
+.audikorea_sns_flex div p {
+    margin: 12px 24px 24px;
+}
+.audikorea_sns_flex div p:nth-child(2) {
+    font-size: 21px;
+    font-family: 'AudiType_Wide_sns';
+    font-weight: 600;
+    line-height: 26px;
+}
+.audikorea_sns_flex div p:nth-child(3) {
+    font-size: 16px;
+    line-height: 24px;
+}
+.audikorea_sns_flex div p:nth-child(4) {
+    margin-left: 34px;
+}
+.audikorea_sns_flex div p:nth-child(4) span {
+    font-size: 13px;
+    letter-spacing: -1px;
+    font-family: 'AudiType_Wide_sns';
+    position: relative;
+    top: -6px;
+    left: 10px;
+}
+.audikorea_sns_flex div p:nth-child(4) i {
+    font-size: 30px;
+}
+
+
+
+@media screen and (min-width:375px) and (max-width:768px){
+    #full_wrap{
+        width: 375px;
+        width: 100%;
+    }
+    .audikorea_sns {
+        width: 375px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    .safe_w1728 {
+        width: 345px;
+        width: 92%;
+        margin: 0 auto;
+    }
+    .audikorea_sns_flex {
+        display: flex;
+        padding-bottom: 200px;
+        /* margin-left: -20px; */
+        margin: 0 auto;
+        display: block;
+    }
+    .audikorea_sns h3 {
+        font-size: 21px;
+        font-family: 'AudiType_sns';
+        font-weight: 600;
+        margin: 0 0 30px;
+    }
+    .audikorea_sns_flex div {
+        background-color: #f2f2f2;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .audikorea_sns_flex div img{
+        width: 100%;
+    }
+    .audikorea_sns_flex div p {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .audikorea_sns_flex div p:last-child {
+        width: 80%;
+    }
+    .audikorea_sns_flex div p:nth-child(2) {
+        font-size: 18px;
+        font-family: 'AudiType_Wide_sns';
+        font-weight: 600;
+        line-height: 26px;
+        padding: 20px 20px 0 20px;
+    }
+    .audikorea_sns_flex div p:nth-child(3) {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 20px;
+    }
+    /* .audikorea_sns_flex div p:nth-child(4) {
+        margin-left: 34px;
+    } */
+    .audikorea_sns_flex div p:nth-child(4) span {
+        font-size: 12px;
+        letter-spacing: -1px;
+        font-family: 'AudiType_Wide_sns';
+    }
+    .audikorea_sns_flex div p:nth-child(4) i {
+        font-size: 30px;
+        padding-bottom: 10px;
+        
+    }
+  
+}

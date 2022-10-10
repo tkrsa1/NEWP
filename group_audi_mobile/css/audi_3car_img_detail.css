@@ -1,0 +1,218 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'AudiType_sns';
+    src: url(../fonts/AudiType-ExtendedNormal_4.03.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'AudiType_ExBold';
+    src: url(../fonts/AudiType-ExtendedBold_4.03.ttf) format('truetype'); 
+}
+@font-face {
+    font-family: 'AudiType_Wide_sns';
+    src: url(../fonts/AudiType-WideNormal_4.03.ttf);
+}
+@font-face {
+    font-family: 'AudiType_normal_sns';
+    src: url(../fonts/AudiType-Normal_4.03.ttf);
+}
+.car_img_detailx3 {
+    width: 1920px;
+    max-width: 1903px;
+    margin: 0 auto;
+    padding-top: 314px;
+    background-color: #fff;
+}
+.car_img_detailx3_box {
+    margin-bottom: 376px;
+    margin-left: 230px;
+}
+.car_img_detailx3 img {
+    width: 730px;
+    height: 730px;
+}
+.car_img_detailx3_box>div {
+    margin-bottom: 260px;
+    display: flex;
+}
+.car_img_detailx3_box>div>div {
+    margin-left: 70px;
+}
+.car_img_detailx3>div:last-child {
+    margin-bottom: 0;
+}
+.car_img_detailx3>div h3 {
+    font-size: 44px;
+    width: 574px;
+    margin-top: 260px;
+    margin-bottom: 32px;
+    font-family: 'AudiType_ExBold';
+    font-weight: 800;
+}
+.car_img_detailx3>div p {
+    font-size: 12px;
+    margin-bottom: 72px;
+}
+.car_img_detailx3>div span {
+    background-color: #000;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    width: 150px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    transition: all 300ms;
+}
+.car_img_detailx3 div div a:hover span {
+    background-color: #666666;
+}
+
+
+
+/* 수정 */
+@media all and (min-width:375px) and (max-width:768px) {
+    .car_img_detailx3 {
+        width: 1920px;
+        max-width: 1903px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 314px;
+        background-color: #fff;
+    }
+    .car_img_detailx3_box {
+        margin-bottom: 376px;
+        margin-left: 230px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .car_img_detailx3 img {
+        width: 100%;
+        height: auto;
+        margin: 0 ;
+    }
+    .car_img_detailx3_box>div {
+        margin: 0 auto;
+        margin-bottom: 160px;
+        width: 79%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .car_img_detailx3_box>div>div {
+        width: 80%;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .car_img_detailx3>div:last-child {
+        margin-bottom: 0;
+    }
+    .car_img_detailx3>div h3 {
+        font-size: 44px;
+        width: 574px;
+        width: 70%;
+        margin-top: 260px;
+        margin-top: 0;
+        margin-bottom: 32px;
+        
+        font-size: 28px;
+        font-family: 'AudiType_ExBold';
+        font-weight: 800;
+        
+    }
+    .car_img_detailx3>div p {
+        font-size: 12px;
+        margin-bottom: 32px;
+    }
+    .car_img_detailx3>div span {
+        background-color: #000;
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        height: 58px;
+        line-height: 58px;
+        padding: 0 10px;
+        text-align: center;
+        transition: all 300ms;
+    }
+    .car_img_detailx3 div div a:hover span {
+        background-color: #666666;
+    }
+}
+
+
+/* 용재님꺼 */
+/* @media all and (min-width:375px) and (max-width:768px) {
+    .car_img_detailx3 {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 200px;
+        padding-right: 40px;
+        background-color: #fff;
+    }
+    .car_img_detailx3_box {
+        margin-bottom: 155px;
+        margin-left: 40px;
+    }
+    .car_img_detailx3 img {
+        width: 285px;
+        height: 430px;
+    }
+    .car_img_detailx3_box>div {
+        margin-bottom: 150px;
+        display: block;
+    }
+    .car_img_detailx3_box>div>div {
+        margin-left: 0px;
+    }
+    .car_img_detailx3>div:last-child {
+        margin-bottom: 0;
+    }
+    .car_img_detailx3>div h3 {
+        width: 285px;
+        height: 132px;
+        font-size: 28px;
+        line-height: 38px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-family: 'AudiType_ExBold';
+        font-weight: 800;
+    }
+    .car_img_detailx3>div p {
+        font-size: 12px;
+        margin-bottom: 35px;
+    }
+    .car_img_detailx3>div span {
+        background-color: #000;
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        width: 272px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        transition: all 300ms;
+    }
+    .car_img_detailx3 div div a:hover span {
+        background-color: #666666;
+    }
+    .main_audi_a3 div h3{
+        line-height: 28px;
+        margin-bottom: 0px;
+        height: 50px;
+    }
+    .main_audi_a3 div span{
+        width: 162px;
+        height: 58px;
+        line-height: 58px;
+    }
+    .main_audi_q3 div h3{
+        line-height: 28px;
+        margin-bottom: 0px;
+        height: 50px;
+    }
+    .main_audi_q3 div span{
+        width: 162px;
+        height: 58px;
+        line-height: 58px;
+    }
+
+} */
