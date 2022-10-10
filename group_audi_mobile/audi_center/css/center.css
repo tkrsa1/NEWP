@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'AudiType_Wide';
+    src: url(../fonts/AudiType-ExtendedNormal_4.03.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'AudiType_ExBold';
+    src: url(../fonts/AudiType-ExtendedBold_4.03.ttf) format('truetype'); 
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Sans KR';
+}
+
+/* center_slider */
+
+.center_main_img{
+    text-align: center;
+}
+.center_main_img img{
+    width: 1400px;
+    margin: 0 auto;
+} 
+.center_list{
+    width: 1400px;
+    height: 30px;
+    font-family: 'AudiType_Wide',sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+.center_position{
+    height: 100px;
+    /* 포지션 */
+    position:sticky;
+    top: 0px;
+    left: 0;
+}
+
+/* ========================================================= */
+
+
+/* center_gnb영역 */
+input[id="btn"] {
+    display: none;
+}
+input[id="btn"]+label {
+    display: block;
+    width: 152px;
+    /* height: 14px; */
+    cursor: pointer;
+}
+
+.center_gnb{
+    display: flex;
+    text-align: center;
+}
+
+.center_gnb li{
+    width: 1200px;
+    text-align: center;
+}
+.center_gnb li a{
+    width: 152px;
+}
+
+.center_gnb li a:hover{
+    color: gray;
+}
+
+.center_submenu{
+    width: 270px;
+    height: 70px;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    display: none;
+}
+.center_submenu li a{
+    line-height: 2;
+}
+.center_submenu li a:hover{
+    color: gray;
+}
+/* call 영역*/
+.call{
+    width: 1177px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+}
+.call p:nth-child(1){
+    margin-top: 50px;
+    font-size: 55px;
+    font-weight: 600;
+}
+.call p:nth-child(2){
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* center_time 섹션 영역 */
+.center_time .center_time_box{
+    width: 1177px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #000;
+    padding: 30px;
+    /* 플렉스 */
+    display: flex;
+}
+.center_time .center_time_box .time_img img{
+    margin-top: 5%;
+    width: 500px;
+    height: 500px;
+}
+.center_time_box h2 span{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.center_time_box h2{
+    width: 447px;
+    height: 447px;
+    margin-top: 20%;
+    margin-left: 5%;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*service 영역 */
+.center_service{
+    width: 900px;
+    /* height: 550px; */
+    margin: 0 auto;
+    padding: 50px;
+    /* 플렉스 */
+    display: flex;
+}
+.center_service .service_list{
+    font-family: 'AudiType_Wide',sans-serif;
+    margin-top: 15%;
+    width: 450px;
+    line-height: 1.5;
+    margin-right: 30px;
+}
+.center_service .service_list h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.center_service .service_list p{
+    margin-top: 5px;
+    font-size: 16px;
+    
+}
+.center_service h2 img{
+    width: 500px;
+    height: 500px;
+}
+
+/* vvip 영역 */
+.vvip{
+    width: 1177px;
+    padding: 130px;
+    margin: 0 auto;
+    background-color: #000;
+}
+.vvip h2 img{
+    /* padding: 140px; */
+    width: 447px;
+    height: 447px;
+    float: left;
+}
+
+.vvip_list h2{
+    width: 280px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.vvip_list{
+    width: 280px;
+    margin-left: 50px;
+    line-height: 1.7;
+    float: left;
+}
+.vvip_list p{
+    width: 286px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    font-family: 'AudiType_Wide',sans-serif;
+}
+.vvip_list p:nth-child(2){
+    margin-top: 10px;
+}
+.katri{
+    width: 1200px;
+    margin: 0 auto;
+}
+.katri p{
+    font-size: 16px;
+}
+.katri p a{
+    color: #000;
+    font-weight: 700;
+}
+.katri b{
+    color:crimson;
+}
+
+/* card_box 영역 */
+.card_box{
+    margin-top: 100px;
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+.card_box h4{
+    font-family: 'AudiType_Wide',sans-serif;
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.card_box_list{
+    display: flex;
+}
+.card_box_list li img{
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+}
+.card_box_list h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+.card_box_list p{
+    font-family: 'AudiType_Wide',sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+footer{
+    margin: 0 auto;
+}
