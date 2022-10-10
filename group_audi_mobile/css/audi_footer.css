@@ -1,0 +1,323 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'AudiType_footer';
+    src: url(../fonts/AudiType-ExtendedNormal_4.03.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'AudiType_ExBold';
+    src: url(../fonts/AudiType-ExtendedBold_4.03.ttf) format('truetype'); 
+}
+@font-face {
+    font-family: 'Audi_normal_footer';
+    src: url(../fonts/AudiType-Normal_4.03.ttf);
+}
+@font-face {
+    font-family: 'Audi_mobile_footer';
+    src: url(../fonts/AudiTypeKR-Normal.woff);
+}
+.safe_w1728 {
+    width: 1728px;
+    margin: 0 auto;
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 124px 0 60px;
+    height: 900px;
+    text-align: left;
+    font-family: 'Audi_normal_footer';
+}
+.footer .footer_flex {
+    padding-bottom: 120px;
+    font-size: 12px;
+    border-bottom: 1px solid #494949;
+}
+.footer .footer_flex dl dd {
+    padding-top: 20px;
+    text-align: left;
+}
+.footer .footer_flex dl dt {
+    padding-bottom: 36px;
+    font-family: 'AudiType_footer';
+    letter-spacing: 1px;
+    
+    font-size: 18px;
+}
+.footer .footer_flex dl:last-child {
+    margin-right: -80px;
+}
+.footer .footer_flex dl:nth-child(1) {
+    float: left;
+    width: 354px;
+}
+.footer .footer_flex dl:nth-child(2) {
+    float: left;
+    width: 354px;
+}
+.footer .footer_flex dl:nth-child(3) {
+    float: left;
+    width: 354px;
+}
+.footer .footer_flex dl:nth-child(4) {
+    float: left;
+    width: 354px;
+}
+.footer .footer_flex dl:nth-child(5) {
+    float: left;
+    width: 354px;
+}
+.footer .topbtn_snsicon {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.mobile_snsicon {
+    display: none;
+}
+.footer .topbtn {
+    position: absolute;
+    right: 0;
+    top: -100px;
+}
+.footer .topbtn span {
+    margin-right: 20px;
+    font-size: 12px;
+}
+.footer .topbtn img {
+    width: 12px;
+    margin-top: 6px;            
+    filter:  brightness(0) invert(1);
+}
+.footer .snsicon {
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 410px;
+}
+.footer .snsicon a:first-child {
+    margin-right: 22px;
+}
+.footer .copyright {
+    padding-top: 24px;
+    font-size: 12px;
+}
+.footer .copyright_flex p:nth-child(1) {
+    float: left;
+    width: 297px;
+}
+.footer .copyright ul {
+    display: table;
+}
+.footer .copyright ul li {
+    display: table-cell;
+    padding-right: 26px;
+    font-size: 12px;
+    font-family: 'AudiType_normal_sns';
+    text-align: left;
+}
+.footer .copyright>p {
+    margin-top: 60px;
+}
+.footer a:hover {
+    color: #bebebe;
+}
+.footer .footer_flex dl dt span img {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 375px){
+    
+    .footer .safe_w1728 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer {
+        background-color: #000;
+        color: #fff;
+        width: 100%;
+        padding: 124px 0 60px;
+        height: auto;
+        text-align: left;
+        font-family: 'Audi_normal_footer';
+    }
+    .footer .footer_flex {
+        padding-bottom: 30px;
+        font-size: 12px;
+        border: none;
+    }
+    .footer .footer_mobile_line {
+        width: 89vw;
+        height: 1px;
+        margin: 0 auto;
+        border-bottom: 1px solid #333333;
+    }
+    
+    .footer .footer_flex dl dd {
+        text-align: left;
+        background-color: #1a1a1a;
+        padding: 12px;
+        /* padding: 0; */
+        padding-left: 28px;
+        /* padding-left: 0; */
+        font-family: 'Audi_normal_footer';
+        font-size: 12px;
+        display: none;
+    }
+    .footer .footer_flex dl dt {
+        padding-bottom: 36px;
+        font-family: 'Audi_normal_footer';
+        letter-spacing: 0px;
+        border-top: 1px solid #333333;
+        font-size: 16px;
+        padding: 16px;
+        padding-left: 28px;
+        /* padding-left: 0; */
+        position: relative;
+        cursor: pointer;
+    }
+    .footer .footer_flex dl dt span {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .footer .footer_flex dl:last-child dt {
+        border-bottom: 1px solid #333333;
+    }
+    .footer .footer_flex dl dt+dd{
+        padding-top: 24px;
+    }
+    .footer .footer_flex dl dd:last-child {
+        padding-bottom: 24px;
+    }
+    .footer .footer_flex dl:last-child {
+        margin-right: -80px;
+        margin-right: 0;
+    }
+    .footer .footer_flex dl:nth-child(1) {
+        float: left;
+        width: 354px;
+        width: 100%;
+    }
+    .footer .footer_flex dl:nth-child(2) {
+        float: left;
+        width: 354px;
+        width: 100%;
+    }
+    .footer .footer_flex dl:nth-child(3) {
+        float: left;
+        width: 354px;
+        width: 100%;
+    }
+    .footer .footer_flex dl:nth-child(4) {
+        float: left;
+        width: 354px;
+        width: 100%;
+    }
+    .footer .footer_flex dl:nth-child(5) {
+        float: left;
+        width: 354px;
+        width: 100%;
+    }
+    .footer .topbtn_snsicon {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        position: relative;
+    }
+    .footer .topbtn {
+        position: absolute;
+        right: 30px;
+        top: -100px;
+    }
+    .footer .topbtn span {
+        margin-right: 10px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .footer .topbtn img {
+        width: 12px;
+        margin-top: 6px;            
+        filter:  brightness(0) invert(1);
+    }
+    .footer .footer_flex dl dt span img {
+        width: 12px;
+        filter:  brightness(0) invert(1);
+        display: inline-block;
+    }
+    .footer .snsicon {
+        font-size: 22px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .footer .snsicon a:first-child {
+        margin-right: 22px;
+    }
+    .mobile_snsicon {
+        display: block;
+        font-size: 22px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+    .mobile_snsicon a:last-child{
+        margin-left: 20px;
+    }
+    .footer .copyright {
+        padding-top: 24px;
+        padding-left: 28px;
+        font-size: 12px;
+    }
+    .footer .copyright_flex p:nth-child(1) {
+        /* float: left; */
+        /* width: 297px; */
+        width: 100%;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    .footer .copyright_flex ul {
+        /* display: table; */
+        display: inline-block;
+        width: 90vw;
+    }
+    .footer .copyright ul li {
+        display: inline-block;
+        margin-right: 24px;
+        padding-right: 0;
+        font-size: 12px;
+        font-family: 'Audi_normal_footer';
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    .footer .copyright>p {
+        margin-top: 24px;
+    }
+    .footer a:hover {
+        color: #bebebe;
+    }
+    .rotate {
+        transform: rotate(-180deg);
+        /*transform: rotate(180deg);*/
+        transition: 300ms;
+    }
+    .rotate-reset {
+        transform: rotate(0deg);
+        transition: 300ms;
+    }
+    body {
+        background-color: #f2f2f2;
+    }
+    #full_wrap {
+        width: 100%;
+    }
+    #mid_wrap {
+        max-width: 1903px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+}
+

@@ -1,0 +1,97 @@
+@charset "utf-8";
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Sans KR';
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;   
+}
+/* HEADER */
+header {
+    width: 100%;
+    max-width: 1903px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: rgb(102, 102, 102);
+    font-weight: 600;
+    background-color: #fff;
+}
+header .depth1{
+    margin: 0 96px;
+    padding-top: 25px;
+    height: 72px;
+}
+.depth1 h1 img {
+    width:70px;
+    float: left;
+}
+.gnb>li {
+    margin-left: 32px;
+    float: left;
+}
+.depth1 p img{
+    width:24px;
+    float: right;
+}
+.gnb>li:hover,
+.depth1 p:hover{
+    cursor: pointer;
+}
+.depth2{
+    height: 375px;
+    padding: 0 96px 0 197px;
+}
+header .depth2 .gnb2 {
+    margin-top: 52px;
+    font-size: 1.6rem;
+    width: 70%;
+    /* background-color: yellow; */
+    float: left;
+}
+.gnb2 li{
+    float: left;
+    width: 320px;
+    height: 24px;
+    margin-right: 48px;
+    margin-bottom: 24px;
+    /* background-color: red; */
+}
+.gnb2+p img{
+    width:432px;
+    height:243px;
+    float: right;
+}
+.gnb2+p{
+    width:30%;
+    float: right;
+    margin-top: 52px;
+}
+.gnb2+p+p{
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    width: 432px;
+    height: 40px;
+    /* background-color: red; */
+    right: 70px;
+    bottom: 80px;
+}
+.fa-angle-right{
+    font-size: 2.5rem;
+}
+.depth2{
+    position: absolute;
+    display: none;
+    background-color: white;
+}
+.main_pic {
+    width: 1920px;
+    margin: 0 auto;
+}
+/* 아직 헤더 변함 */
+/* @media screen and (max-width:1425px) {
+    
+} */
+/* /HEADER */
