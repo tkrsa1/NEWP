@@ -249,7 +249,7 @@
         <!-- /Section 01 -->
         <!-- Section 02 -->
         <section class="real_title">
-          <h2 class="real_time w1300">
+          <h2 class="real_time w1300 cf">
             <ul>
               <li>
                 <img class="real_title"
@@ -267,7 +267,7 @@
                 </button></a>
               </li>
             </ul>
-            <article class="realtime_img">
+            <article class="realtime_img no_mt">
               <div class="slider">
                 <div><a href="#"><img src="./image/realtime_1.jpg" alt=""></a></div>
                 <div><a href="#"><img src="./image/realtime_2.jpg" alt=""></a></div>
@@ -421,7 +421,7 @@
         $(document).ready(function () {
         $(".slider").bxSlider({
           mode: 'horizontal',// 가로 방향 수평 슬라이드
-          speed: 300,        // 이동 속도를 설정
+          speed: 500,        // 이동 속도를 설정
           pager: false,      // 현재 위치 페이징 표시 여부 설정
           moveSlides: 1,     // 슬라이드 이동시 개수
           minSlides: 3,      // 최소 노출 개수
@@ -430,6 +430,7 @@
           auto: true,        // 자동 실행 여부
           autoHover: true,   // 마우스 호버시 정지 여부
           randomStart:true,
+          controls: false
         });
       });
     </script>
