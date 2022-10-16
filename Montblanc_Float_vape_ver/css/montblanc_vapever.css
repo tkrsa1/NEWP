@@ -521,6 +521,8 @@ header .img_deco button a {
   margin: 0 auto;
 }
 .about_us_tab {
+  width: 90%;
+  margin: 0 auto;
   margin-top: 60px;
 }
 
@@ -547,8 +549,13 @@ header .img_deco button a {
 /* Section WHY */
 .why {
   padding-top: 100px;
-  padding-top: 380px;
+  padding-top: 100px;
   padding-bottom: 160px;
+  width: 100%;
+}
+.why img{
+  width: 100%;
+  height: 400px;
 }
 
 /* Section FAQ */
