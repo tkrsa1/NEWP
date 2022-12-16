@@ -6,7 +6,7 @@ body {
   padding: 0px;
   overflow: hidden;
   font-family: "Noto sans KR", sans-serif;
-  color: #020217;
+  color: #2E3940;
   background: #E4E9F2;
 }
 #fullpage {
@@ -42,26 +42,27 @@ body {
 img {
   width: 70%;
   max-width: 100%;
-  border: 1px solid white;
 }
 .container {
   margin: 0 auto;
   text-align: center;
-  width: 100%;
+  width: 50%;
 }
 small {
   display: block;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .title2{
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 50px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .full1 h1 {
   font-weight: 700;
   font-size: 2.5rem;
+  line-height: 50px;
   text-align: center;
   position: absolute;
   top: 20%;
@@ -100,7 +101,11 @@ small {
   border: none;
 }
 
-
+.full2 {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
 .box {
   width: 450px;
   height: 450px;
