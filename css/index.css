@@ -7,7 +7,7 @@ body {
   overflow: hidden;
   font-family: "Noto sans KR", sans-serif;
   color: #2E3940;
-  background: #E4E9F2;
+  background: white;
 }
 #fullpage {
   position: relative;
@@ -50,7 +50,7 @@ img {
 }
 small {
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .title2{
   font-size: 1.5rem;
@@ -65,26 +65,9 @@ small {
   line-height: 50px;
   text-align: center;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -30%);
-}
-.loadDiv {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  display: flex;
-  background: white;
-  z-index: 999;
-  opacity: 1;
-}
-.loadDiv > img {
-  display: flex;
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
+  transform: translate(-50%, -100%);
 }
 .scroll_down {
   width: 5%;
@@ -105,74 +88,6 @@ small {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-}
-.box {
-  width: 450px;
-  height: 450px;
-  border-radius: 5px;
-  box-shadow: 0 2px 30px rgba(black, .2);
-  background: lighten(#f0f4c3, 10%);
-  position: relative;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  left: 50%;
-  transform: translateX(-50%);
-  top: 50%;
-}
-
-.wave {
-  opacity: .4;
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  background: #0af;
-  width: 500px;
-  height: 500px;
-  margin-left: -250px;
-  margin-top: -250px;
-  transform-origin: 50% 48%;
-  border-radius: 43%;
-  animation: drift 3000ms infinite linear;
-}
-
-.wave.-three {
-  animation: drift 5000ms infinite linear;
-}
-
-.wave.-two {
-  animation: drift 7000ms infinite linear;
-  opacity: .1;
-  background: yellow;
-}
-
-.box:after {
-  content: '';
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
-  z-index: 11;
-  transform: translate3d(0, 0, 0);
-}
-
-.title {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  line-height: 300px;
-  text-align: center;
-  transform: translate3d(0, 0, 0);
-  color: white;
-  text-transform: uppercase;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: .4em;
-  font-size: 24px;
-  text-shadow: 0 1px 0 rgba(black, .1);
-  text-indent: .3em;
 }
 @keyframes drift {
   from { transform: rotate(0deg); }
