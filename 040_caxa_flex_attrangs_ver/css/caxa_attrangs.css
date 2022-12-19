@@ -536,7 +536,12 @@ footer {
   margin-top: 10px;
   padding: 10px;
 }
-
+.bx-wrapper {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
 @media all and (min-width:378px) and (max-width:768px){
 
 html {
