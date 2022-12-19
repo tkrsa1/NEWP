@@ -119,6 +119,10 @@ body {
 }
 .work_section .work_list li {
   width: 100%;
+  margin-bottom: 10px;
+}
+.work_section .work_list li:last-child{
+  margin-bottom: 0;
 }
 .work_section .work_list li a {
   display: block;
@@ -209,6 +213,8 @@ body {
   line-height: 1.6;
   font-size: 0.8rem;
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 .contact_section {
   margin-top: 100px;
@@ -257,8 +263,8 @@ textarea {
 .footer p:first-child {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  padding: 30px;
-  font-size: 1.2rem;
+  padding: 20px;
+  font-size: 1.0rem;
   text-align: left;
 }
 #contents form {
@@ -318,6 +324,10 @@ textarea {
 .promotion_section ul li {
   float: left;
   width: 100%;
+  margin-bottom: 20px;
+}
+.promotion_section ul li:last-child{
+  margin-bottom: 0;
 }
 .promotion_section ul li:last-child {
   margin-right: 0;
@@ -332,6 +342,12 @@ textarea {
   width: 100%;
   max-width: 100%;
   height: 500px;
+}
+.bx-wrapper {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
 }
 /* 태블릿 */
 @media screen and (min-width: 768px) {
@@ -513,6 +529,7 @@ textarea {
   .promotion_section ul li {
     width: 50%;
     float: left;
+    
   }
   .promotion_section ul li img {
     width: 100%;
@@ -559,8 +576,12 @@ textarea {
     margin-bottom: 80px;
   }
   .work_section .work_list li {
-    width: 25%;
+    width: 24%;
     float: left;
+    margin-right: 5px;
+  }
+  .work_section .work_list li:last-child{
+    margin-right: 0;
   }
   .work_section .work_list li a {
     display: block;
