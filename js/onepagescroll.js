@@ -83,13 +83,6 @@ function quickClick() {
     return false;
   });
 }
-$(function () {
-  $(window).on("load", function () {
-    setTimeout(function () {
-      $(".loadDiv").fadeOut();
-    }, 1500);
-  });
-});
 
 $(function(){
 
@@ -152,5 +145,5 @@ function wait(ms) {
 }
 
 // 초기 실행
-setTimeout(typing, 1500);
+setTimeout(typing, 2000);
 });
