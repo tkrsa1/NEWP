@@ -1,0 +1,447 @@
+@charset "utf-8";
+html{
+  font-size: 62.5%;
+  font-family: "NotoSans",sans-serif;
+  width: 1920px;
+}
+/* 헤더 */
+.w1720{
+    width: 1720px;
+    margin: 0 auto;
+}
+header{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 99999999999999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 550%;
+}
+.sticky{
+    position: sticky;
+    left: 100px;
+    top: 0;
+}
+.sticky>div{
+  display: flex;
+}
+.divider{
+    width: 100%;
+    height: 0.1px;
+    margin-top: 20px;
+    background-color: rgb(247, 247, 247);
+}
+header div>ul{
+    display: flex;
+    margin-top: 60px;
+}
+header h2{
+    margin-top: 60px;
+    transition: all 0.2s;
+}
+.best{
+    margin-left: 680px;
+    transition: all 0.2s;
+}
+.best li{
+    padding-left: 45px;
+}
+.lang{
+    font-size: 1.2rem;
+    transition: all 0.2s;
+}
+.lang li:last-child{
+    padding-left: 5px;
+    padding-right: 40px;
+}
+.icon{
+    transition: all 0.2s;
+    text-align: center;
+}
+.icon>ul>li{
+    margin-left: 20px;
+}
+.sub_menu1{
+    position: absolute;
+    width: 200px;
+    left: 0px;
+    top: 30px;
+    display: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;   
+    font-size: 13px;
+}
+.main_menu1:hover .sub_menu1{
+    display: block;
+}
+.sub_menu1:hover{
+    display: block;
+}
+.sub_menu1 li{
+    height: 35px;
+    line-height: 35px;
+}
+.sub_menu1>li:hover{
+    border: 1px solid rgb(251, 181, 66);
+    background-color: rgb(251, 181, 66);
+    border-radius: 10px;
+    outline: none;
+}
+.sub_menu1 li:last-child{
+    margin-bottom: 0px;
+}
+.main_menu1{
+    width: 110px;
+    position: relative;
+    height: 30px;
+}
+.main_menu2{
+    width: 95px;
+    position: relative;
+    height: 30px;
+}
+.sub_menu2{
+    position: absolute;
+    width: 200px;
+    left: 0px;
+    top: 30px;
+    display: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;  
+    font-size: 13px;
+}
+.sub_menu2>li:hover{
+    border: 1px solid rgb(251, 181, 66);
+    background-color: rgb(251, 181, 66);
+    border-radius: 10px;
+    outline: none;
+}
+.main_menu2:hover .sub_menu2{
+    display: block;
+}
+.sub_menu2 li{
+    height: 35px;
+    line-height: 35px;
+}
+.main_menu3{
+    width: 150px;
+    position: relative;
+    height: 30px;
+}
+.sub_menu3{
+    position: absolute;
+    width: 200px;
+    left: 0px;
+    top: 30px;
+    display: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 13px;
+}
+.sub_menu3>li:hover{
+    border: 1px solid rgb(251, 181, 66);
+    background-color: rgb(251, 181, 66);
+    border-radius: 10px;
+    outline: none;
+}
+.main_menu3:hover .sub_menu3{
+    display: block;
+}
+.sub_menu3 li{
+    height: 35px;
+    line-height: 35px;
+}
+.main_menu4{
+    width: 150px;
+    position: relative;
+    height: 30px;
+}
+.sub_menu4{
+    position: absolute;
+    width: 105px;
+    height: 60px;
+    left: 0px;
+    top: 30px;
+    display: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    background-color: white;
+    font-size: 12px;
+}
+.sub_menu4 li{
+    height: 35px;
+    line-height: 35px;
+}
+.sub_menu4>li:hover{
+    border: 1px solid rgb(247, 247, 247);
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    outline: none;
+}
+.main_menu5{
+    position: relative;
+    height: 30px;
+}
+.main_menu4:hover .sub_menu4{
+    display: block;
+}
+.sub_menu5{
+    position: absolute;
+    width: 120px;
+    left: 0px;
+    top: 30px;
+    display: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    padding-top: 30px;
+    z-index: 1;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 13px;
+}
+.sub_menu5>li:hover{
+    border: 1px solid rgb(247, 247, 247);
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    outline: none;
+}
+.sub_menu5>li{
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.main_menu5:hover .sub_menu5{
+    display: block;
+}
+.sub_menu01{
+    position: relative;
+}
+.sub_menu01:hover .sub2_menu1{
+    display: block;
+}
+.sub2_menu1{
+    position: absolute;
+    left: 101%;
+    top: 0;
+    display: none;
+    border: 1px solid rgb(157, 160, 164);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    font-size: 13px;
+}
+.sub2_menu1>li:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+.sub_menu02{
+    position: relative;
+}
+.sub_menu02:hover .sub2_menu2{
+    display: block;
+}
+.sub2_menu2{
+    position: absolute;
+    left: 101%;
+    top: 0;
+    display: none;
+    border: 1px solid rgb(157, 160, 164);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    font-size: 13px;
+}
+.sub2_menu2>li:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+.sub_menu03{
+    position: relative;
+}
+.sub_menu03:hover .sub2_menu3{
+    display: block;
+}
+.sub2_menu3{
+    position: absolute;
+    left: 101%;
+    top: 0;
+    display: none;
+    border: 1px solid rgb(157, 160, 164);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    font-size: 13px;
+}
+.sub2_menu3>li:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+.sub_menu04{
+    position: relative;
+}
+.sub_menu04:hover .sub2_menu4{
+    display: block;
+}
+.sub2_menu4{
+    position: absolute;
+    left: 101%;
+    top: 0;
+    display: none;
+    border: 1px solid rgb(157, 160, 164);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    font-size: 13px;
+}
+.sub2_menu4>li:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+.sub_menu05{
+    position: relative;
+}
+.sub_menu05:hover .sub2_menu5{
+    display: block;
+}
+.sub2_menu5{
+    position: absolute;
+    left: 101%;
+    top: 0;
+    display: none;
+    border: 1px solid rgb(157, 160, 164);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    font-size: 13px;
+}
+.sub2_menu5>li:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+.sub_menu06{
+    position: relative;
+}
+.sub_menu06:hover .sub2_menu6{
+    display: block;
+}
+.sub2_menu6{
+    position: absolute;
+    left: 101%;
+    top: 0;
+    display: none;
+    border: 1px solid rgb(157, 160, 164);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    font-size: 13px;
+}
+.sub2_menu6>li:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+.sub_menu07{
+    position: relative;
+}
+.sub_menu07:hover .sub2_menu7{
+    display: block;
+}
+.sub2_menu7{
+    position: absolute;
+    left: 101%;
+    top: 0;
+    display: none;
+    border: 1px solid rgb(157, 160, 164);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    font-size: 13px;
+
+}
+.sub2_menu7>li:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+.sub_menu08{
+    position: relative;
+}
+.sub_menu08:hover .sub2_menu8{
+    display: block;
+}
+.sub2_menu8{
+    position: absolute;
+    left: 101%;
+    top: 0;
+    display: none;
+    border: 1px solid rgb(157, 160, 164);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    font-size: 13px;
+}
+.sub2_menu8>li:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+}
+header li span{
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    transform: rotate(-90deg);
+    transition: all 0.2s;
+}
+li span img{
+    width: 10px;
+    height: 10px;
+}
+.sub_menu01:hover span{
+    transform: rotate(-270deg);
+}
+.sub_menu02:hover span{
+    transform: rotate(-270deg);
+}
+.sub_menu03:hover span{
+    transform: rotate(-270deg);
+}
+.sub_menu04:hover span{
+    transform: rotate(-270deg);
+}
+.sub_menu05:hover span{
+    transform: rotate(-270deg);
+}
+.sub_menu06:hover span{
+    transform: rotate(-270deg);
+}
+.sub_menu07:hover span{
+    transform: rotate(-270deg);
+}
+.sub_menu08:hover span{
+    transform: rotate(-270deg);
+}
+
+/* 헤더 */

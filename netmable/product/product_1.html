@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            pager:false,
+            auto:true,
+            autoHover: true,
+            controls: true,
+            infiniteLoop:true,
+            slideWidth:1920
+          });
+        });
+        $(window).scroll(function () { 
+        	var scrollValue = $(document).scrollTop(); 
+                if(scrollValue>=100){
+                $(".sticky").css({"backgroundColor":"rgba(255,255,255,0.9)"});
+                $("header h2").css({"transform":"translateY(-80%)"})
+                $(".best,.lang").css({"transform":"translateY(-20%)"})
+                $(".icon").css({"transform":"translateY(-30%)"})
+            }   
+            else{
+                $(".sticky").css({"backgroundColor":"transparent"});
+                $("header h2,.best,.lang,.icon").css({"transform":"translateY(0%)"})
+            }
+            });
+      </script>
+</head>
+<body>
+    <header>
+        <div class="sticky">
+            <div class="w1720">
+                <h2><img src="https://www.netmarblestore.com/web/upload/category/editor/2021/05/13/c94f19709256f998ba9c90df4dcf959e.png" alt=""></h2>
+                <div class="best">
+                    <ul>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">NEW</a></li>
+                        <li class="main_menu1"><a href="#">카테고리</a>
+                        <ul class="sub_menu1">
+                            <li><a href="#">전체보기</a></li>
+                            <li class="sub_menu01"><a href="#">키덜트</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu1">
+                                <li><a href="#">인형</a></li>
+                                <li><a href="#">피규어</a></li>
+                                <li><a href="#">완구</a></li>
+                            </ul></li>
+                            <li class="sub_menu02"><a href="#">디자인문구</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu2">
+                                <li><a href="#">노트/메모</a></li>
+                                <li><a href="#">볼펜</a></li>
+                                <li><a href="#">파일</a></li>
+                                <li><a href="#">스티커</a></li>
+                                <li><a href="#">데스크소품</a></li>
+                            </ul></li>
+                            <li class="sub_menu03"><a href="#">리빙</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu3">
+                                <li><a href="#">컵/텀블러</a></li>
+                                <li><a href="#">생활소품</a></li>
+                                <li><a href="#">쿠션</a></li>
+                                <li><a href="#">욕실용품</a></li>
+                            </ul></li>
+                            <li class="sub_menu04"><a href="#">의류</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu4">
+                                <li><a href="#">상의</a></li>
+                            </ul></li>
+                            <li class="sub_menu05"><a href="#">잡화</a><span><img  src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu5">
+                                <li><a href="#">파우치</a></li>
+                                <li><a href="#">우산</a></li>
+                                <li><a href="#">양말</a></li>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">패션소품</a></li>
+                            </ul></li>
+                            <li class="sub_menu06"><a href="#">차량/레져</a><span><img  src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu6">
+                                <li><a href="#">여행용품</a></li>
+                                <li><a href="#">차량용품</a></li>
+                                <li><a href="#">물놀이</a></li>
+                                <li><a href="#">골프용품</a></li>
+                            </ul></li>
+                            <li class="sub_menu07"><a href="#">디지털</a><span><img  src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu7">
+                                <li><a href="#">핸드폰 액세서리</a></li>
+                                <li><a href="#">pc/노트북 액세서리</a></li>
+                                <li><a href="#">소형가전</a></li>
+                                <li><a href="#">계절가전</a></li>
+                            </ul></li>
+                            <li class="sub_menu08"><a href="#">도서출판</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu8">
+                                <li><a href="#">서적</a></li>
+                                <li><a href="#">퍼즐</a></li>
+                                <li><a href="#">포스터</a></li>
+                                <li><a href="#">음반</a></li>
+                            </ul></li>
+                        </ul></li>
+                        <li class="main_menu2"><a href="#">캐릭터</a>
+                        <ul class="sub_menu2">
+                            <li><a href="#">넷마블프렌즈</a></li>
+                            <li><a href="#">KUYA</a></li>
+                            <li><a href="#">스톤에이지</a></li>
+                            <li><a href="#">세븐나이츠</a></li>
+                            <li><a href="#">모두의마블</a></li>
+                            <li><a href="#">BTS World</a></li>
+                            <li><a href="#">제2의 나라</a></li>
+                        </ul></li>
+                        <li class="main_menu3"><a href="#">고객센터</a>
+                        <ul class="sub_menu3">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul></li>
+                    </ul>
+                </div>
+                <div class="lang">
+                    <ul class="main_menu4">
+                        <li><a href="#">Language&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="#">한국어</a></li>
+                        <li><img width="10" height="10" src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></li>
+                        <ul class="sub_menu4">
+                            <li><a href="#">한국어</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <ul>
+                        <li class="main_menu5"><a href="#"><img src="https://www.netmarblestore.com/morenvyimg/top_myshop.png" alt=""></a>
+                        <ul class="sub_menu5">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">주문조회</a></li>
+                        </ul></li>
+                        <li><a href="#"><img src="https://www.netmarblestore.com/morenvyimg/top_cart.png" alt=""></a></li>
+                        <li><a href="#"><img src="https://www.netmarblestore.com/morenvyimg/top_search.png" alt=""></a></li>
+                    </ul>
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="w1480">
+            <div class="main_top">
+                <div class="main_small_img">
+                    <p><img src="./images/product_1/1.jpg" alt=""></p>
+                    <p><img src="./images/product_1/2.jpg" alt=""></p>
+                </div>
+                <p><img class="main_img" src="./images/product_1/1.jpg" alt=""></p>
+                <div class="main_top_right">
+                    <h2>제2의 나라 1주년 컬러링북</h2>
+                    <div class="main_text">
+                        <h4>10%</h4>
+                        <h5>13,500원</h5>
+                        <h3>15,000원</h3>
+                    </div>
+                    <hr>
+                    <div class="main_delivery">
+                        <ul>
+                            <li>배송방법</li>
+                            <li>배송비</li>
+                        </ul>
+                        <ul>
+                            <li>택배</li>
+                            <li>2,500원 (30,000원 이상 구매시 무료)</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <p>(최소주문수량 1개이상)</p>
+                    <div class="main_silver_box">
+                        <p>제2의나라 1주년 컬러링북</p>
+                        <div>
+                            <p><img src="./images/minus.png" alt=""></p>
+                            <p>1</p>
+                            <p><img src="./images/plus.png" alt=""></p>
+                            <p></p>
+                            <p>13,500원</p>
+                        </div>
+                    </div>
+                    <div class="main_total">
+                        <p>TOTAL</p>
+                        <p><span>13,500원</span>(1개)</p>
+                    </div>
+                    <div class="main_pay">
+                        <button>바로구매</button>
+                        <p><img class="npay" src="./images/product_1/Npay.png" alt=""></p>
+                        <button>장바구니</button>
+                    </div>
+                    <div class="main_review">
+                        <p>REVIEW  1</p>
+                        <p>Q&A  2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w1720">
+            <div class="blank">
+                <ul>
+                    <li>상품상세정보</li>
+                    <li>상품구매안내</li>
+                    <li>구매후기(1)</li>
+                    <li>구매문의(2)</li>
+                </ul>
+            </div>
+            <div class="main_details">
+                <p><img src="./images/product_1/4.jpg" alt=""></p>
+                <p><img src="./images/product_1/5.jpg" alt=""></p>
+                <p><img src="./images/product_1/6.jpg" alt=""></p>
+                <p><img src="./images/product_1/7.jpg" alt=""></p>
+                <div class="w800">
+                    <p>상세정보</p>
+                    <div class="main_details2">
+                        <ul class="details_left">
+                            <li>제품명</li>
+                            <li>사이즈</li>
+                            <li>무게</li>
+                            <li>참고사항</li>
+                            <li>사용상 주의사항</li>
+                            <li>디자인</li>
+                            <li>저자</li>
+                            <li>주소</li>
+                            <li>재질</li>
+                            <li>사용연령</li>
+                            <li>발행일</li>
+                            <li>제조국명</li>
+                            <li>교환장소</li>
+                        </ul>
+                        <ul class="details_right">
+                            <li>제2의 나라 1주년 컬러링북</li>
+                            <li>260x260mm</li>
+                            <li>500g</li>
+                            <li>- 상세 사이즈의 치수는 측정 방법과 위치에 따라 오차가 발생할 수 있습니다.<br>
+                                - 사이즈 측정 기준은 단면 (mm)입니다.<br>
+                                - 사진 촬영용 이미지로 실제 제품과 다소 차이가 있을 수 있습니다.
+                            </li>
+                            <li>- 제품 용도 이외에는 사용하지 마십시오.<br>
+                                - 본 제품은 어린이제품안전특별법에 의한 제품이 아닙니다.<br>
+                                - 직사광선이나 고온 등 화기가 있는 곳에 가까이 두지 마십시오.
+                            </li>
+                            <li>(주)겜툰</li>
+                            <li>넷마블㈜</li>
+                            <li>서울시 구로구 디지털로 26길 38, G-Tower</li>
+                            <li>종이</li>
+                            <li>14세 이상</li>
+                            <li>2022년 07월</li>
+                            <li>한국</li>
+                            <li>구입처</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blank">
+                    <ul>
+                        <li>상품상세정보</li>
+                        <li>상품구매안내</li>
+                        <li>구매후기(1)</li>
+                        <li>구매문의(2)</li>
+                    </ul>
+                </div>
+                <div class="main_infoContainer">
+                    <div class="main_info">
+                        <div>
+                            <div>
+                                <p><strong>PAYMENT</strong></p>
+                                <p>INFO</p>
+                            </div>
+                            <button>위로가기</button>
+                        </div>
+                        <p>상품결제정보</p>
+                        <div>
+                            <p>고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다.
+                                확인과정에서 도난 카드의 사용이나 타인 명의의 주문등 정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는 취소할 수 있습니다.<br>  
+                                <br>
+                                무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다.<br>
+                               주문시 입력한 입금자명과 실제입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금을 하셔야 하며 입금되지 않은 주문은 자동취소 됩니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main_info">
+                        <div>
+                            <div>
+                                <p><strong>DELIVERY</strong></p>
+                                <p>INFO</p>
+                            </div>
+                            <button>위로가기</button>
+                        </div>
+                        <p>배송정보</p>
+                        <div>
+                            <p><strong>배송 방법</strong> : 택배<br>
+                                <strong>배송 지역</strong> : 전국지역<br>
+                                <strong>배송 비용</strong> : 2,500원<br>
+                                <strong>배송 기간</strong> : 3일 ~ 7일<br>
+                                <strong>배송 안내</strong> : =- 산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.<br>
+                                고객님께서 주문하신 상품은 입금 확인후 배송해 드립니다. 다만, 상품종류에 따라서 상품의 배송이 다소 지연될 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main_info">
+                        <div>
+                            <div>
+                                <p><strong>EXCHANGE</strong></p>
+                                <p>INFO</p>
+                            </div>
+                            <button>위로가기</button>
+                        </div>
+                        <p>교환 및 반품정보</p>
+                        <div>
+                            <p><strong>교환 및 반품 주소</strong><br>
+                                - [17524] 경기도 안성시 죽산면 송문주로 219 3층 로지포커스 (넷마블스토어)<br>
+                                
+                                <strong>교환 및 반품이 가능한 경우</strong><br>
+                                - 상품을 공급 받으신 날로부터 7일이내 단, 가전제품의<br>
+                                  경우 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.<br>
+                                - 공급받으신 상품 및 용역의 내용이 표시.광고 내용과<br>
+                                  다르거나 다르게 이행된 경우에는 공급받은 날로부터 3월이내, 그사실을 알게 된 날로부터 30일이내<br>
+                                  <br>
+                                <strong>교환 및 반품이 불가능한 경우</strong><br>
+                                - 고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된 경우. 단, 상품의 내용을 확인하기 위하여<br>
+                                  포장 등을 훼손한 경우는 제외<br>
+                                - 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우<br>
+                                  (예 : 가전제품, 식품, 음반 등, 단 액정화면이 부착된 노트북, LCD모니터, 디지털 카메라 등의 불량화소에<br>
+                                  따른 반품/교환은 제조사 기준에 따릅니다.)<br>
+                                - 고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우 단, 화장품등의 경우 시용제품을<br>
+                                  제공한 경우에 한 합니다.<br>
+                                - 시간의 경과에 의하여 재판매가 곤란할 정도로 상품등의 가치가 현저히 감소한 경우<br>
+                                - 복제가 가능한 상품등의 포장을 훼손한 경우<br>
+                                  (자세한 내용은 고객만족센터 1:1 E-MAIL상담을 이용해 주시기 바랍니다.)<br>
+                                  <br>
+                                ※ 고객님의 마음이 바뀌어 교환, 반품을 하실 경우 상품반송 비용은 고객님께서 부담하셔야 합니다.<br>
+                                  (색상 교환, 사이즈 교환 등 포함)
+                                </p>
+                        </div>
+                    </div>
+                    <div class="main_info">
+                        <div>
+                            <div>
+                                <p><strong>SERVICE</strong></p>
+                                <p>INFO</p>
+                            </div>
+                            <button>위로가기</button>
+                        </div>
+                        <p>서비스문의</p>
+                        <div>
+                            <p>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank">
+                    <ul>
+                        <li>상품상세정보</li>
+                        <li>상품구매안내</li>
+                        <li>구매후기(1)</li>
+                        <li>구매문의(2)</li>
+                    </ul>
+                </div>
+                <div class="w1480">
+                    <div class="main_review2">
+                        <p>REVIEW</p>
+                        <p>상품의 사용후기를 적어주세요</p>
+                        <button>상품후기쓰기</button>
+                        <button>모두보기</button>
+                    </div>
+                    <div class="boardlist">
+                        <table>
+                            <!--<c:forEach var="bean" items="${bbean }">-->
+                                <tr class="boardlist_list">
+                                    <td class="boardlist_title"><a href="#">안녕하세요~</a></td>
+                                    <td class="boardlist_id"><a href="#">yhk0828</a></td>
+                                    <td class="boardlist_date">2022-12-12</td>
+                                    <td class="boardlist_cnt">76</td>
+                                </tr>
+                                <tr class="boardlist_list">
+                                    <td class="boardlist_title"><a href="#">안녕하세요~</a></td>
+                                    <td class="boardlist_id"><a href="#">yhk0828</a></td>
+                                    <td class="boardlist_date">2022-12-12</td>
+                                    <td class="boardlist_cnt">76</td>
+                                </tr>
+                            <!--</c:forEach>-->
+                        </table>
+                    </div>
+                    <div class="boardlist_prev_next">
+                        <a href="#" class="on">1</a>
+                    </div>
+                </div>
+                <div class="blank">
+                    <ul>
+                        <li>상품상세정보</li>
+                        <li>상품구매안내</li>
+                        <li>구매후기(1)</li>
+                        <li>구매문의(2)</li>
+                    </ul>
+                </div>
+                <div class="w1480">
+                    <div class="main_review2">
+                        <p>Q&A</p>
+                        <p>상품에 대해 궁금한 점을 해결해 드립니다.</p>
+                        <button>상품문의하기</button>
+                        <button>모두보기</button>
+                    </div>
+                    <div class="boardlist">
+                        <table>
+                            <!--<c:forEach var="bean" items="${bbean }">-->
+                                <tr class="boardlist_list">
+                                    <td class="boardlist_title"><a href="#">문의합니다</a></td>
+                                    <td class="boardlist_id"><a href="#">yhk0828</a></td>
+                                    <td class="boardlist_date">2022-12-12</td>
+                                    <td class="boardlist_cnt">76</td>
+                                </tr>
+                                <tr class="boardlist_list">
+                                    <td class="boardlist_title"><a href="#">문의합니다</a></td>
+                                    <td class="boardlist_id"><a href="#">yhk0828</a></td>
+                                    <td class="boardlist_date">2022-12-12</td>
+                                    <td class="boardlist_cnt">76</td>
+                                </tr>
+                                <tr class="boardlist_list">
+                                    <td class="boardlist_title"><a href="#">문의합니다</a></td>
+                                    <td class="boardlist_id"><a href="#">yhk0828</a></td>
+                                    <td class="boardlist_date">2022-12-12</td>
+                                    <td class="boardlist_cnt">76</td>
+                                </tr>
+                            <!--</c:forEach>-->
+                        </table>
+                    </div>
+                    <div class="boardlist_prev_next">
+                        <a href="#" class="on">1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="w1720">
+            <section class="sec1">
+                <h2>
+                    <img src="https://www.netmarblestore.com/web/upload/category/editor/2021/05/13/ada992eb39db6e8cf166102866cd57ae.png" alt="">
+                </h2>
+                <dl class="mb15">
+                    <dd class="mb15">상호명: 넷마블 주식회사 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자 등록번호:105-87-64746</dd>
+                </dl>
+                <dl class="mb15">
+                    <dd>통신판매업 신고번호 : 제2014-서울구로-1028호 <a href="#">[사업자정보확인]</a>  &nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표집행임원 신고번호 : 권영식, 도기욱</dd>
+                </dl>
+                <dl class="mb15">
+                    <dd>주소 : 서울특별시 구로구 디지털로26길 38 (구로동) G-TOWER</dd>
+                </dl>
+                <dl class="mb15">
+                    <dd>고객센터 : 1670-2451(평일 10시~18시) &nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp; 이메일 : storecs@netmarble.com &nbsp;&nbsp;&nbsp;I &nbsp;&nbsp;&nbsp;호스팅 서비스 제공자 : 카페24(주)</dd>
+                </dl>
+                <div class="escrow_flex mb15">
+                    <h3><img src="https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png" alt="에스크로 이미지"></h3>
+                    <p>구매안전(에스크로)서비스 <a href="#">서비스 가입사실 확인</a></p>
+                </div>
+                <dl class="mb50">
+                    <dd>고객님의 안전거래를 위해 현금 등으로 5만원이상 결제시 저희 쇼핑몰에서 가입한 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</dd>
+                </dl>
+                <p class="copyright">Copyright 2021. Netmarble Corp All Rights Reserved.</p>
+            </section>
+            <section class="sec2">
+                <ul>
+                    <li><span>개인정보 처리방침 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span></li>
+                    <li>이용약관&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</li>
+                    <li>고객센터 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                    <li><img src="https://www.netmarblestore.com/morenvyimg/ft_sns01.png" alt=""></li>
+                    <li><img src="https://www.netmarblestore.com/morenvyimg/ft_sns02.png" alt=""></li>
+                    <li><img src="https://www.netmarblestore.com/morenvyimg/ft_sns03.png" alt=""></li>
+                </ul>
+                <div class="footer_divider">
+                    <dl>
+                        <dd>공지사항</dd>
+                        <dd>고객문의</dd>
+                        <dd>이벤트</dd>
+                    </dl>
+                    <dl>
+                        <dd>회원가입</dd>
+                        <dd>마이페이지</dd>
+                        <dd>장바구니</dd>
+                        <dd>위시리스트</dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>

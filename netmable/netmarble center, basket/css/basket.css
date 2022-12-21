@@ -1,0 +1,108 @@
+@charset "utf-8";
+#basket_wrap {
+    width: 1920px;
+    height: 870px;
+    margin: 0 auto;
+    font-family: 'noto sans kr';
+    margin-top: 100px;
+}
+.w1720 {
+    width: 1720px;
+    margin: 0 auto;
+    font-family: 'noto sans kr';
+}
+.titearea h2 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 216px;
+}
+#basket_wrap .basketpackage_title  {
+    border-bottom: 1px solid #d6d4d4;
+    text-align: center;
+    height: 141px;
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+#basket_wrap .basketpackage_title img {
+    opacity: 0.3;
+    width: 40px;
+    margin-bottom: -10px;
+}
+#basket_wrap .basketpackage_title p {
+    margin-top: 40px;
+    color: #d6d4d4;
+}
+.basketpackage {
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.basketpackage_lbtn button {
+    width: 160px;
+    border: 1px solid #d6d4d4;
+    border-radius: 10px;
+    padding: 15px 20px; 
+    margin: 0 5px 0 0 ;
+    font-size: 14px;
+    float: left;
+    font-family: 'noto sans kr';
+}
+.basketpackage_btn button:hover {
+    cursor: pointer;
+}
+.basketpackage_lbtn button:first-child {
+    background-color: #f7f7f7;
+    color: #707070;
+}
+.basketpackage_lbtn button:first-child:hover {
+    background-color: #d6d4d4;
+}
+.basketpackage_lbtn button:last-child {
+    background-color: #000;
+    color: #f7f7f7;
+}
+.basketpackage_rbtn button {
+    float: right;
+    width: 160px;
+    border: 1px solid #d6d4d4;
+    border-radius: 10px;
+    padding: 15px 20px; 
+    margin: 0 5px 0 0 ;
+    font-size: 14px;
+    font-family: 'noto sans kr';
+}
+.basketpackage_rbtn button:first-child {
+    margin-right: 0;
+}
+.basketpackage_rbtn button:first-child:hover {
+    background-color: #d6d4d4;
+}
+
+.basketpackage_rbtn .npay {
+    background-color: rgb(1, 199, 60);
+}
+.basketpackage_rbtn button:last-child{
+    background-color: rgb(1, 199, 60);
+    height: 52px;
+    padding-top: 14px;
+}
+
+.basketlist {
+    border: 1px solid #d6d4d4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+.basketlist h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 4px;
+    color: #000;
+}
+.basketlist li {
+    color: #707070;
+}
