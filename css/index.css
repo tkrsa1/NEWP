@@ -42,6 +42,7 @@ body {
 img {
   width: 70%;
   max-width: 100%;
+  border: 1px solid #000;
 }
 .container {
   margin: 0 auto;
@@ -89,7 +90,8 @@ small {
   justify-content: space-between;
   flex-flow: row wrap;
 }
-@keyframes drift {
-  from { transform: rotate(0deg); }
-  from { transform: rotate(360deg); }
+.full3{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
