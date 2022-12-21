@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(window).scroll(function () { 
+        	var scrollValue = $(document).scrollTop(); 
+                if(scrollValue>=100){
+                $(".sticky").css({"backgroundColor":"rgba(255,255,255,0.9)","height":"100"});
+                $("header h2").css({"transform":"translateY(-80%)"})
+                $(".best,.lang").css({"transform":"translateY(-20%)"})
+                $(".icon").css({"transform":"translateY(-30%)"})
+            }   
+            else{
+                $(".sticky").css({"backgroundColor":"transparent","height":"122"});
+                $("header h2,.best,.lang,.icon").css({"transform":"translateY(0%)"})
+            }
+            });
+      </script>
+</head>
+<body>
+    <header>
+        <div class="sticky">
+            <div class="w1720">
+                <h2><a href="index.html"><img src="https://www.netmarblestore.com/web/upload/category/editor/2021/05/13/c94f19709256f998ba9c90df4dcf959e.png" alt=""></a></h2>
+                <div class="best">
+                    <ul>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">NEW</a></li>
+                        <li class="main_menu1"><a href="#">카테고리</a>
+                        <ul class="sub_menu1">
+                            <li><a href="#">전체보기</a></li>
+                            <li class="sub_menu01"><a href="#">키덜트</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu1">
+                                <li><a href="#">인형</a></li>
+                                <li><a href="#">피규어</a></li>
+                                <li><a href="#">완구</a></li>
+                            </ul></li>
+                            <li class="sub_menu02"><a href="#">디자인문구</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu2">
+                                <li><a href="#">노트/메모</a></li>
+                                <li><a href="#">볼펜</a></li>
+                                <li><a href="#">파일</a></li>
+                                <li><a href="#">스티커</a></li>
+                                <li><a href="#">데스크소품</a></li>
+                            </ul></li>
+                            <li class="sub_menu03"><a href="#">리빙</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu3">
+                                <li><a href="#">컵/텀블러</a></li>
+                                <li><a href="#">생활소품</a></li>
+                                <li><a href="#">쿠션</a></li>
+                                <li><a href="#">욕실용품</a></li>
+                            </ul></li>
+                            <li class="sub_menu04"><a href="#">의류</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu4">
+                                <li><a href="#">상의</a></li>
+                            </ul></li>
+                            <li class="sub_menu05"><a href="#">잡화</a><span><img  src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu5">
+                                <li><a href="#">파우치</a></li>
+                                <li><a href="#">우산</a></li>
+                                <li><a href="#">양말</a></li>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">패션소품</a></li>
+                            </ul></li>
+                            <li class="sub_menu06"><a href="#">차량/레져</a><span><img  src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu6">
+                                <li><a href="#">여행용품</a></li>
+                                <li><a href="#">차량용품</a></li>
+                                <li><a href="#">물놀이</a></li>
+                                <li><a href="#">골프용품</a></li>
+                            </ul></li>
+                            <li class="sub_menu07"><a href="#">디지털</a><span><img  src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu7">
+                                <li><a href="#">핸드폰 액세서리</a></li>
+                                <li><a href="#">pc/노트북 액세서리</a></li>
+                                <li><a href="#">소형가전</a></li>
+                                <li><a href="#">계절가전</a></li>
+                            </ul></li>
+                            <li class="sub_menu08"><a href="#">도서출판</a><span><img src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></span>
+                            <ul class="sub2_menu8">
+                                <li><a href="#">서적</a></li>
+                                <li><a href="#">퍼즐</a></li>
+                                <li><a href="#">포스터</a></li>
+                                <li><a href="#">음반</a></li>
+                            </ul></li>
+                        </ul></li>
+                        <li class="main_menu2"><a href="#">캐릭터</a>
+                        <ul class="sub_menu2">
+                            <li><a href="#">넷마블프렌즈</a></li>
+                            <li><a href="#">KUYA</a></li>
+                            <li><a href="#">스톤에이지</a></li>
+                            <li><a href="#">세븐나이츠</a></li>
+                            <li><a href="#">모두의마블</a></li>
+                            <li><a href="#">BTS World</a></li>
+                            <li><a href="#">제2의 나라</a></li>
+                        </ul></li>
+                        <li class="main_menu3"><a href="#">고객센터</a>
+                        <ul class="sub_menu3">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul></li>
+                    </ul>
+                </div>
+                <div class="lang">
+                    <ul class="main_menu4">
+                        <li><a href="#">Language&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="#">한국어</a></li>
+                        <li><img width="10" height="10" src="https://cdn-icons-png.flaticon.com/512/120/120886.png" alt=""></li>
+                        <ul class="sub_menu4">
+                            <li><a href="#">한국어</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <ul>
+                        <li class="main_menu5"><a href="#"><img src="https://www.netmarblestore.com/morenvyimg/top_myshop.png" alt=""></a>
+                        <ul class="sub_menu5">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">주문조회</a></li>
+                        </ul></li>
+                        <li><a href="#"><img src="https://www.netmarblestore.com/morenvyimg/top_cart.png" alt=""></a></li>
+                        <li><a href="#"><img src="https://www.netmarblestore.com/morenvyimg/top_search.png" alt=""></a></li>
+                    </ul>
+                </div>
+        </div>
+      </header>
+      <!-- <div class="divider"></div> -->
+<main role="main">
+        <h2>로그인</h2>
+        <h3>넷마블스토어 회원으로 로그인하시면<br>
+            다양한 서비스를 이용하실 수 있습니다.
+        </h3>
+        <section class="content">
+          <!-- 3-1 display -->
+          <section class="display_section container">
+            <form action="loginCtrl.jsp" method="post">
+                <div class="box">
+                  <div class="search_container">
+                    <input
+                      type="text"
+                      id="search"
+                      placeholder="아이디"
+                      name="id"
+                    />
+                  </div>
+                  <div class="search_container">
+                    <input
+                      type="password"
+                      id="search2"
+                      placeholder="비밀번호"
+                      name="pw"
+                    />
+                  </div>
+                </div>
+            <input type="submit" value="로그인">
+              </form>
+          </section>
+          <section class="sec10">
+            <a href="signin.jsp"><input type="button" value="회원가입"></a>
+          </section>
+          <ul class="personal_info">
+              <li><a href="#">아이디 찾기</a></li>
+              <li><a href="#">비밀번호 찾기</a></li>
+              <li><a href="#">비회원 주문조회</a></li>
+          </ul>
+            <section class="sns_login">
+              <dl>
+                <dt>SNS 로그인</dt>
+                <div>
+                  <dd><img src="https://netmarblestore.com/morenvyimg/login_sns_na.png" alt=""></dd>
+                  <dd><img src="https://netmarblestore.com/morenvyimg/login_sns_ka.png" alt=""></dd>
+                </div>
+              </dl>
+          </section>
+        <section class="long_banner">
+            <div class="left_banner">
+               <div class="left_text">
+                    <p>넷마블 스토어 리뉴얼 이벤트</p>
+                    <p>다양한 이벤트를 만나보세요</p>
+               </div>
+                <img src="https://netmarblestore.com/morenvyimg/ft_left.png" alt="">
+            </div>
+            <div class="right_banner">
+                <div class="right_text">
+                    <p>신규가입시 3천원 쿠폰 증정</p>
+                    <p>넷마블스토어 신규 가입하고 할인받자!</p>
+                </div>
+                <img src="https://netmarblestore.com/morenvyimg/ft_right.png" alt="">
+            </div>
+        </section>
+   </main>
+    <footer class="w1720">
+        <section class="sec1">
+            <h2>
+                <img src="https://www.netmarblestore.com/web/upload/category/editor/2021/05/13/ada992eb39db6e8cf166102866cd57ae.png" alt="">
+            </h2>
+            <dl class="mb15">
+                <dd class="mb15">상호명: 넷마블 주식회사 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자 등록번호:105-87-64746</dd>
+            </dl>
+            <dl class="mb15">
+                <dd>통신판매업 신고번호 : 제2014-서울구로-1028호 <a href="#">[사업자정보확인]</a>  &nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표집행임원 신고번호 : 권영식, 도기욱</dd>
+            </dl>
+            <dl class="mb15">
+                <dd>주소 : 서울특별시 구로구 디지털로26길 38 (구로동) G-TOWER</dd>
+            </dl>
+            <dl class="mb15">
+                <dd>고객센터 : 1670-2451(평일 10시~18시) &nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp; 이메일 : storecs@netmarble.com &nbsp;&nbsp;&nbsp;I &nbsp;&nbsp;&nbsp;호스팅 서비스 제공자 : 카페24(주)</dd>
+            </dl>
+            <div class="escrow_flex mb15">
+                <h3><img src="https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png" alt="에스크로 이미지"></h3>
+                <p>구매안전(에스크로)서비스 <a href="#">서비스 가입사실 확인</a></p>
+            </div>
+            <dl class="mb50">
+                <dd>고객님의 안전거래를 위해 현금 등으로 5만원이상 결제시 저희 쇼핑몰에서 가입한 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</dd>
+            </dl>
+            <p class="copyright">Copyright 2021. Netmarble Corp All Rights Reserved.</p>
+        </section>
+        <section class="sec2">
+            <ul>
+                <li style="color: black;">개인정보 처리방침 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                <li>이용약관&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</li>
+                <li>고객센터 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                <li><img src="https://www.netmarblestore.com/morenvyimg/ft_sns01.png" alt=""></li>
+                <li><img src="https://www.netmarblestore.com/morenvyimg/ft_sns02.png" alt=""></li>
+                <li><img src="https://www.netmarblestore.com/morenvyimg/ft_sns03.png" alt=""></li>
+            </ul>
+            <div class="footer_divider">
+                <dl>
+                    <dd>공지사항</dd>
+                    <dd>고객문의</dd>
+                    <dd>이벤트</dd>
+                </dl>
+                <dl>
+                    <dd>회원가입</dd>
+                    <dd>마이페이지</dd>
+                    <dd>장바구니</dd>
+                    <dd>위시리스트</dd>
+                </dl>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
