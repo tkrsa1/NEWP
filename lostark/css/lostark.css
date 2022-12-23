@@ -1,0 +1,772 @@
+@charset "utf-8";
+html{
+    font-size: 62.5%;
+    font-family: 'Noto Sans KR',sans-serif;
+}
+.w1260{
+    width: 1260px;
+    margin: 0 auto;
+}
+.overheader{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.overheader h2 img{
+    width: 80%;
+}
+.overheader h2{
+    padding: 15px 50px;
+}
+.allgnbmenu{
+    display: flex;
+    margin-right: 30px;
+}
+.allgnbmenu img{
+    width: 20%;
+    margin-right: 15px;
+}
+.login{
+    display: block;
+    color: #1a1a1a;
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding-top: 20px;
+}
+.topmain{
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/main/@bg_index_issue_v19.jpg?75cd41fde6b83c0ec814f6a0a7b09c39);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    color: white;
+    height: 1000px;
+}
+.underheader{
+    width: 100%;
+    position: absolute;
+    z-index: 9999999999999999999;
+}
+.underheader a{
+    display: block;
+    width: 158px;
+    height: 46px;
+    background-position: -275px -228px;
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    background-size: 1273px  1239px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    margin: 20px 60px 0 80px;
+    float: left;
+}
+.loginbutton{
+    width: 50px;
+    height: 12px;
+    font-size: 0;
+    display: block;
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    background-repeat: no-repeat;
+    background-size: 1273px 1293px;
+    background-position: -851px -960px;
+    margin-top: 35px;
+    float: right;
+}
+.gamestart{
+    width: 260px;
+    height: 80px;
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/layout/bt_header_gamestart_hover.png?acbec8d40f0c8d6223ba82129112a223);
+    font-size: 0;
+    margin-left: 20px;
+    float: right;
+}
+.PClocation{
+    width: 71px;
+    height: 30px;
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-size: 1273px 1239px;
+    background-position: -1077px -801px;
+    font-size: 0;
+    margin-left: 20px;
+    margin-top: 25px;
+    float: right;
+}
+.underheader{
+    height: 80px;
+}
+nav{
+    font-size: 1.7rem;
+    line-height: 40px;
+    float: left;
+}
+nav>ul{
+    display: flex;
+    margin: 20px 0;
+}
+nav>ul>li{
+    margin-right: 50px;
+}
+nav>ul>li:last-child{
+    margin-right: 0;
+}
+nav>ul>li>ul{
+    display: none;
+}
+.eventsection{
+    width: 890px;
+    height: 508px;
+    float: left;
+    margin-top: 410px;
+    
+}
+.slider .div_1{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/92186a6ee4684bcfaac4f92c20dd3a4a.jpg);
+    height: 508px;
+}
+.slider .div_2{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/813e752f5a514cfbaeb5f3bb29916b6e.jpg);
+    height: 508px;
+}
+.slider .div_3{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/8bcb2270ea8f4fc29e343feb5826e6d5.jpg);
+    height: 508px;
+}
+.slider .div_4{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/21c80bba46c745d2af9d018aa419ddf5.jpg);
+    height: 508px;
+}
+.slider .div_5{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/de2249420b3a414d8962b91a01bdd5cc.jpg);
+    height: 508px;
+}
+.slider .div_6{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/6728dd0344e74d8bbc96e5179fbd61af.jpg);
+    height: 508px;
+}
+.slider .div_7{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/9dc8579027a8444f8bfc55028befad5f.jpg);
+    height: 508px;
+}
+.slider .div_8{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/2be66c0768cc4821ba15d77c7c5812fe.jpg);
+    height: 508px;
+}
+.slider .div_9{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/938cc820a5764cf69ddb38389a116a6d.jpg);
+    height: 508px;
+}
+.slider .div_10{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/cff65c01e0d84fa7aa00bcd2cc1aaac7.jpg);
+    height: 508px;
+}
+.alretsection{
+    width: 360px;
+    height: 280px;
+    float: right;
+    margin-top: 410px;
+}
+.alretsection .div_1{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/42ebd461206248cabae016b016687e3f.jpg);
+    height: 280px;
+}
+.alretsection .div_2{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/9fa28a366a9c44c6b9c4642417a0081a.jpg);
+    height: 280px;
+}
+.alretsection .div_3{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/9612d0a2514e4d57a09006bbbdebfa7a.jpg);
+    height: 280px;
+}
+.alretsection .div_4{
+    background-image: url(https://cdn-lostark.game.onstove.com/uploadfiles/banner/7d6aef4eb1a24093b79ad43dca9ef2e9.jpg);
+    height: 280px;
+}
+.alretsection2 h2{
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    background-position: -971px -989px;
+    width: 88px;
+    height: 23px;
+    font-size: 0;
+    margin-bottom: 20px;
+    float: left;
+}
+.alretsection2 h3{
+    float: right;
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    background-position: -1254px -96px;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    cursor: pointer;
+}
+.alretsection2{
+    background: rgba(28,30,36,.9);
+    color: #c2c2c2;
+    font-size: 1.6rem;
+    width: 360px;
+    height: 228px;
+    padding: 28px 20px;
+    line-height: 32px;
+    float: right;
+}
+.alretsection2 ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+.alretsection2 ul li{
+    width: 280px;
+}
+.alretsection2 li::before{
+    content: "\2022";
+    color: #c2c2c2;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.alretsection2 span{
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    background-position: -1254px -673px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.floinggift{
+    position: absolute;
+    left: 77%;
+    top: 35%;
+    z-index: 999999999;
+}
+.floinggift h2:first-child{
+    animation: bounce 2s ease-in-out 0s infinite;
+}
+.floinggift h2:last-child{
+    position: absolute;
+    left: -20px;
+    top: 200px;
+    animation: bounce 2s ease-in-out 0s infinite;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.info{
+    width: 1268px;
+    height: 78px;
+    font-size: 1.6rem;
+    background-color: rgb(45, 49, 61);
+    display: flex;
+    position: relative;
+    top: 40px;
+    box-sizing: border-box;
+}
+.play{
+    width: 504px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    margin-left: 100px;
+}
+.info .play h2{
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    width: 93px;
+    height: 20px;
+    background-position: -323px -207px;
+    margin-top: 29px;
+}
+.info input{
+    width: 390px;
+    height: 49px;
+    background-color: #1c1e26;
+    border: 1px solid #16181e;
+    margin-top: 12.5px;
+    font-size: 1.6rem;
+    color: #fff;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-left: 20px;
+}
+
+.info .guide{
+    width: 504px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    margin-left: 100px;
+}
+.info .guide h2{
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    width: 95px;
+    height: 20px;
+    background-position: -227px -207px;
+    margin-top: 25px;
+}
+.info h3{
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    background-position: -1162px -578px;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+.undermain{
+    margin-top: 80px;
+    display: flex;
+}
+.update{
+    width: 435px;
+    height: 315px;
+    margin-right: 20px;
+}
+.update h2{
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -342px -1016px;
+    width: 101px;
+    height: 27px;
+    float: left;
+    margin-bottom: 20px;
+}
+.update h3{
+    width: 18px;
+    height: 18px;
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -1254px -96px;
+    float: right;
+}
+.undermain>div{
+    display: flex;
+}
+.pointguide{
+    width: 435px;
+    height: 315px;
+    margin-right: 20px;
+}
+.pointguide h2{
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -585px -847px;
+    width: 137px;
+    height: 27px;
+    float: left;
+    margin-bottom: 20px;
+}
+.pointguide h3{
+    width: 18px;
+    height: 18px;
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -1254px -96px;
+    float: right;
+}
+.postlisha{
+    width: 350px;
+    height: 315px;
+}
+.postlisha h2{
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -723px -847px;
+    width: 133px;
+    height: 27px;
+    float: left;
+    margin-bottom: 20px;
+}
+.postlisha h3{
+    width: 18px;
+    height: 18px;
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -1254px -96px;
+    float: right;
+}
+.gPxor{
+    margin-top: 8px;
+}
+.underundermain{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.underundermain h2{
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    width: 57px;
+    height: 57px;
+    background-position: 0 -1016px;
+    float: left;
+    margin-right: 20px;
+}
+.underundermain h3:nth-child(2){
+    color: #888;
+    font-size: 1.6rem;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    width: 280px;
+}
+.underundermain h3:last-child{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: black;
+}
+.underundermainn{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.underundermain2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.underundermain2 h2{
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    width: 57px;
+    height: 57px;
+    background-position: -58px -1016px;
+    float: left;
+    margin-right: 20px;
+}
+.underundermain2 h3:nth-child(2){
+    color: #888;
+    font-size: 1.6rem;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    width: 290px;
+}
+.underundermain2 h3:last-child{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: black;
+}
+
+.underundermain3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.underundermain3 h2{
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    width: 57px;
+    height: 57px;
+    background-position: -116px -1016px;
+    float: left;
+    margin-right: 20px;
+}
+.underundermain3 h3:nth-child(2){
+    color: #888;
+    font-size: 1.6rem;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    width: 310px;
+}
+.underundermain3 h3:last-child{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: black;
+}
+.moviepoint{
+    background-color: #e9e9e9;
+    height: 787px;
+}
+.moviepoint>div>h2{
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -231px -1016px;
+    width: 110px;
+    height: 28px;
+    font-size: 0;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.moviepoint h3{
+    width: 18px;
+    height: 18px;
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -1254px -59px;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.boxes{
+    width: 309px;
+    height: 296px;
+    background-color: white;
+    margin-right:8px;
+    font-size: 1.6rem;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.boxes h4{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 900;
+}
+.boxes h5{
+    padding-top: 40px;
+    padding-left: 20px;
+    color: #8045dd;
+    font-size: 1.4rem;
+}
+.boxes:nth-child(4n){
+    margin-right: 0;
+}
+.boxes img{
+    width: 100%;
+}
+.flxbox{
+    display: flex !important;
+    flex-flow: row wrap;
+}
+.gameguide{
+    background-color: white;
+}
+.gameguide>div>div>h2{
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    background-position: -451px -847px;
+    width: 133px;
+    height: 28px;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.gameguide>div>div>h3{
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    background-position: -1254px -96px;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.gameguide>div>div>div>h5{
+    background-image: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151);
+    background-position: -1162px -463px;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+.gameguide .textbox{
+    display: flex;
+}
+.gameguide .textbox h4{
+    height: 36px;
+    margin-left: 10px;
+    padding: 0 12px;
+    border: 1px solid #c6c6c6;
+    border-radius: 19px;
+    font-size: 1.8rem;
+    color: #000;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+.gameguide .textbox h4:first-child{
+    margin-left: 0;
+}
+.gameguide .inputarea{
+    position: relative;
+    margin-left: 398px;
+}
+.inputarea input{
+    box-sizing: border-box;
+    border: 2px solid #dddfe3;
+    width: 350px;
+    height: 50px;
+    padding-left: 18px;
+    font-size: 1.6rem;
+    color: #555;
+}
+.inputarea input:hover{
+    border-color: #2b3653;
+}
+.gameguide .imagearea{
+    display: flex;
+}
+.imagearea div{
+    margin-right: 5px;
+}
+.disfbox{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    display: flex;
+    flex-flow: row wrap;
+}
+.content_incontent{
+    background: #463e42 url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/main/@bg_contents.jpg?f68edf68b121b0bdb4fc02bb26ad6bef) no-repeat 100% 0;
+    width: 50%;
+    height: 523px;
+    padding: 55px 42px 0 0;
+    box-sizing: border-box;
+    margin-top: 62px;
+}
+.content_incontent h2{
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -1077px -863px;
+    width: 77px;
+    height: 27px;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 685px;
+}
+.content_incontent h3{
+    background: url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite.png?b2d4895908632ffdc5e9a39f3a642151) no-repeat 0 0;
+    background-position: -1254px -96px;
+    width: 18px;
+    height: 18px;
+    float: right;
+}
+.contentimg{
+    width: 556px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 685px;
+}
+.contentimg img{
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.content_inclass{
+    width: 50%;
+    height: 570px;
+    margin-top: 15px;
+}
+.content_inclass .slider6 .div_1{
+    background:url(../images/riper.png) no-repeat;
+    background-position: 0 50%;
+    width: 50%;
+    height: 570px;
+}
+.content_inclass .slider6 .div_2{
+    background:url(../images/gunslinger.png) no-repeat;
+    background-position: 0 50%;
+    width: 50%;
+    margin-top: 20px;
+    height: 550px;
+}
+.content_inclass .slider6 .div_3{
+    background:url(../images/striker.png) no-repeat;
+    background-position: 0 50%;
+    width: 50%;
+    height: 550px;
+    margin-top: 20px;
+}
+.content_inclass .slider6 .div_4{
+    background:url(../images/sorceress.png) no-repeat;
+    background-position: 0 50%;
+    width: 50%;
+    height: 560px;
+    margin-top: 15px;
+}
+.content_inclass .slider6 .div_5{
+    background:url(../images/artist.png) no-repeat;
+    background-position: 0 50%;
+    width: 50%;
+    height: 560px;
+    margin-top: 15px;
+}
+.slider6{
+    position: relative;
+}
+.slider6 h2{
+    width: 140px;
+    height: 42px;
+    box-sizing: border-box;
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+}
+.slider6 h3{
+    width: 140px;
+    height: 42px;
+    box-sizing: border-box;
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 21%;
+    top: 70%;
+}
+footer{
+    background-color: #212226;
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+.slider6 h4{
+    font-size: 1.6rem;
+    color: #69a1ff;
+    position: absolute;
+    top: 80%;
+    left: 14%;
+}
+footer>div {
+    display: flex;
+}
+footer>div>div>ul{
+    display: flex;
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+footer>div>div>ul>li{
+    padding-top: 6px;
+}
+footer>div>div>ul>li::after{
+    content: "|";
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #888;
+}
+footer>div>div>ul>li:nth-child(10):after{
+    content: "";
+    margin-left: 0;
+    margin-right: 0;
+}
+footer>div>div>ul>li:last-child{
+    height: 25px;
+    padding: 6px 12px;
+    line-height: 1;
+    background-color: #343459;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+footer p{
+    color: #949596;
+    font-size: 1.2rem;
+}
+footer p:last-child{
+    color: #fff;
+}
+footer div h2:nth-child(2){
+    margin-left: 30px;
+}
+footer>div>div{
+    margin-left: 50px;
+}
+footer>div>div p:nth-child(2){
+    margin-bottom: 10px;
+}
+footer>div>div p:nth-child(3){
+    margin-bottom: 20px;
+}
+footer span{
+    color: #ff009c;
+}
