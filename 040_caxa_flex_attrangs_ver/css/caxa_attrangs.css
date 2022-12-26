@@ -73,7 +73,7 @@ header .local .lnb {
 }
 header .local .lnb li {
   margin-left: 12px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 header .local .lnb li:nth-child(1) {
   margin-left: 0;
@@ -133,6 +133,10 @@ header .global .snb li a {
 .md_pick{
   margin-top: 150px;
 }
+.md_pick h2{
+  font-size: 3rem;
+  line-height: 40px;
+}
 .md_pick ul{
   display: flex;
   flex-flow: row nowrap;
@@ -156,25 +160,28 @@ header .global .snb li a {
   padding-top: 88px;
   padding-left: 100px;
   padding-bottom: 88px;
+  display: flex;
+}
+.real_time>ul>li>h2{
+  font-size: 2rem;
+  line-height: 50px;
 }
 .realtime_img{
-  float: right;
-  width: 50%;
+  width: 100%;
 }
-.real_time ul {
+.real_time>ul {
   text-align: center;
   margin-right: 76px;
   padding-bottom: 150px;
-  float: left;
-  width: 40%;
+  width: 100%;
 }
-.real_time ul li {
+.real_time>ul li {
   margin-bottom: 14px;
 }
-.real_time ul li:first-child {
+.real_time>ul>li:first-child {
   margin-bottom: 36px;
 }
-.real_time ul li:last-child {
+.real_time>ul>li:last-child {
   margin-top: 64px;
   margin-bottom: 0;
 }
@@ -186,13 +193,16 @@ header .global .snb li a {
   height: 32px;
   line-height: 32px;
 }
-.real_time ul li a:hover {
+.real_time>ul>div>li>a:hover {
   color: #fff;
   background-color: #a56fbb;
 }
 /* 마지막 li 버튼은 호버효과 없애기 */
-.real_time ul li:last-child a:hover {
+.nohover a:hover {
   background-color: transparent;
+}
+.nohover a button:hover{
+  cursor: pointer;
 }
 /* Section 03 */
 .caxa {
@@ -257,6 +267,7 @@ footer {
   padding-bottom: 54px;
   line-height: 1.5;
   color: #020217;
+  border-top: 1px solid #1d1c2e;
 }
 .footer_information {
   display: flex;
@@ -295,6 +306,7 @@ footer {
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.6;
+  margin-top: 40px;
 }
 .footer_contact dl:first-child dt + dd {
   font-size: 2.2rem;
@@ -340,7 +352,7 @@ footer {
   position: fixed;
   left: 60%;
   top: 70%;
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
   cursor: pointer;
   color: white;
@@ -360,7 +372,7 @@ footer {
 
 .menu-trigger {
   position: relative;
-  width: 50px;
+  width: 44px;
   height: 44px;
   z-index: 3;
 }
@@ -386,7 +398,7 @@ footer {
   top: 35px;
 }
 .menu-trigger.active-1 span:nth-of-type(1) {
-  -webkit-transform: translateY(-15px) rotate (-45deg);
+  -webkit-transform: translateY(-15px) rotate(-45deg);
   transform: translateY(10px) rotate(-45deg);
 }
 
@@ -398,15 +410,10 @@ footer {
   -webkit-transform: translateY(-15px) rotate(45deg);
   transform: translateY(-10px) rotate(45deg);
 }
-
-
 /* full_gnb */
 .full_gnb{
-  background-color: rgb(188, 182, 240);
-  padding-top: 80px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  background-color: #D9B0A7;
+  padding: 50px 50px;
   position: absolute;
   z-index: 2;
   display: none;
@@ -419,7 +426,7 @@ footer {
 }
 .div1{
   background-color: white;
-  border-radius: 5%;
+  border-radius: 15px;
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
@@ -441,12 +448,13 @@ footer {
 }
 .div1 button{
   margin-top: 50px;
-  background-color: rgb(146, 95, 255);
+  background-color: #D9B0A7;
   width: 100%;
   padding: 20px;
-  border-radius: 5%;
-  font-size: 2rem;
-  color: white;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #020217;
 }
 .div1 p{
   margin-top: 50px;
@@ -468,7 +476,7 @@ footer {
 
 .div2{
   background-color: white;
-  border-radius: 5%;
+  border-radius: 15px;
   padding-top: 40px;
   padding-left: 50px;
   padding-right: 50px;
@@ -501,7 +509,7 @@ footer {
 
 .div3{
   background-color: white;
-  border-radius: 5%;
+  border-radius: 15px;
   padding-top: 40px;
   padding-left: 50px;
   padding-right: 50px;
@@ -528,11 +536,15 @@ footer {
   margin-top: 50px;
 }
 .buttonall button{
+  color: #020217;
+  font-weight: 700;
+}
+.buttonall button{
   width: 45%;
   margin-right: 10%;
   font-size: 1.5rem;
-  border-radius: 5%;
-  background-color: rgb(188, 182, 240);
+  border-radius: 5px;
+  background-color: #D9B0A7;
   margin-top: 10px;
   padding: 10px;
 }
@@ -727,50 +739,53 @@ header .global .snb li a {
   margin: 0 auto;
   text-align: center;
   align-items: center;
-  padding-top: 88px;
-  padding-left: 0;
-  padding-bottom: 88px;
+  padding-top: 44px;
+  padding-left: 0px;
+  padding-bottom: 44px;
+  display: block;
+}
+.real_time>ul>li>h2{
+  line-height: 50px;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 .realtime_img{
-  float: none;
   width: 100%;
 }
-.real_time ul {
+.real_time>ul {
   text-align: center;
-  margin-right: 0px;
-  padding-bottom: 150px;
-  float: none;
+  margin-right: 76px;
+  padding-bottom: 30px;
   width: 100%;
 }
-.real_time ul li {
+.real_time>ul li {
   margin-bottom: 14px;
 }
-.real_time ul li img{
-  width: 90%;
-  margin-left: 20px;
-}
-.real_time ul li:first-child {
+.real_time>ul>li:first-child {
   margin-bottom: 36px;
 }
-.real_time ul li:last-child {
-  margin-top: 32px;
-  margin-bottom: 0px;
+.real_time>ul>li:last-child {
+  margin-top: 64px;
+  margin-bottom: 0;
 }
 .real_time ul li a {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   color: #393939;
   display: inline-block;
   width: 180px;
   height: 32px;
   line-height: 32px;
 }
-.real_time ul li a:hover {
+.real_time>ul>div>li>a:hover {
   color: #fff;
   background-color: #a56fbb;
 }
 /* 마지막 li 버튼은 호버효과 없애기 */
-.real_time ul li:last-child a:hover {
+.nohover a:hover {
   background-color: transparent;
+}
+.nohover a button:hover{
+  cursor: pointer;
 }
 /* Section 03 */
 .caxa {
@@ -897,6 +912,7 @@ footer {
   color: #020217;
   font-size: 1.2rem;
   margin-bottom: 20px;
+  margin-top: 25px;
 }
 .footer_info {
   font-size: 1.0rem;

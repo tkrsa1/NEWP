@@ -238,7 +238,7 @@
       <main role="main">
         <!-- Section 01 -->
         <section class="md_pick w1300">
-          <h2><img src="./image/md's_pick_tittle.png" alt=""></h2>
+          <h2>지금 가장 주목해야할 아뜨소식<img src="./image/heart.png" alt=""></h2>
           <ul>
             <li><a href="#"><img src="./image/dessert.png" alt=""></a></li>
             <li><a href="#"><img src="./image/lookbook.png" alt=""></a></li>
@@ -250,21 +250,20 @@
         <!-- Section 02 -->
         <section class="real_title">
           <h2 class="real_time w1300 cf">
-            <ul>
+            <ul class="slider_index">
               <li>
-                <img class="real_title"
-                  src="./image/title2.png"
-                  alt="리얼타임타이틀"
-                />
+                <h2>살랑이는 바람,지금은 플리츠를 꺼내입을 때<img src="../040_caxa_flex_attrangs_ver/image/cl.png" alt=""></h2>
               </li>
-              <li><a href="#">#SK6006</a></li>
-              <li><a href="#">#플리츠 미니스커트</a></li>
-              <li><a href="#">#가을 무드에 3컬러</a></li>
-              <li><a href="#">#데일리로 좋은 뮤트컬러</a></li>
-              <li>
-                <a href="#"><button>
-                  제품 퀵뷰 보기
-                </button></a>
+              <div id="custom_pager">
+                <li><a href="#" data-slide-index="0">#SK6006</a></li>
+                <li><a href="#" data-slide-index="1">#플리츠 미니스커트</a></li>
+                <li><a href="#" data-slide-index="2">#가을 무드에 3컬러</a></li>
+                <li><a href="#" data-slide-index="3">#데일리로 좋은 뮤트컬러</a></li>
+              </div>
+              <li class="nohover">
+                <a href="#">
+                  <button>제품 퀵뷰 보기</button>
+                </a>
               </li>
             </ul>
             <article class="realtime_img no_mt">
@@ -274,7 +273,7 @@
                 <div><a href="#"><img src="./image/realtime_3.jpg" alt=""></a></div>
                 <div><a href="#"><img src="./image/realtime_4.jpg" alt=""></a></div>
               </div>
-            </article>
+            </article>            
           </h2>
         </section>
         <!-- /Section 02 -->
@@ -354,11 +353,6 @@
               </li>
             </ul>
           </div>
-          <p>
-            <a href="#"
-              ><img src="./image/buy_all.png" alt="전체구매"
-            /></a>
-          </p>
         </section>
         <!-- /Section 03 -->
       </main>
@@ -386,7 +380,7 @@
             </nav>
             <div class="footer_info">
               <p>
-                주식회사 | 웸씨웹 | 대표이사 : MCSSAM | <br />
+                주식회사 | 에스엔패션그룹  | 대표이사 : 구길리  | <br />
                 사업자등록번호 : 120-21-05435 | 통신판매업신고번호 : 제
                 2021-서울강남-00810호<br />
                 주소 : 서울특별시 강남구 아차산로 123 | 대표전화 : 02-3424-3432
@@ -418,21 +412,17 @@
       <!-- Footer -->
     </div>
     <script>
-        $(document).ready(function () {
-        $(".slider").bxSlider({
-          mode: 'horizontal',// 가로 방향 수평 슬라이드
-          speed: 500,        // 이동 속도를 설정
-          pager: false,      // 현재 위치 페이징 표시 여부 설정
-          moveSlides: 1,     // 슬라이드 이동시 개수
-          minSlides: 1,      // 최소 노출 개수
-          maxSlides: 1,      // 최대 노출 갯수
-          slideMargin: 5,    // 슬라이드간의 간격
-          auto: true,        // 자동 실행 여부
-          autoHover: true,   // 마우스 호버시 정지 여부
-          randomStart:true,
-          controls: false
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            mode :'fade',
+            pager:true,
+            auto:true,
+            autoHover: true,
+            controls: false,
+            infiniteLoop:true,
+            pagerCustom:"#custom_pager"
+          });
         });
-      });
     </script>
   </body>
 </html>
