@@ -11,6 +11,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+.mob_gnb{
+  display: none;
+}
 /* Header */
 header {
   height: 700px;
@@ -99,7 +102,9 @@ header .img_deco button a {
   top: -80px;
   z-index: 1;
 }
-
+.card_box_view img{
+  border: 1px solid #fff;
+}
 /* CardBox Text  */
 .card_box .card_box_info {
   padding-bottom: 60px;
@@ -185,14 +190,24 @@ header .img_deco button a {
 .banner {
   background-color: white;
   margin-bottom: 100px;
+  color: #807f7f;
 }
-.banner_img {
-  text-align: center;
+.banner div{
+  margin-left: 200px;
+  margin-bottom: 20px; 
+  display: flex;
 }
-.banner img {
-  width: 80%;
-  max-width: 100%;
-  padding: 20px;
+.banner div h3{
+  margin-right: 50px;
+  color: #020217;
+  font-size: 1rem;
+}
+.banner div h4{
+  font-size: 0.8rem;
+}
+.banner div i{
+  color: #807f7f;
+  margin-right: 10px;
 }
 /* footer */
 .footer {
@@ -216,6 +231,12 @@ header .img_deco button a {
 .footer .footer_logo .sns {
   display: inline-block;
   margin-right: 20px;
+}
+.sns a{
+  font-size: 1.5rem;
+}
+.sns a:hover{
+  color: #fc3;
 }
 /* Footer Services */
 .footer .footer_services {
@@ -276,6 +297,7 @@ header .img_deco button a {
   text-align: center;
   padding-top: 70px;
   padding-bottom: 32px;
+  color: white;
 }
 .footer .copyright_line {
   width: 100%;
@@ -469,6 +491,7 @@ header .img_deco button a {
     left: 0;
     top: -80px;
     z-index: 1;
+    
   }
   .card_box .card_box_view img{
     width: 100%;
@@ -569,14 +592,26 @@ header .img_deco button a {
 .banner {
   background-color: white;
   margin-bottom: 100px;
+  color: #807f7f;
+
 }
-.banner_img {
-  text-align: center;
+.banner div{
+  margin-left: 10px;
+  margin-bottom: 20px; 
+  display: flex;
 }
-.banner img {
-  width: 100%;
-  max-width: 100%;
-  padding: 20px;
+.banner div h3{
+  margin-right: 20px;
+  color: #020217;
+  font-size: 1rem;
+}
+.banner div h4{
+  font-size: 0.5rem;
+  width: 350px;
+}
+.banner div i{
+  color: #807f7f;
+  margin-right: 10px;
 }
 /* footer */
 

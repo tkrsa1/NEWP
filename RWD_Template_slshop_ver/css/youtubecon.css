@@ -17,7 +17,7 @@ body {
 .sec_title {
   font-size: 42px;
   font-size: 2.625rem;
-  color: #3f51b5;
+  color: rgb(119,120,122);
 }
 /* 구분선 스타일 */
 .divider {
@@ -63,6 +63,9 @@ body {
   display: none;
   line-height: 60px;
 }
+.header .gnb li:hover{
+  color: #4f5b66;
+}
 .header .gnb li {
   border-bottom: 1px solid #303f9f;
 }
@@ -75,7 +78,7 @@ body {
 /* hamberger toggle */
 .header .menu_toggle_btn {
   width: 20px;
-  margin-top: 4px;
+  margin-top: 15px;
   cursor: pointer;
   float: right;
 }
@@ -144,7 +147,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: #3f51b5;
+  background: #020217;
   opacity: 0;
   /* 포지션 */
   position: absolute;
@@ -192,6 +195,7 @@ body {
 .blog_section .blog_list li {
   width: 100%;
   margin-top: 48px;
+  padding: 0 20px;
 }
 .blog_section .blog_list li:first-child {
   margin-top: 0;
@@ -216,14 +220,6 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-.contact_section {
-  margin-top: 100px;
-  margin-bottom: 200px;
-}
-.contact_section .sec_title {
-  margin-bottom: 48px;
-  text-align: center;
-}
 input,
 textarea {
   border-bottom: 1px solid #757575;
@@ -232,25 +228,7 @@ textarea {
   color: #3f51b5;
   border-radius: 0%;
 }
-.contact_section .form_box .form input {
-  padding-bottom: 14px;
-  margin-bottom: 40px;
-}
-.contact_section .form_box .txta textarea {
-  height: 170px;
-}
-.contact_section .form_box .send_btn {
-  margin-top: 36px;
-  text-align: right;
-}
-.contact_section .form_box .send_btn button {
-  font-size: 12px;
-  font-size: 0.75rem;
-  color: #fff;
-  background: #3f51b5;
-  padding: 15px;
-  cursor: pointer;
-}
+
 .footer {
   margin-top: 100px;
 }
@@ -297,34 +275,71 @@ textarea {
   margin-top: 17px;
   margin-left: 17px;
 }
-/* input form */
-.search_container input#search {
-  width: 100%;
-  height: 50px;
-  background-color: teal;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 11px;
-  padding-left: 45px;
-  outline: none;
-  float: left;
-  transition: all 0.5s ease;
-}
-.search_container input#search:hover,
-.search_container input#search:focus .search_container input#search:active {
-  background-color: black;
-}
 .promotion_section h2 {
   font-weight: 900;
   font-size: 1.5rem;
   text-align: center;
   margin: 100px 0;
+  color: rgb(119,120,122);
 }
 .promotion_section ul li {
   float: left;
   width: 100%;
   margin-bottom: 20px;
+  padding: 0 20px;
+  position: relative;
+}
+.promotion_section ul li:first-child::before{
+  content: "#다이아몬드 주얼리";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgba(0,0,0,.2);
+  color: #fff;
+}
+.promotion_section ul li:nth-child(2):before{
+  content: "#셀럽착용 주얼리";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,.2);
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.promotion_section ul li:nth-child(3):before{
+  content: "#컬러풀 주얼리";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,.2);
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.promotion_section ul li:nth-child(4):before{
+  content: "#데일리 주얼리";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,.2);
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
 }
 .promotion_section ul li:last-child{
   margin-bottom: 0;
@@ -336,12 +351,55 @@ textarea {
   width: 100%;
   max-width: 100%;
 }
-
-/* 유튜브 슬라이더 */
-.slider_section iframe {
+.contact_section{
   width: 100%;
-  max-width: 100%;
-  height: 500px;
+  background-color: rgb(238, 238, 238);
+  padding: 50px 0;
+  font-size: 15px;
+  color: #222;
+  margin-top: 50px;
+}
+.contact_section>h2{
+  font-size: 35px;
+  color: #222;
+  text-align: center;
+  font-weight: bold;
+}
+.contact_section>div{
+  display: block;
+}
+.contact_section div div{
+  margin-right: 0px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.contact_section div div:last-child{
+  margin-right: 0;
+}
+.contact_section div div h2{
+  margin-top: 10px;
+}
+.contact_section div div h3{
+  margin-top: 10px;
+}
+.contact_section div div img{
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+  padding: 0 24px;
+}
+.contact_section button{
+  display: block;
+  width: 142px;
+  height: 52px;
+  font-size: 15px;
+  color: #222;
+  border: 1px solid #222;
+  margin: 0 auto;
+  margin-top: 75px;
+  cursor: pointer;
 }
 .bx-wrapper {
   -moz-box-shadow: none;
@@ -474,13 +532,59 @@ textarea {
     color: #424242;
     line-height: 1.6;
   }
-  .contact_section {
-    margin-top: 180px;
+  .contact_section{
+    width: 100%;
+    height: 1400px;
+    background-color: rgb(238, 238, 238);
+    padding: 100px 0;
+    font-size: 15px;
+    color: #222;
+    margin-top: 100px;
   }
-  .contact_section .sec_title {
-    margin-bottom: 48px;
+  .contact_section>h2{
+    font-size: 35px;
+    color: #222;
     text-align: center;
+    font-weight: bold;
   }
+  .contact_section>div{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .contact_section div div{
+    margin-right: 0px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .contact_section div div:last-child{
+    width: 100%;
+    margin-right: 0;
+  }
+  .contact_section div div h2{
+    margin-top: 10px;
+  }
+  .contact_section div div h3{
+    margin-top: 10px;
+  }
+  .contact_section div div img{
+    width: 300px;
+    height: 275px;
+    cursor: pointer;
+  }
+  .contact_section button{
+    display: block;
+    width: 142px;
+    height: 52px;
+    font-size: 15px;
+    color: #222;
+    border: 1px solid #222;
+    margin: 0 auto;
+    margin-top: 75px;
+    cursor: pointer;
+  }
+  
   input,
   textarea {
     border-bottom: 1px solid #757575;
@@ -488,37 +592,6 @@ textarea {
     font-size: 0.75rem;
     color: #3f51b5;
     border-radius: 0%;
-  }
-  .contact_section .form_box .form {
-    width: 374px;
-    width: 48.69791666666667%;
-    margin-right: 20px;
-    margin-right: 2.604166666666667%;
-    float: left;
-  }
-  .contact_section .form_box .txta {
-    width: 374px;
-    width: 48.69791666666667%;
-    float: right;
-  }
-  .contact_section .form_box .form input {
-    padding-bottom: 14px;
-    margin-bottom: 40px;
-  }
-  .contact_section .form_box .txta textarea {
-    height: 170px;
-  }
-  .contact_section .form_box .send_btn {
-    margin-top: 36px;
-    text-align: right;
-  }
-  .contact_section .form_box .send_btn button {
-    font-size: 12px;
-    font-size: 0.75rem;
-    color: #fff;
-    background: #3f51b5;
-    padding: 15px;
-    cursor: pointer;
   }
   .promotion_section h2 {
     font-weight: 900;
@@ -636,17 +709,58 @@ textarea {
     color: #424242;
     line-height: 1.6;
   }
-  .contact_section {
-    margin-top: 180px;
-  }
-  .contact_section .sec_title {
-    margin-bottom: 0;
-    text-align: center;
-    margin-bottom: 100px;
-  }
-  .contact_section iframe {
+  .contact_section{
     width: 100%;
-    height: 600px;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    padding: 0 0;
+    font-size: 15px;
+    color: #222;
+    margin-top: 50px;
+    padding: 50px 0;
+  }
+  .contact_section>h2{
+    font-size: 35px;
+    color: #222;
+    text-align: center;
+    font-weight: bold;
+  }
+  .contact_section>div{
+    width: 100%;
+    display: flex;
+  }
+  .contact_section>div>div{
+    margin-right: 0px;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .contact_section div div:last-child{
+    width: 20%;
+    margin-right: 0;
+  }
+  .contact_section div div h2{
+    margin-top: 10px;
+  }
+  .contact_section div div h3{
+    margin-top: 10px;
+  }
+  .contact_section div div img{
+    width: 450px;
+    height: 375px;
+    cursor: pointer;
+  }
+  .contact_section button{
+    display: block;
+    width: 142px;
+    height: 52px;
+    font-size: 15px;
+    color: #222;
+    border: 1px solid #222;
+    margin: 0 auto;
+    margin-top: 75px;
+    cursor: pointer;
   }
   input,
   textarea {
@@ -655,42 +769,6 @@ textarea {
     font-size: 0.75rem;
     color: #3f51b5;
     border-radius: 0%;
-  }
-  .contact_section .form_box .form {
-    width: 412px;
-    width: 48.81516587677725%;
-    margin-right: 20px;
-    margin-right: 2.369668246445498%;
-    float: left;
-  }
-  .contact_section .form_box .txta {
-    width: 412px;
-    width: 48.81516587677725%;
-    float: right;
-  }
-  .contact_section .form_box .form input {
-    padding-bottom: 14px;
-    margin-bottom: 40px;
-  }
-  .contact_section .form_box .txta textarea {
-    height: 170px;
-  }
-  .contact_section .form_box .send_btn {
-    margin-top: 36px;
-    text-align: right;
-  }
-  .contact_section .form_box .send_btn button {
-    font-size: 12px;
-    font-size: 0.75rem;
-    color: #fff;
-    background: #3f51b5;
-    padding: 15px;
-    cursor: pointer;
-  }
-  .contact_section .form_box {
-    width: 844px;
-    width: 74.5583038869258%;
-    float: right;
   }
   .promotion_section h2 {
     font-weight: 900;
