@@ -93,7 +93,7 @@ $(function(){
     "Hello!",
     "안녕하세요.",
     "개발자를 꿈꾸는 \n 이용재입니다.",
-    "#jdr"
+    "#LYJ"
   ];
   
   // 글자 입력 속도
@@ -146,4 +146,12 @@ function wait(ms) {
 
 // 초기 실행
 setTimeout(typing, 2000);
+});
+
+jQuery(document).ready(function($) {
+
+  $(".scroll").click(function(event){            
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+  });
 });
