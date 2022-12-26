@@ -53,9 +53,9 @@ body::-webkit-scrollbar { display:none; }
 }
 .header ul li a{
     display:block;
-    height:60px;
+    height: 5vh;
     text-align:center;
-    line-height:60px;
+    line-height:5vh;
     font-size:20px;
     text-decoration:none;
     background-color:#020217;
@@ -70,37 +70,39 @@ body::-webkit-scrollbar { display:none; }
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 .centerbox{
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 30vh;
+    left: 55vw;
+    transform: translateX(-50%);
 }
 .centerbox p{
     font-size: 2rem;
     text-align: center;
     color: white;
     animation: fadeInDown 4s;
-    height: 50px;
+    height: 4vh;
 }
 .text{
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     color: white; 
     animation: fadeInDown 1s;
-    height: 50px;
+    height: 6vh;
 }
 .text2{
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     color: white; 
     animation: fadeInDown 2s;
-    height: 150px;
+    height: 13vh;
 }
 .text2 span{
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: bolder;
     background-size: 100% 100%;
     background-image: linear-gradient(transparent 80%, #2B88D9 20%);
@@ -110,7 +112,7 @@ body::-webkit-scrollbar { display:none; }
 }
 .cnt02>div{
     position: absolute;
-    left: 15%;
+    left: 15vw;
     top: 0%;
 }
 .cnt02>div h2{
@@ -118,8 +120,8 @@ body::-webkit-scrollbar { display:none; }
     font-weight: 700;
     background-size: 100% 100%;
     background-image: linear-gradient(transparent 80%, rgb(248, 205, 7) 20%);
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
 }
 .cnt02>div p{
     font-size: 2rem;
@@ -141,26 +143,26 @@ body::-webkit-scrollbar { display:none; }
 .noneflexbox span{
     display: block;
 }
+
 .cnt03{
     position: relative;
     background-color: #F2F2F2;
 }
 .cnt03>div{
     position: absolute;
-    left: 20%;
+    left: 15vw;
 }
 .cnt03>div h2{
     font-size: 3rem;
     font-weight: 900;
     background-size: 100% 100%;
     background-image: linear-gradient(transparent 80%,#F2D785 20%);
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 300px;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    width: 15vw;
 }
 .cnt03>div img{
-    width: 900px;
-    height: 500px;
+    width: 35vw;
 }
 .cnt03>div p{
     font-size: 2rem;
@@ -168,21 +170,40 @@ body::-webkit-scrollbar { display:none; }
 }
 .cnt03>div span{
     font-size: 2rem;
-    font-weight: 400;
     margin-left: 10px;
 }
 .imgflexbox{
     display: flex;
-    box-sizing: border-box;
     box-shadow: 5px 5px 10px #666;
-    width: 1600px;
+    width: 75vw;
+    padding: 16px 16px;
 }
 .personal_project_text{
-    padding: 120px 0;
-    margin-left: 200px;
+    margin-left: 12vw;
+    align-self: center;
+}
+.personal_project_text button{
+    display: block;
+    width: 20vw;
+    height: 4vh;
+    border: 1px solid #000;
+    color: #020217;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+.personal_project_text button:last-child{
+    margin-top: 1vh;
+}
+.personal_project_text button:hover{
+    background-color: #020217;
+    color: white;
 }
 .mb50{
-    margin-bottom: 50px;
+    margin-bottom: 3vh;
 }
 
 
@@ -193,20 +214,19 @@ body::-webkit-scrollbar { display:none; }
 }
 .cnt04>div{
     position: absolute;
-    left: 20%;
+    left: 15vw;
 }
 .cnt04>div h2{
     font-size: 3rem;
     font-weight: 900;
     background-size: 100% 100%;
     background-image: linear-gradient(transparent 80%,#F2D785 20%);
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 300px;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+    width: 15vw;
 }
 .cnt04>div img{
-    width: 900px;
-    height: 500px;
+    width: 35vw;
 }
 .cnt04>div p{
     font-size: 2rem;
@@ -214,7 +234,6 @@ body::-webkit-scrollbar { display:none; }
 }
 .cnt04>div span{
     font-size: 2rem;
-    font-weight: 400;
     margin-left: 10px;
 }
 
@@ -226,20 +245,23 @@ body::-webkit-scrollbar { display:none; }
 }
 .cnt05>div{
     position: absolute;
-    left: 20%;
+    left: 15vw;
 }
 .cnt05>div h2{
     font-size: 3rem;
     font-weight: 900;
     background-size: 100% 100%;
     background-image: linear-gradient(transparent 80%,#D93240 20%);
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 300px;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+    width: 15vw;;
 }
 .cnt05>div img{
-    width: 900px;
-    height: 500px;
+    width: 40vw;
+    height: 50vh;
+}
+.cnt05>div>div>p{
+    align-self: center;
 }
 .cnt05>div p{
     font-size: 2rem;
@@ -247,6 +269,15 @@ body::-webkit-scrollbar { display:none; }
 }
 .cnt05>div span{
     font-size: 2rem;
-    font-weight: 400;
     margin-left: 10px;
+}
+.buttondiv button{
+    margin-top: 2vh !important;
+}
+.imgflexbox2{
+    display: flex;
+    box-shadow: 5px 5px 10px #666;
+    width: 75vw;
+    height: 70vh;
+    padding: 16px 16px;
 }
