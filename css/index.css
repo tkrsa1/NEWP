@@ -1,97 +1,252 @@
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  font-family: "Noto sans KR", sans-serif;
-  color: #2E3940;
-  background: white;
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
-#fullpage {
-  position: relative;
-  top: 0px;
-  z-index: 9;
-  width: 100%;
-  height: 100%;
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
-.fullsection {
-  width: 100%;
-  height: 100%;
-  position: relative;
+html{
+    font-size: 62.5%;
+    font-family: "Noto Sans KR",sans-serif;
 }
-.quick {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 100000;
+body{-ms-overflow-style:none; }
+body::-webkit-scrollbar { display:none; }
+.header{
+    position:fixed;
+    z-index:10;
+    top:0;
+    left: 0;
+    width: 10vw;
+    height: 100vh;
+    background-color: black;
+    padding: 24px 16px;
+    box-shadow: 5px 0 5px -5px #666;
 }
-.quick li {
-  width: 10px;
-  height: 10px;
-  margin-bottom: 10px;
-  border-radius: 15px;
-  border: 2px solid #020217;
-  cursor: pointer;
+.header .title{
+    color: white;
+    padding: 24px 0px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    animation: fadein 2s;
 }
-.quick .on {
-  background: #020217;
+.header .email{
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    color: white;
+    padding: 24px 0px;
+    font-size: 1rem;
+    margin-top: 70vh;
+    text-align: center;
+    animation: fadein 2s;
 }
-img {
-  width: 70%;
-  max-width: 100%;
-  border: 1px solid #000;
+.tab{
+    animation: fadein 2s;
 }
-.container {
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
+.header ul li a{
+    display:block;
+    height:60px;
+    text-align:center;
+    line-height:60px;
+    font-size:20px;
+    text-decoration:none;
+    background-color:#020217;
+    color:white
 }
-small {
-  display: block;
-  margin-top: 10px;
+.header ul li.on a{
+    background-color:#fff;
+    color:#000
 }
-.title2{
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.cnt01{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(https://news.samsungdisplay.com/wp-content/uploads/2022/05/IT_twi001t1345955-1-1024x639.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.full1 h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 50px;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
+.centerbox{
+    position: absolute;
+    top: 40%;
+    left: 50%;
 }
-.scroll_down {
-  width: 5%;
-  height: 100%;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10000000000;
+.centerbox p{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    animation: fadeInDown 4s;
+    height: 50px;
 }
-.scroll_down img {
-  width: 100%;
-  max-width: 100%;
-  border: none;
+.text{
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    color: white; 
+    animation: fadeInDown 1s;
+    height: 50px;
+}
+.text2{
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    color: white; 
+    animation: fadeInDown 2s;
+    height: 150px;
+}
+.text2 span{
+    font-size: 6rem;
+    font-weight: bolder;
+    background-size: 100% 100%;
+    background-image: linear-gradient(transparent 80%, #2B88D9 20%);
+}
+.cnt02{
+    position: relative;
+}
+.cnt02>div{
+    position: absolute;
+    left: 15%;
+    top: 0%;
+}
+.cnt02>div h2{
+    font-size: 3rem;
+    font-weight: 700;
+    background-size: 100% 100%;
+    background-image: linear-gradient(transparent 80%, rgb(248, 205, 7) 20%);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.cnt02>div p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.cnt02>div span{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.flexbox{
+    display: flex;
+    margin-top: 20px;
+}
+.noneflexbox{
+    display: block;
+    margin-top: 20px;
+}
+.noneflexbox span{
+    display: block;
+}
+.cnt03{
+    position: relative;
+    background-color: #F2F2F2;
+}
+.cnt03>div{
+    position: absolute;
+    left: 20%;
+}
+.cnt03>div h2{
+    font-size: 3rem;
+    font-weight: 900;
+    background-size: 100% 100%;
+    background-image: linear-gradient(transparent 80%,#F2D785 20%);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 300px;
+}
+.cnt03>div img{
+    width: 900px;
+    height: 500px;
+}
+.cnt03>div p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.cnt03>div span{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.imgflexbox{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #666;
+    width: 1600px;
+}
+.personal_project_text{
+    padding: 120px 0;
+    margin-left: 200px;
+}
+.mb50{
+    margin-bottom: 50px;
 }
 
-.full2 {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
+
+
+.cnt04{
+    position: relative;
+    background-color: #D9D9D9;
 }
-.full3{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
+.cnt04>div{
+    position: absolute;
+    left: 20%;
+}
+.cnt04>div h2{
+    font-size: 3rem;
+    font-weight: 900;
+    background-size: 100% 100%;
+    background-image: linear-gradient(transparent 80%,#F2D785 20%);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 300px;
+}
+.cnt04>div img{
+    width: 900px;
+    height: 500px;
+}
+.cnt04>div p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.cnt04>div span{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+
+
+.cnt05{
+    position: relative;
+    background-color: #F2F2F2;
+}
+.cnt05>div{
+    position: absolute;
+    left: 20%;
+}
+.cnt05>div h2{
+    font-size: 3rem;
+    font-weight: 900;
+    background-size: 100% 100%;
+    background-image: linear-gradient(transparent 80%,#D93240 20%);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 300px;
+}
+.cnt05>div img{
+    width: 900px;
+    height: 500px;
+}
+.cnt05>div p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.cnt05>div span{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 10px;
 }

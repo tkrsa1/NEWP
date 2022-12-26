@@ -1,0 +1,121 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-family: "Noto sans KR", sans-serif;
+  color: #2E3940;
+  background: white;
+  font-size: 62.5%;
+}
+#fullpage {
+  position: relative;
+  top: 0px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+.fullsection {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.quick {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100000;
+}
+.quick li {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 2px solid #020217;
+  cursor: pointer;
+}
+.quick .on {
+  background: #020217;
+}
+img {
+  width: 70%;
+  max-width: 100%;
+  border: 1px solid #000;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+small {
+  display: block;
+  margin-top: 10px;
+}
+.title2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.full1{
+  display: flex;
+}
+.full1 .text {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -100%);
+}
+header{
+  width: 10vw;
+  background-color: #020217;
+  color: white;
+  height: 100vh;
+  font-size: 2rem;
+  text-align: center;
+}
+header h1{
+  padding: 36px 0;
+}
+header h2{
+  padding: 16px 0;
+}
+header h2:last-child{
+  margin-bottom: 0;
+}
+header h2:hover{
+  background-color: #F29F05;
+}
+.scroll_down {
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  top: 90%;
+  left: 55%;
+  transform: translateX(-50%);
+  z-index: 10000000000;
+}
+.scroll_down img {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+}
+
+.full2 {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.full3{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
