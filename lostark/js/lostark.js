@@ -47,6 +47,16 @@ $(document).ready(function(){
     controls: false,
     infiniteLoop:true
     });
+
+    $("nav").hover(function(){
+        $("nav>ul>li>ul").slideDown(100)
+        $(".underheader").css({"backgroundColor":"black"});
+    });
+    $("nav").mouseleave(function(){
+        $("nav>ul>li>ul").css({"display":"none"})
+        $(".underheader").css({"backgroundColor":"transparent"});
+    });
+    
 });
 $(window).scroll(function () { 
     var scrollValue = $(document).scrollTop(); 
@@ -60,4 +70,21 @@ $(window).scroll(function () {
         $(".underheader").css({"backgroundColor":"transparent"});
         $(".underheader").css({"position":"absolute"});
     }
+});
+
+$(function(){
+    var scrollValue = $(document).scrollTop(); 
+    $("nav").hover(function(){
+        $("nav>ul>li>ul").slideDown(100)
+        $(".underheader").css({"backgroundColor":"black"});
+    });
+    $("nav").mouseleave(function(){
+        if(scrollValue>=30){
+            $("nav>ul>li>ul").css({"display":"none"})
+            $(".underheader").css({"backgroundColor":"black"});
+        }else{
+            $("nav>ul>li>ul").css({"display":"none"})
+            $(".underheader").css({"backgroundColor":"transparent"});
+        }
+    });
 });
