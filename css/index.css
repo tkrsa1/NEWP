@@ -193,10 +193,10 @@ body::-webkit-scrollbar { display:none; }
     cursor: pointer;
     text-align: center;
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 15vh;
 }
-.personal_project_text button:last-child{
-    margin-top: 1vh;
+.mt1vh{
+    margin-top: 1vh !important;
 }
 .personal_project_text button:hover{
     background-color: #020217;
@@ -270,6 +270,9 @@ body::-webkit-scrollbar { display:none; }
 .cnt05>div span{
     font-size: 2rem;
     margin-left: 10px;
+}
+.buttondiv{
+    margin-top: 5vh;
 }
 .buttondiv button{
     margin-top: 2vh !important;
